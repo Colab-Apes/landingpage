@@ -1,13 +1,10 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Waitlist from './components/Waitlist/Waitlist';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
-      <Navbar />
-      <h1>Hello World!</h1>
-      <Waitlist />
+      <Hero />
     </>
   );
 }

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 35px;
+    max-width: 90%; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the navbar horizontally */
+}
+
+.brand{
+    display: flex;
+}
+
+.logoContainer{
+    width: 55px;
+    height: 55px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.logo{
+    width: 44.73px;
+    height: 47.93px;
+}
+
+.brandName{
+    padding-left: 19px;
+    place-items: center;
+}
+
+.brandName img{
+    width: 200px;
+    height: 50px;
+}
+
+
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: -10px;
+    gap: 20px;
+
+    /* background: #FFFFFF; */
+    border-radius: 50px;
+}
+
+.signIn{
+    padding: 12px 30px;
+
+    background: #FFFFFF;
+    border-radius: 50px;
+    border: none;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+
+    color: #054E12;
+}
+
+.signUp{
+    padding: 12px 30px;
+
+    background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
+    border-radius: 50px;
+    border: none;
+
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
