@@ -17,9 +17,9 @@ const NavbarComp = () => {
         </div>
       </div>
 
-      <div id='btn'>
-        <button className='btn' id='signIn'>Sign in</button>
-        <button className='btn' id='signUp'>Sign up</button>
+      <div className='btn'>
+        <button className='signIn'>Sign in</button>
+        <button className='signUp'>Sign up</button>
       </div>
 
     </nav>
