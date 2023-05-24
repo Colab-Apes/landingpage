@@ -3,7 +3,13 @@ import './Waitlist.css';
 
 const Waitlist = () => {
   return (
-    <div>Waitlist</div>
+    <div className='waitlist'>
+      <p>Join the waitlist</p>
+      <form action="">
+        <input type="text" placeholder='Enter your email address...'/>
+        <button>Join</button>
+      </form>
+    </div>
   )
 }
 

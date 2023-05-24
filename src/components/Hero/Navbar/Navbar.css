@@ -51,14 +51,14 @@ nav{
     margin-top: -10px;
     gap: 20px;
 
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .signIn{
     padding: 12px 30px;
 
     background: #FFFFFF;
-    border-radius: 50px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
 
@@ -75,7 +75,7 @@ nav{
     padding: 12px 30px;
 
     background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
-    border-radius: 50px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
 
