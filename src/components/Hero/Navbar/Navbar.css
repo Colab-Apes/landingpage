@@ -30,14 +30,14 @@ nav{
 }
 
 .signIn{
-    padding: 12px 20px;
+    padding: 8px 18px;
 
     background: none;
     border-radius: 20px;
     border: none;
     cursor: pointer;
 
-    height: 48px;
+    height: 40px;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -49,14 +49,14 @@ nav{
 }
 
 .signUp{
-    padding: 12px 20px;
+    padding: 8px 18px;
 
     background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
     border-radius: 20px;
     border: none;
     cursor: pointer;
 
-    height: 48px;
+    height: 40px;
 
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -65,4 +65,11 @@ nav{
     text-align: center;
 
     color: #FFFFFF;
+}
+
+/* Size can also be negative; see how it's smaller than the element */
+.navBtn:hover,
+.navBtn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #3B8004;
+  transform: translateY(-0.25em);
 }

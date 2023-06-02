@@ -14,7 +14,8 @@
     height: 30px;
 }
 
-.icon:hover{
+.icon:hover,
+.icon:focus {
     width: 35px;
     height: 35px;
 }

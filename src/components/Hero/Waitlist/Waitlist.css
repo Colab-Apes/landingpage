@@ -136,6 +136,13 @@
     color: #FFFFFF;
 }
 
+.bottom form button:hover,
+.bottom form button:focus {
+  box-shadow: inset 6.5em 0 0 0 #ffffff;
+  color: #054E12;
+  border: 1px solid #054E12;
+}
+
 .waitlistSVG{
     width: 410.07px;
     height: 381px;

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import logo from '../../../assets/logo.svg';
+
 import './Navbar.css';
 
 const NavbarComp = () => {
@@ -12,8 +13,8 @@ const NavbarComp = () => {
       </div>
 
       <div className='btn'>
-        <button className='signIn'>Sign in</button>
-        <button className='signUp'>Sign up</button>
+        <button className='signIn navBtn'>Sign in</button>
+        <button className='signUp navBtn'>Sign up</button>
       </div>
 
     </nav>
