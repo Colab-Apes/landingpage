@@ -1,9 +1,10 @@
 import React from 'react';
 import NavbarComp from './Navbar/Navbar';
 import Waitlist from './Waitlist/Waitlist';
+import Socials from './Socials/Socials';
 
 import './Hero.css';
-import Socials from './Socials/Socials';
+import './HeroMobile.css';
 
 const Hero = () => {
   return (

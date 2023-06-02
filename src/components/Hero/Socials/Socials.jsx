@@ -7,6 +7,7 @@ import twitter from '../../../assets/socials/twitter.svg';
 import linkedin from '../../../assets/socials/linkedin.svg';
 
 import './Socials.css';
+import './SocialsMobile.css';
 
 const Socials = () => {
   return (

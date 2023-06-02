@@ -2,7 +2,9 @@ import React from 'react';
 
 import waitlistImg from '../../../assets/waitlist.svg';
 import line from '../../../assets/line.svg';
+
 import './Waitlist.css';
+import './WaitlistMobile.css';
 
 const Waitlist = () => {
   return (
