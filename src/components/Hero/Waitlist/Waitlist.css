@@ -39,6 +39,10 @@
     height: 3px;
 }
 
+#mobile{
+    display: none;
+}
+
 .text h3{
 
     font-family: 'Lato';

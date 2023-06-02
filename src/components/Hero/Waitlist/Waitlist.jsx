@@ -19,7 +19,7 @@ const Waitlist = () => {
 
         <h3>Unlock Your Digital Team:<br/>Find, Collaborate, and Build the<br/>Future Together</h3>
 
-        <div className='bottom'>
+        <div className='bottom' id='desktop'>
           <p>Join the wait list</p>
           <form action="">
             <input type="email" placeholder='enter your email address...' required/>
@@ -30,6 +30,14 @@ const Waitlist = () => {
       </div>
 
       <img src={waitlistImg} alt="Team collaboration" className="waitlistSVG"/>
+
+      <div className='bottom' id='mobile'>
+        <p>Join the wait list</p>
+        <form action="">
+          <input type="email" placeholder='enter your email address...' required/>
+          <button>Join</button>
+        </form>
+      </div>
     </div>
   )
 }
