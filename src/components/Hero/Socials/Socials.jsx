@@ -20,7 +20,7 @@ const Socials = () => {
         <img src={twitter} alt="twitter" className="icon"/>
       </a>
 
-      <a href="https://www.instagram.com/colabapes" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.instagram.com/co_labapes" target="_blank" rel="noopener noreferrer">
         <img src={instagram} alt="instagram" className="icon"/>
       </a>
 
