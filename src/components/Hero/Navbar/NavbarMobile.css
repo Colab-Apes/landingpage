@@ -17,7 +17,11 @@
     }
 
     .btn{
-        visibility: hidden;
+        display: none;
+    }
+
+    .mobileBtn{
+        display: flex;
     }
 
     .mobileBtn img{
