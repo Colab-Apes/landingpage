@@ -1,8 +1,8 @@
-.waitlist{
-    height: 75%;
+.socials{
+    height: 10%;
 
     max-width: 90%; /* Set your desired maximum width */
     margin: 0 auto; /* Center the navbar horizontally */
 
-    place-items: center;
+    text-align: end;
 }
