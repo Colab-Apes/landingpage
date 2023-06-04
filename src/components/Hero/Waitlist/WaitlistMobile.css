@@ -31,7 +31,7 @@
     }
 
     .text h3{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 36px;
         /* or 150% */
     
@@ -48,7 +48,7 @@
 
 
     .bottom{
-        width: 347px;
+        width: 93vw;
         height: 90px;
 
         margin-top: 10%;
