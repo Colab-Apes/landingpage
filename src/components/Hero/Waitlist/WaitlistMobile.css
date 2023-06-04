@@ -48,7 +48,7 @@
 
 
     .bottom{
-        width: 93vw;
+        width: 90vw;
         height: 90px;
         
         justify-content: center;
@@ -61,7 +61,7 @@
     }
     
     .bottom form{
-        width: 93vw;
+        width: 90vw;
         height: 40px;
     
         border-radius: 10px;
