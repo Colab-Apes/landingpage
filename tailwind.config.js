@@ -4,6 +4,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('./assets/hero.jpeg')",
+        mobilehero: "url('./assets/heroMobile.jpeg')",
+      },
       colors: {
         main: "#054E12",
         second: "#47019d",
