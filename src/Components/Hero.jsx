@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="relative">
             <input
               type="text"
-              className="h-[3rem] w-[20rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2"
+              className="h-[3rem] w-[20rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
             />
           </div>
         </div>
