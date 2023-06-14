@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import NavBar from "../Components/NavBar";
 
 const LandingPage = () => {
   return (
-    <div>LandingPage</div>
-  )
-}
+    <div>
+      <NavBar />
+    </div>
+  );
+};
 
-export default LandingPage
+export default LandingPage;
