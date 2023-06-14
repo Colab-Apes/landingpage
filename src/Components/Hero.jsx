@@ -30,7 +30,12 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <img src={heroimage} alt="" className="  xl:w-[25rem] object-contain" />
+      <img
+        src={heroimage}
+        alt=""
+        className="  xl:w-[25rem] object-contain"
+        loading="lazy"
+      />
     </div>
   );
 };
