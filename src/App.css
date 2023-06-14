@@ -3,11 +3,16 @@
   margin: 0;
 }
 
-.grad,.join {
+.grad {
   background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
+  
 }
 
+.grad:hover{
+  background: transparent;
+}
 
 .join{
+  background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
 box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
 }
