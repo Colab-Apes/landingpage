@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
-import Circles from "./../Components/Circles";
 import Hero from "./../Components/Hero";
 import image from "../assets/hero.jpeg";
 import Socials from './../Components/Socials';
