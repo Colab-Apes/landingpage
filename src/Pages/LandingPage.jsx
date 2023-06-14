@@ -6,10 +6,10 @@ import Socials from './../Components/Socials';
 
 const LandingPage = () => {
   return (
-    <div className="px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero md:bg-hero  bg-cover">
+    <div className="px-3 md:px-8 lg:px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero md:bg-hero  bg-cover">
       <NavBar />
       <Hero />
-      <Socials />
+      {/* <Socials /> */}
     </div>
   );
 };
