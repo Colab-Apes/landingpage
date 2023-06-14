@@ -9,6 +9,7 @@ const LandingPage = () => {
     <div className="px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero md:bg-hero  bg-cover">
       <NavBar />
       <Hero />
+      
     </div>
   );
 };
