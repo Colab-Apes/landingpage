@@ -14,13 +14,13 @@ const Hero = () => {
         </p>
         <div className="flex flex-col">
           <p className=" text-main font-lato font-medium">Join the wait list</p>
-          <div className="relative mt-2">
+          <div className="relative mt-2 w-fit">
             <input
               type="text"
               placeholder="enter your email address..."
-              className="h-[3.8rem] placeholder:text-[#999999] text-lg font-medium w-[24rem] px-[1.3rem] rounded-[16px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+              className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-[28rem] px-[1.3rem] rounded-[16px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
             />
-            <button className="join font-lato font-semibold h-[2rem] w-[8rem] text-white">Join</button>
+            <button className="join absolute right-2 top-[0.3rem] font-lato font-semibold h-[3.5rem] w-[8rem] rounded-[16px] text-white">Join</button>
           </div>
         </div>
       </div>
