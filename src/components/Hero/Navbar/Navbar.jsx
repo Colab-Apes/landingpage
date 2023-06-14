@@ -8,6 +8,7 @@ import './NavbarMobile.css';
 
 const NavbarComp = () => {
   return (
+  
     <nav>
 
       <img src={logo} alt="Colab Apes Logo" className="logo"/>
