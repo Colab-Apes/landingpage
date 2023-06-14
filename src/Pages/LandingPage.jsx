@@ -4,7 +4,7 @@ import Circles from "./../Components/Circles";
 
 const LandingPage = () => {
   return (
-    <div className="px-20 h-screen w-full bg-[#F5FFF7] font-lato">
+    <div className="px-20 h-full w-full bg-[#F5FFF7] font-lato">
       <NavBar />
       <Circles />
     
