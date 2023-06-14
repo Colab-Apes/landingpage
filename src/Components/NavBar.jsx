@@ -3,9 +3,9 @@ import logo from "../assets/logo.svg";
 import "../App.css";
 const NavBar = () => {
   return (
-    <nav className="flex justify-between font-lato">
-      <img src={logo} alt="" />
-      <div className="text-xl flex gap-x-3 items-center">
+    <nav className="flex justify-between font-lato mt-8">
+      <img src={logo} alt="" className="object-contain" />
+      <div className="text-lg flex gap-x-3 items-center">
         <button className=" text-main rounded-2xl  w-[8rem] h-[2rem] font-bold">
           Sign in
         </button>
