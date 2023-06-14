@@ -22,7 +22,7 @@ const Hero = () => {
             <input
               type="text"
               placeholder="enter your email address..."
-              className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-[24rem] xl:w-[28rem] px-[1.3rem] rounded-[16px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+              className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-[24rem] xl:w-[26rem] px-[1.3rem] rounded-[16px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
             />
             <button className="join absolute right-2 inset-y-1  font-lato font-semibold h-[3.5rem] w-[6rem] rounded-[16px] text-white">
               Join
