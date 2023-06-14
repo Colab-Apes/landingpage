@@ -3,7 +3,7 @@ import NavBar from "../Components/NavBar";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="px-10 mt-2">
       <NavBar />
     </div>
   );

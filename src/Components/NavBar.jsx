@@ -1,11 +1,11 @@
-import React from 'react'
-import logo from "../assets/logo.svg"
+import React from "react";
+import logo from "../assets/logo.svg";
 const NavBar = () => {
   return (
-    <nav>
-        <img src={logo} alt="" />
+    <nav className="flex justify-between">
+      <img src={logo} alt="" />
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
