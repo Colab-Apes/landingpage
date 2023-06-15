@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import heroimage from "../assets/waitlist.svg";
+import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
@@ -33,7 +33,7 @@ const Hero = () => {
           loading="lazy"
         />
         <div className="flex flex-col w-full   mt-10 justify-between ">
-          <p className=" text-[#054E12] text-xl font-lato font-medium">
+          <p className=" text-[#054E12]  text-xl font-lato font-medium">
             Join the wait list
           </p>
           <div className="mt-2"></div>
