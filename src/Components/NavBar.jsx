@@ -10,10 +10,10 @@ const NavBar = () => {
     <nav className="flex justify-between  sm:pt-8 pt-3">
       <img src={logo} alt="" className="object-contain md:w-[15rem]" />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
-        <button className=" text-main rounded-2xl  w-[8rem] h-[2rem] font-bold">
+        <button className=" text-main rounded-2xl text-lg w-[5rem] h-[3rem] font-bold">
           Sign in
         </button>
-        <button className="grad rounded-2xl  w-[8rem] h-[3rem] text-white hover:text-main  font-bold">
+        <button className="grad rounded-2xl   text-lg w-[5rem] h-[3rem] text-white hover:text-main  font-bold">
           Sign up
         </button>
       </div>
@@ -44,7 +44,7 @@ const NavBar = () => {
           />
         </div>
 
-        <div className="flex flex-col mt-16 gap-y-4"> 
+        <div className="flex flex-col mt-16 gap-y-4">
           <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
             Signup
           </button>

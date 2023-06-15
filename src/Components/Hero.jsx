@@ -20,9 +20,9 @@ const Hero = () => {
           <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
             Coming soon
           </p>
-          <div className=" bg-[#3B8004] w-[10rem] xl:w-[20rem] h-[0.2rem]"></div>
+          <div className=" bg-[#3B8004] w-[10rem] xl:w-[9rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-[1.6rem] text-left leading-[36px] sm:text-[1.9rem] md:text-4xl lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
+        <p className="text-[1.6rem] text-left  xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-3xl xl:text-[2.5rem] text-main mt-4 font-bold ">
           Unlock Your Digital Team: Find, Collaborate, and Build the Future
           Together
         </p>
@@ -32,15 +32,16 @@ const Hero = () => {
           className="w-[27rem] lg:w-[20rem]  object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
           loading="lazy"
         />
-        <div className="flex flex-col mt-10 ">
-          <p className=" text-[#054E12] text-xl font-lato font-medium mb-2">
+        <div className="flex flex-col w-full   mt-10 justify-between ">
+          <p className=" text-[#054E12] text-xl font-lato font-medium">
             Join the wait list
           </p>
+          <div className="mt-2"></div>
           {success ? (
             //
             <div
               className={
-                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[20rem] xl:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
+                "w-[90%] lg:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[20rem] xl:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
@@ -51,11 +52,11 @@ const Hero = () => {
               />
             </div>
           ) : (
-            <div className="relative  w-full lg:w-fit   left-0 right-0 duration-500 origin-right   scale-x-[100%]">
+            <div className="relative  w-full lg:w-full   duration-500 origin-right   scale-x-[100%]">
               <input
                 type="email"
                 placeholder="enter your email address..."
-                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
               <button
                 onClick={() => setsuccess(true)}
