@@ -8,7 +8,7 @@ const NavBar = () => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
     <nav className="flex justify-between  md:pt-8 pt-3">
-      <img src={logo} alt="" className="object-contain" />
+      <img src={logo} alt="" className="object-contain md:w-[15rem]" />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         <button className=" text-main rounded-2xl  w-[8rem] h-[2rem] font-bold">
           Sign in
@@ -19,7 +19,7 @@ const NavBar = () => {
       </div>
       <BiMenuAltRight
         onClick={() => setopensidenav(true)}
-        className="text-4xl text-main lg:hidden "
+        className="text-4xl  md:text-5xl text-main lg:hidden "
       />
       <div
         className={

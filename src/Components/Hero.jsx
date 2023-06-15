@@ -1,23 +1,24 @@
 import React from "react";
 import heroimage from "../assets/waitlist.svg";
+import Socials from "./Socials";
 const Hero = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:px-10 mt-10 xl:px-20 lg:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center ">
+    <div className="grid lg:grid-cols-2 lg:px-10 mt-8 xl:px-20 md:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center  ">
       <div className="flex flex-col lg:h-[30vh] justify-around ">
-        <div className="flex items-center gap-x-4 mt-2">
-          <p className="text-main text-lg lg:text-lg xl:text-xl font-bold">
+        <div className="flex items-center gap-x-4 mt-2 ">
+          <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
             Coming soon
           </p>
           <div className=" bg-[#3B8004] w-[10rem] xl:w-[20rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-[1.6rem] text-left leading-[36px] lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
+        <p className="text-[1.6rem] text-left leading-[36px] md:text-4xl lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
           Unlock Your Digital Team: Find, Collaborate, and Build the Future
           Together
         </p>
         <img
           src={heroimage}
           alt=""
-          className="w-[20rem] object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
+          className="w-[20rem]  object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
           loading="lazy"
         />
         <div className="flex flex-col mt-10 ">
@@ -25,7 +26,7 @@ const Hero = () => {
             Join the wait list
           </p>
 
-          <div className="relative  w-full mt-2  left-0 right-0">
+          <div className="relative  w-full lg:w-fit mt-2  left-0 right-0">
             <input
               type="text"
               placeholder="enter your email address..."
@@ -34,6 +35,13 @@ const Hero = () => {
             <button className="join absolute right-2 inset-y-2  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white">
               Join
             </button>
+          </div>
+          <div
+            className="
+         lg:hidden mt-10 " 
+          >
+            {" "}
+            <Socials />
           </div>
         </div>
       </div>
