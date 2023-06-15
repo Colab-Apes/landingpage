@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import heroimage from "../assets/waitlist.svg";
 import Socials from "./Socials";
+import { RiErrorWarningLine } from "react-icons/ri";
+import { IoIosClose } from "react-icons/io";
 const Hero = () => {
+  const [success, setsuccess] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setsuccess(false);
+    }, 3000);
+  }, [success]);
+
   return (
     <div className="grid lg:grid-cols-2 lg:px-10 mt-14 lg:mt-0 xl:px-20 md:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center  ">
       <div className="flex flex-col lg:h-[30vh] justify-around ">
@@ -25,20 +34,36 @@ const Hero = () => {
           <p className=" text-[#054E12] text-xl font-lato font-medium">
             Join the wait list
           </p>
-
-          <div className="relative  w-full lg:w-fit mt-2  left-0 right-0">
-            <input
-              type="text"
-              placeholder="enter your email address..."
-              className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] px-[1.3rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
-            />
-            <button className="join absolute right-2 inset-y-2  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white">
-              Join
-            </button>
-          </div>
+          {success ? (
+            <div
+              className="w-full lg:w-[24rem] xl:w-[26rem] px-14 h-[4rem] mt-2   border-main border-4 text-white bg-main/[30%] rounded-[20px] flex
+         justify-between items-center"
+            >
+              <RiErrorWarningLine className="text-2xl cursor-pointer" />
+              <p className="text-lg">Successfully submitted !</p>
+              <IoIosClose
+                className="text-2xl cursor-pointer"
+                onClick={() => setsuccess(false)}
+              />
+            </div>
+          ) : (
+            <div className="relative  w-full lg:w-fit mt-2  left-0 right-0">
+              <input
+                type="text"
+                placeholder="enter your email address..."
+                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] px-[1.3rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+              />
+              <button
+                onClick={() => setsuccess(true)}
+                className="join absolute right-2 inset-y-2  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
+              >
+                Join
+              </button>
+            </div>
+          )}
           <div
             className="
-         lg:hidden mt-10  h-[10vh]  justify-center flex" 
+         lg:hidden mt-10  h-[10vh]  justify-center flex"
           >
             {" "}
             <Socials />
