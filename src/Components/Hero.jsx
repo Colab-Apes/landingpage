@@ -41,7 +41,7 @@ const Hero = () => {
             //
             <div
               className={
-                "w-[90%] lg:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[20rem] xl:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
+                "w-[90%] lg:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
@@ -52,7 +52,7 @@ const Hero = () => {
               />
             </div>
           ) : (
-            <div className="relative  w-full lg:w-full   duration-500 origin-right   scale-x-[100%]">
+            <div className="relative  w-full    duration-500 origin-left   scale-x-[100%]">
               <input
                 type="email"
                 placeholder="enter your email address..."
