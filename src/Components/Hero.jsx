@@ -39,11 +39,11 @@ const Hero = () => {
           {success ? (
             <div
               className={
-                "w-full lg:w-[24rem] xl:w-[22rem] duration-200 px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center"
+                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500   ease-in-out  md:px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
-              <p className="text-lg mr-3">Successfully submitted !</p>
+              <p className="md:text-lg mr-3">Successfully submitted !</p>
               <IoIosClose
                 className="text-2xl cursor-pointer"
                 onClick={() => setsuccess(false)}
