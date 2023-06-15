@@ -7,6 +7,7 @@ module.exports = {
       backgroundImage: {
         hero: "url('./assets/hero.jpeg')",
         mobilehero: "url('./assets/heroMobile.jpeg')",
+        sidenavoverlay: "url('./assets/overlaysidenav.png')",
       },
       colors: {
         main: "#054E12",

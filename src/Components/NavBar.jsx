@@ -15,8 +15,10 @@ const NavBar = () => {
         </button>
       </div>
       <BiMenuAltRight className="text-4xl text-main lg:hidden " />
-      <div className="fixed top-0 right-0 bottom-0 h-[100vh] w-[56%] bg-[#F8F8F8] z-30">
-        <div className="h-[13rem] w-[13rem] rounded-full bg-[#054E124D] absolute blur-[500px] rounded-l-[40px] shadow my-4"></div>
+      <div className="fixed top-0 right-0 bottom-0 h-[100vh] w-full bg-black/[25%] z-30 ">
+        <div className="fixed top-0 right-0 bottom-0 h-[100vh] w-[58%] bg-[#F8F8F8] z-30 rounded-l-[20px]">
+          <div className="h-[20rem] w-[20rem] rounded-full bg-[#054E124D]/[30%] t absolute blur-[500px]  "></div>
+        </div>
       </div>
     </nav>
   );
