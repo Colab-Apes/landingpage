@@ -28,3 +28,47 @@ box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
   
 }
+
+
+/* children will be positioned relativly to this element */
+
+
+.center {
+ 
+}
+
+.center {
+  width: 60px;
+  height: 10rem;
+  background: yellow;
+}
+
+
+
+
+
+.center {
+ 
+  left: 20px;
+
+ 
+  width: 1px;
+  transform: scaleX(60);
+
+ 
+  transform-origin: left;
+}
+
+.center {
+  animation: center-animate 1s ease-in alternate;
+}
+
+
+@keyframes center-animate {
+  0% {
+      transform: scaleX(120);
+  }
+  100% {
+      transform: scaleX(60);
+  }
+}

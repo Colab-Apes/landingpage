@@ -9,7 +9,7 @@ const Hero = () => {
     if (success) {
       setTimeout(() => {
         setsuccess(false);
-      }, 5000);
+      }, 3000);
     }
   }, [success]);
 
@@ -33,13 +33,14 @@ const Hero = () => {
           loading="lazy"
         />
         <div className="flex flex-col mt-10 ">
-          <p className=" text-[#054E12] text-xl font-lato font-medium">
+          <p className=" text-[#054E12] text-xl font-lato font-medium mb-2">
             Join the wait list
           </p>
           {success ? (
+            //
             <div
               className={
-                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500   ease-in-out  md:px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
+                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500 origin-left scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
@@ -50,7 +51,7 @@ const Hero = () => {
               />
             </div>
           ) : (
-            <div className="relative  w-full lg:w-fit mt-2  left-0 right-0">
+            <div className="relative  w-full lg:w-fit   left-0 right-0 duration-500 origin-right  scale-x-[100%]">
               <input
                 type="text"
                 placeholder="enter your email address..."
