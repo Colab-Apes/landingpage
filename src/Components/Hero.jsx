@@ -22,7 +22,7 @@ const Hero = () => {
           </p>
           <div className=" bg-[#3B8004] w-[10rem] xl:w-[9rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-[1.6rem] text-left  xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-3xl xl:text-[2.5rem] text-main mt-4 font-bold ">
+        <p className="text-[1.6rem] text-left lg:leading-[3rem]  xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold ">
           Unlock Your Digital Team: Find, Collaborate, and Build the Future
           Together
         </p>
