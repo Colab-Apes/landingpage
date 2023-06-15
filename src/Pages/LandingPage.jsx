@@ -6,7 +6,7 @@ import Socials from "./../Components/Socials";
 
 const LandingPage = () => {
   return (
-    <div className="px-4 md:px-20 lg:px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero sm:bg-hero  bg-cover">
+    <div className="px-4  sm:px-20 lg:px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero sm:bg-hero  bg-cover">
       <NavBar />
       <Hero />
 

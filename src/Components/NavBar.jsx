@@ -7,7 +7,7 @@ import "../App.css";
 const NavBar = () => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
-    <nav className="flex justify-between  md:pt-8 pt-3">
+    <nav className="flex justify-between  sm:pt-8 pt-3">
       <img src={logo} alt="" className="object-contain md:w-[15rem]" />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         <button className=" text-main rounded-2xl  w-[8rem] h-[2rem] font-bold">
@@ -31,12 +31,12 @@ const NavBar = () => {
       <div
         className={
           opensidenav
-            ? "fixed top-0 right-0 duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] px-5 pt-3 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
-            : "fixed top-0 right-[-100%] duration-500 ease-in-out  bottom-0 h-[100vh] w-[70%] px-4 pt-4 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
+            ? "fixed top-0 right-0 duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] px-5 sm:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
+            : "fixed top-0 right-[-100%] duration-500 ease-in-out  bottom-0 h-[100vh] w-[75%] px-5 sm:px-20 pt-3 sm:pt-10  bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
         }
       >
         <div className="flex w-full justify-between items-center ">
-          <img src={sidenavlogo} alt="" className="object-contain w-[12rem]" />
+          <img src={sidenavlogo} alt="" className="object-contain w-[12rem] " />
           <TfiClose
             onClick={() => setopensidenav(false)}
             className="text-2xl text-[#999999]"
@@ -44,7 +44,7 @@ const NavBar = () => {
         </div>
 
         <div className="flex flex-col mt-16 gap-y-4">
-          <button className="grad h-[3rem] w-full rounded-xl text-white font-semibold">
+          <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
             Signup
           </button>
           <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
