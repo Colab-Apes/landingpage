@@ -6,9 +6,11 @@ import { IoIosClose } from "react-icons/io";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
   useEffect(() => {
-    setTimeout(() => {
-      setsuccess(false);
-    }, 3000);
+    if (success) {
+      setTimeout(() => {
+        setsuccess(false);
+      }, 5000);
+    }
   }, [success]);
 
   return (
@@ -36,11 +38,12 @@ const Hero = () => {
           </p>
           {success ? (
             <div
-              className="w-full lg:w-[24rem] xl:w-[26rem] px-14 h-[4rem] mt-2   border-main border-4 text-white bg-main/[30%] rounded-[20px] flex
-         justify-between items-center"
+              className={
+                "w-full lg:w-[24rem] xl:w-[22rem] duration-200 px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[30%] rounded-[20px] flex items-center"
+              }
             >
-              <RiErrorWarningLine className="text-2xl cursor-pointer" />
-              <p className="text-lg">Successfully submitted !</p>
+              <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
+              <p className="text-lg mr-3">Successfully submitted !</p>
               <IoIosClose
                 className="text-2xl cursor-pointer"
                 onClick={() => setsuccess(false)}
