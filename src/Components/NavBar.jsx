@@ -22,7 +22,13 @@ const NavBar = () => {
         className="text-4xl text-main lg:hidden "
       />
       <div className="fixed top-0 right-0 bottom-0 h-[100vh] w-full bg-black/[25%] z-30 ">
-        <div className="fixed top-0 right-0 bottom-0 h-[100vh] w-[70%] px-4 pt-3 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]">
+        <div
+          className={
+            opensidenav
+              ? "fixed top-0 right-0 bottom-0 h-[100vh] w-[70%] px-4 pt-3 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
+              : "fixed top-0 right-0 bottom-0 h-[100vh] w-[70%] px-4 pt-3 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px]"
+          }
+        >
           <div className="flex w-full justify-between items-center ">
             <img
               src={sidenavlogo}
