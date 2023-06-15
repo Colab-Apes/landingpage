@@ -40,7 +40,7 @@ const Hero = () => {
             //
             <div
               className={
-                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500 origin-left scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
+                "w-[90%] lg:w-[20rem] xl:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[20rem] xl:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
@@ -53,9 +53,9 @@ const Hero = () => {
           ) : (
             <div className="relative  w-full lg:w-fit   left-0 right-0 duration-500 origin-right  scale-x-[100%]">
               <input
-                type="text"
+                type="email"
                 placeholder="enter your email address..."
-                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] px-[1.3rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
               <button
                 onClick={() => setsuccess(true)}
