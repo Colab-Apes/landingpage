@@ -51,11 +51,11 @@ const Hero = () => {
               />
             </div>
           ) : (
-            <div className="relative  w-full lg:w-fit   left-0 right-0 duration-500 origin-right  scale-x-[100%]">
+            <div className="relative  w-full lg:w-fit   left-0 right-0 duration-500 origin-right   scale-x-[100%]">
               <input
                 type="email"
                 placeholder="enter your email address..."
-                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-[24rem] xl:w-[26rem] lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
               <button
                 onClick={() => setsuccess(true)}
