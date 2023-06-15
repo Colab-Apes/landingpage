@@ -39,7 +39,7 @@ const Hero = () => {
           {success ? (
             <div
               className={
-                "w-full lg:w-[24rem] xl:w-[22rem] duration-200 px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[30%] rounded-[20px] flex items-center"
+                "w-full lg:w-[24rem] xl:w-[22rem] duration-200 px-10 h-[4rem] mt-2   border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center"
               }
             >
               <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
@@ -58,7 +58,7 @@ const Hero = () => {
               />
               <button
                 onClick={() => setsuccess(true)}
-                className="join absolute right-2 inset-y-2  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
+                className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
               >
                 Join
               </button>
