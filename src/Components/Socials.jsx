@@ -9,35 +9,35 @@ const Socials = () => {
     <div className="flex w-full  md:h-[10vh] items-center   justify-center lg:justify-end gap-x-3 ">
       <a
         href="https://www.youtube.com"
-        className="border-[#3B8004]  h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
+        className="border-[#3B8004] hover:scale-125  h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
         target="_blank"
       >
         <img src={youtube} alt="" />
       </a>
       <a
         href="https://www.twitter.com/co_labapes"
-        className="border-[#3B8004]  h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
+        className="border-[#3B8004]  h-[2rem] w-[2rem] hover:scale-125  rounded-full flex justify-center items-center"
         target="_blank"
       >
         <img src={facebook} alt="" />
       </a>
       <a
         href="https://www.instagram.com/co_labapes"
-        className="border-[#3B8004]  h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
+        className="border-[#3B8004]  h-[2rem] w-[2rem]  hover:scale-125  rounded-full flex justify-center items-center"
         target="_blank"
       >
         <img src={instagram} alt="" />
       </a>
       <a
         href="https://www.twitter.com/co_labapes"
-        className="border-[#3B8004]  h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
+        className="border-[#3B8004]  h-[2rem] w-[2rem] hover:scale-125  rounded-full flex justify-center items-center"
         target="_blank"
       >
         <img src={twitter} alt="" />
       </a>
       <a
         href="https://www.twitter.com/co_labapes"
-        className="border-[#3B8004] h-[2rem] w-[2rem] rounded-full flex justify-center items-center"
+        className="border-[#3B8004] h-[2rem] w-[2rem]  hover:scale-125 rounded-full flex justify-center items-center"
         target="_blank"
       >
         <img src={linkedin} alt="" />
