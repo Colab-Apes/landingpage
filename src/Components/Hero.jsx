@@ -10,7 +10,7 @@ const Hero = () => {
           </p>
           <div className=" bg-[#3B8004] w-[10rem] xl:w-[20rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-[1.8rem] leading-[36px] lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
+        <p className="text-[1.6rem] text-left leading-[36px] lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
           Unlock Your Digital Team: Find, Collaborate, and Build the Future
           Together
         </p>
