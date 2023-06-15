@@ -2,7 +2,7 @@ import React from "react";
 import heroimage from "../assets/waitlist.svg";
 const Hero = () => {
   return (
-    <div className="grid md:grid-cols-2 lg:px-10 mt-10 xl:px-20 h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center ">
+    <div className="grid md:grid-cols-2 lg:px-10 mt-10 xl:px-20 lg:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center ">
       <div className="flex flex-col lg:h-[30vh] justify-around ">
         <div className="flex items-center gap-x-4 ">
           <p className="text-main text-lg lg:text-lg xl:text-xl font-bold">
@@ -10,7 +10,7 @@ const Hero = () => {
           </p>
           <div className=" bg-[#3B8004] w-[10rem] xl:w-[20rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-3xl leading-[36px] lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
+        <p className="text-[1.8rem] leading-[36px] lg:text-3xl xl:text-4xl text-main mt-4 font-bold lg:leading-[1.5]">
           Unlock Your Digital Team: Find, Collaborate, and Build the Future
           Together
         </p>

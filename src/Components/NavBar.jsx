@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 import "../App.css";
 const NavBar = () => {
   return (
-    <nav className="flex justify-between  pt-8">
+    <nav className="flex justify-between  md:pt-8 pt-2">
       <img src={logo} alt="" className="object-contain" />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         <button className=" text-main rounded-2xl  w-[8rem] h-[2rem] font-bold">
