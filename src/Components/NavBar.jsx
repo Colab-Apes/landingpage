@@ -14,7 +14,7 @@ const NavBar = () => {
           Sign up
         </button>
       </div>
-      <BiMenuAltRight className="text-4xl text-main" />
+      <BiMenuAltRight className="text-4xl text-main lg:hidden " />
     </nav>
   );
 };
