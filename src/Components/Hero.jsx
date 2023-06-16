@@ -15,13 +15,18 @@ const Hero = () => {
         position: "bottom-left",
         autoClose: 2000,
         toastId: 1,
+        theme: "colored",
       });
     } else {
-      setTimeout(() => {
-        setsuccess(false);
-      }, 3000);
+      setsuccess(true);
     }
   };
+  useEffect(() => {
+    setTimeout(() => {
+      setsuccess(false);
+    }, 3000);
+    setemail("");
+  }, [success]);
 
   return (
     <div className="grid lg:grid-cols-2 lg:px-10 mt-14 lg:mt-0 xl:px-20 md:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center  ">
@@ -65,7 +70,7 @@ const Hero = () => {
             <div className="relative  w-full    duration-500 origin-left   scale-x-[100%]">
               <input
                 type="email"
-                onChange={(e)=>setemail(e.target.value)}
+                onChange={(e) => setemail(e.target.value)}
                 value={email}
                 placeholder="enter your email address..."
                 className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
