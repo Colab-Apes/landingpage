@@ -65,6 +65,8 @@ const Hero = () => {
             <div className="relative  w-full    duration-500 origin-left   scale-x-[100%]">
               <input
                 type="email"
+                onChange={(e)=>setemail(e.target.value)}
+                value={email}
                 placeholder="enter your email address..."
                 className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
