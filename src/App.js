@@ -1,10 +1,11 @@
 import './App.css';
-import Hero from './components/Hero/Hero';
+import LandingPage from './Pages/LandingPage';
+
 
 function App() {
   return (
     <>
-      <Hero />
+      <LandingPage />
     </>
   );
 }
