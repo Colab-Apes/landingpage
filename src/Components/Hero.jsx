@@ -8,18 +8,28 @@ import { ToastContainer, toast } from "react-toastify";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
   const [email, setemail] = useState("");
+  var validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   const submitEmail = () => {
     if (email.length === 0) {
       toast.error("Enter an Email", {
-        position: "bottom-left",
+        position: "bottom-center",
         autoClose: 2000,
         toastId: 1,
         theme: "colored",
       });
-    } else {
-      setsuccess(true);
+    } else if (validRegex.test(email)) {
+      toast.error("Enter a valid  Email", {
+        position: "bottom-center",
+        autoClose: 2000,
+        toastId: 2,
+        theme: "colored",
+      });
     }
+    // } else {
+    //   setsuccess(true);
+    // }
   };
   useEffect(() => {
     setTimeout(() => {
