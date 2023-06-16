@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../assets/logo.svg";
-import sidenavlogo from "../assets/sidenavlogo.png";
+import sidenavlogo from "../assets/sidenavlogo.svg";
 import { TfiClose } from "react-icons/tfi";
 import "../App.css";
 const NavBar = () => {
