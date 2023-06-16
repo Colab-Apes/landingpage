@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
 import Hero from "./../Components/Hero";
-import image from "../assets/hero.jpeg";
+// import image from "../assets/hero.jpeg";
 import Socials from "./../Components/Socials";
 
 const LandingPage = () => {
