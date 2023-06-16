@@ -19,17 +19,16 @@ const Hero = () => {
         toastId: 1,
         theme: "colored",
       });
-    } else if (validRegex.test(email)) {
+    } else if (!validRegex.test(email)) {
       toast.error("Enter a valid  Email", {
         position: "bottom-center",
         autoClose: 2000,
         toastId: 2,
         theme: "colored",
       });
+    } else {
+      setsuccess(true);
     }
-    // } else {
-    //   setsuccess(true);
-    // }
   };
   useEffect(() => {
     setTimeout(() => {
