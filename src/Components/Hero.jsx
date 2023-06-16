@@ -29,10 +29,10 @@ const Hero = () => {
         <img
           src={heroimage}
           alt=""
-          className="w-[27rem] lg:w-[20rem]  object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
+          className="w-[27rem] md:w-[20rem] lg:w-[20rem]  object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
           loading="lazy"
         />
-        <div className="flex flex-col w-full   mt-10 justify-between ">
+        <div className="flex flex-col w-full   lg:mt-10 justify-between ">
           <p className=" text-[#054E12]  text-xl font-lato font-medium">
             Join the wait list
           </p>
