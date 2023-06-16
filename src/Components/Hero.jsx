@@ -3,15 +3,25 @@ import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
+
+import { ToastContainer, toast } from "react-toastify";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
-  useEffect(() => {
-    if (success) {
+  const [email, setemail] = useState("");
+
+  const submitEmail = () => {
+    if (email.length === 0) {
+      toast.error("Enter an Email", {
+        position: "bottom-left",
+        autoClose: 2000,
+        toastId: 1,
+      });
+    } else {
       setTimeout(() => {
         setsuccess(false);
       }, 3000);
     }
-  }, [success]);
+  };
 
   return (
     <div className="grid lg:grid-cols-2 lg:px-10 mt-14 lg:mt-0 xl:px-20 md:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-0 items-center justify-items-center  ">
@@ -59,7 +69,7 @@ const Hero = () => {
                 className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
               <button
-                onClick={() => setsuccess(true)}
+                onClick={() => submitEmail()}
                 className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
               >
                 Join
