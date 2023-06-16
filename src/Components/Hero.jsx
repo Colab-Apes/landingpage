@@ -26,15 +26,16 @@ const Hero = () => {
         toastId: 2,
         theme: "colored",
       });
+      setemail("");
     } else {
       setsuccess(true);
+      setemail("");
     }
   };
   useEffect(() => {
     setTimeout(() => {
       setsuccess(false);
     }, 3000);
-    setemail("");
   }, [success]);
 
   return (
