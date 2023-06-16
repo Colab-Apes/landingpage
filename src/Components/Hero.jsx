@@ -14,14 +14,14 @@ const Hero = () => {
   const submitEmail = () => {
     if (email.length === 0) {
       toast.error("Enter an Email", {
-        position: "bottom-center",
+        position: "bottom-left",
         autoClose: 2000,
         toastId: 1,
         theme: "colored",
       });
     } else if (!validRegex.test(email)) {
-      toast.error("Enter a valid  Email", {
-        position: "bottom-center",
+      toast.warning("Enter a valid Email", {
+        position: "bottom-left",
         autoClose: 2000,
         toastId: 2,
         theme: "colored",
