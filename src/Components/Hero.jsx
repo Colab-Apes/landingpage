@@ -53,7 +53,7 @@ const Hero = () => {
         <img
           src={heroimage}
           alt=""
-          className="w-[27rem] lg:w-full  object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
+          className="w-[27rem]   object-contain  lg:hidden  mx-auto lg:mx-0 mt-4"
           loading="lazy"
         />
         <div className="flex flex-col w-full   mt-10 justify-between ">
@@ -104,7 +104,7 @@ const Hero = () => {
       <img
         src={heroimage}
         alt=""
-        className="xl:w-[25rem] object-contain lg:block hidden "
+        className=" object-contain lg:block hidden "
         loading="lazy"
       />
     </div>
