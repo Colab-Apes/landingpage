@@ -41,10 +41,10 @@ const Hero = () => {
             //
             <div
               className={
-                "w-[90%] lg:w-[22rem] duration-500 origin-left scale-x-[90%] lg:scale-x-[22rem] md:px-10 h-[4rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center justify-center"
+                "w-[92%] lg:w-[22rem] duration-500 origin-left scale-x-[92%] lg:scale-x-[22rem] md:px-10 h-[4.5rem]  border-main border-4 text-white bg-main/[50%] rounded-[20px] flex items-center text-center justify-center"
               }
             >
-              <RiErrorWarningLine className="text-2xl cursor-pointer mr-3" />
+              <RiErrorWarningLine className="text-2xl  mr-3" />
               <p className="md:text-lg mr-3">Successfully submitted !</p>
               <IoIosClose
                 className="text-2xl cursor-pointer"
