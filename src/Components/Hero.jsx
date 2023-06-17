@@ -55,15 +55,15 @@ const Hero = () => {
           sequence={[
             // Same substring at the start will only be typed once, initially
             "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
-            1000,
+            7000,
             "Unlock Your Digital Dream Team: Find, Collaborate, and Soar Together",
-            1000,
+            7000,
             "Unleash Your Digital Vision with the Perfect Dream Team",
-            1000,
+            7000,
             "Empowering Digital Entrepreneurs to Build their Dream Team for Success",
-            1000,
+            7000,
             "Unleash Your Digital Vision. Find Your Dream Team Today!",
-            1000,
+            7000,
           ]}
           speed={1}
           style={{ fontSize: "2em" }}
