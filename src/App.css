@@ -15,7 +15,7 @@
 .grad:hover{
   background: transparent;
   /* Tailwind css */
-  @apply bg-[#054e12]/[10%] 
+  @apply bg-[#054e12]/[10%];
 
 }
 
