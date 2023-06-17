@@ -5,6 +5,7 @@ import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
 
 import { ToastContainer, toast } from "react-toastify";
+import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
   const [email, setemail] = useState("");
@@ -39,17 +40,35 @@ const Hero = () => {
 
   return (
     <div className="grid lg:flex lg:px-10 mt-14 lg:mt-0 xl:px-20 md:h-[75vh] w-full justify-center lg:gap-x-10 xl:gap-x-16 items-center justify-items-center  ">
-      <div className="flex flex-col lg:h-[30vh] justify-around ">
+      <div className="flex flex-col lg:min-h-[30vh] justify-around ">
         <div className="flex items-center gap-x-4 mt-2 ">
           <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
             Coming soon
           </p>
           <div className=" bg-[#3B8004] w-[10rem] xl:w-[9rem] h-[0.2rem]"></div>
         </div>
-        <p className="text-[1.6rem] text-left lg:leading-[3rem]  xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold ">
-          Unlock Your Digital Team: Find, Collaborate, and Build the Future
-          Together
-        </p>
+        {/* <div className="text-[1.6rem] text-left lg:leading-[3rem] w-[30rem] h-[10rem]  bg-red-400 xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold ">
+         
+        </div> */}
+        <TypeAnimation
+          className="text-[1.6rem] text-left lg:leading-[3rem] w-full lg:w-[30rem]  h-[10rem]   xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold "
+          sequence={[
+            // Same substring at the start will only be typed once, initially
+            "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
+            1000,
+            "Unlock Your Digital Dream Team: Find, Collaborate, and Soar Together",
+            1000,
+            "Unleash Your Digital Vision with the Perfect Dream Team",
+            1000,
+            "Empowering Digital Entrepreneurs to Build their Dream Team for Success",
+            1000,
+            "Unleash Your Digital Vision. Find Your Dream Team Today!",
+            1000,
+          ]}
+          speed={1}
+          style={{ fontSize: "2em" }}
+          repeat={Infinity}
+        />
         <img
           src={heroimage}
           alt=""
