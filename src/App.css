@@ -14,6 +14,7 @@
 
 .grad:hover{
   background: transparent;
+  @apply bg-[#054e12]/[10%] 
 }
 
 .join{
@@ -23,8 +24,11 @@ box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
 
 
 
+
+
 .join:hover{
   background: transparent;
+  @apply bg-[#054e12]/[10%] 
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
   
 }
