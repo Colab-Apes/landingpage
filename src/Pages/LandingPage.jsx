@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 
 const LandingPage = () => {
   return (
-    <div className="  sm:w-[33rem] md:w-[40rem] mx-auto lg:px-20 min-h-[100%] lg:h-screen lg:w-full  bg-no-repeat  font-lato   bg-cover">
+    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[40rem] mx-auto lg:px-20 min-h-[100%] lg:h-screen lg:w-full  bg-no-repeat  font-lato   bg-cover">
       <ToastContainer />
       <Background />
       <NavBar />
