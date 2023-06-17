@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../assets/logo.svg";
-import sidenavlogo from "../assets/sidenavlogo.png";
+import sidenavlogo from "../assets/sidenavlogo.svg";
 import { TfiClose } from "react-icons/tfi";
 import "../App.css";
 const NavBar = () => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
-    <nav className="flex justify-between  sm:pt-8 pt-3">
-      <img src={logo} alt="" className="object-contain md:w-[15rem]" />
+    <nav className="flex justify-between items-center  sm:pt-8 pt-3">
+      <img
+        src={logo}
+        alt=""
+        className="object-contain md:w-[15rem] lg:w-[14rem]"
+      />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
-        <button className=" text-main rounded-2xl text-lg w-[5rem] h-[3rem] font-bold">
+        {/* <button className=" text-main rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] font-bold">
           Sign in
-        </button>
-        <button className="grad rounded-2xl   text-lg w-[5rem] h-[3rem] text-white hover:text-main  font-bold">
+        </button> */}
+        <button className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main  font-bold">
           Sign up
         </button>
       </div>
@@ -44,13 +48,13 @@ const NavBar = () => {
           />
         </div>
 
-        <div className="flex flex-col mt-16 gap-y-4">
+        <div className="flex flex-col mt-16 gap-y-10">
           <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
             Signup
           </button>
-          <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
+          {/* <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
             Signin
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

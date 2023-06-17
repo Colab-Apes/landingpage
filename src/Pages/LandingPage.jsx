@@ -2,10 +2,15 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 import Hero from "./../Components/Hero";
 import Socials from "./../Components/Socials";
+import Background from "./../Components/Background";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const LandingPage = () => {
   return (
-    <div className="px-4  sm:px-20 lg:px-20 h-screen w-full bg-[#F5FFF7] bg-no-repeat  font-lato bg-mobilehero sm:bg-hero  bg-cover">
+    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[40rem] mx-auto lg:px-20 min-h-[100%] lg:h-screen lg:w-full  bg-no-repeat  font-lato   bg-cover">
+      <ToastContainer />
+      <Background />
       <NavBar />
       <Hero />
       <div
