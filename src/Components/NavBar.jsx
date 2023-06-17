@@ -14,9 +14,9 @@ const NavBar = () => {
         className="object-contain md:w-[15rem] lg:w-[14rem]"
       />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
-        <button className=" text-main rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] font-bold">
+        {/* <button className=" text-main rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] font-bold">
           Sign in
-        </button>
+        </button> */}
         <button className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main  font-bold">
           Sign up
         </button>
@@ -48,13 +48,13 @@ const NavBar = () => {
           />
         </div>
 
-        <div className="flex flex-col mt-16 gap-y-4">
+        <div className="flex flex-col mt-16 gap-y-10">
           <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
             Signup
           </button>
-          <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
+          {/* <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
             Signin
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
