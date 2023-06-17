@@ -53,17 +53,20 @@ const Hero = () => {
             </div>
           ) : (
             <div className="relative  w-full    duration-500 origin-left   scale-x-[100%]">
-              <input
-                type="email"
-                placeholder="enter your email address..."
-                className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
-              />
-              <button
-                onClick={() => setsuccess(true)}
-                className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
-              >
-                Join
-              </button>
+              <form action="">
+                <input
+                  type="email"
+                  placeholder="enter your email address..."
+                  className="h-[4rem]  placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
+                  required
+                />
+                <button
+                  onClick={() => setsuccess(true)}
+                  className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main  font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
+                >
+                  Join
+                </button>
+              </form>
             </div>
           )}
           <div

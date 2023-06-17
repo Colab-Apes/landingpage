@@ -16,7 +16,7 @@ const Socials = () => {
         <img src={youtube} alt="" />
       </a>
       <a
-        href="https://www.twitter.com/co_labapes"
+        href="https://www.facebook.com/"
         className="border-[#3B8004]  h-[2rem] w-[2rem] hover:scale-125  rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const Socials = () => {
         <img src={twitter} alt="" />
       </a>
       <a
-        href="https://www.twitter.com/co_labapes"
+        href="https://www.linkedin.com/"
         className="border-[#3B8004] h-[2rem] w-[2rem]  hover:scale-125 rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
