@@ -50,7 +50,7 @@ const NavBar = () => {
 
         <div className="flex flex-col mt-16 gap-y-10">
           <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
-            Signup
+            Sign up
           </button>
           {/* <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
             Signin
