@@ -5,7 +5,7 @@ import image from "../assets/hero.jpeg";
 import Socials from "./../Components/Socials";
 import Background from "./../Components/Background";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
 
 const LandingPage = () => {
   return (
