@@ -8,7 +8,7 @@ const NavBar = () => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
     <nav className="flex justify-between  sm:pt-8 pt-3">
-      <img src={logo} alt="" className="object-contain md:w-[15rem]" />
+      <img src={logo} alt="" className="object-contain md:w-[15rem] lg:w-[14rem]" />
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         <button className=" text-main rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] font-bold">
           Sign in
