@@ -3,6 +3,7 @@ import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
+
 const Hero = () => {
   const [success, setsuccess] = useState(false);
   useEffect(() => {
