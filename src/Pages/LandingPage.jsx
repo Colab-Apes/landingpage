@@ -1,7 +1,6 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
 import Hero from "./../Components/Hero";
-import image from "../assets/hero.jpeg";
 import Socials from "./../Components/Socials";
 import Background from "./../Components/Background";
 import "react-toastify/dist/ReactToastify.css";
