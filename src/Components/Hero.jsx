@@ -3,16 +3,17 @@ import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
-import { toast } from 'react-toastify';
-import { TypeAnimation } from 'react-type-animation';
+import { toast } from "react-toastify";
+import { TypeAnimation } from "react-type-animation";
+import axios from "axios";
 
 const Hero = () => {
   const [success, setsuccess] = useState(false);
   const [email, setemail] = useState("");
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
   const submitEmail = () => {
+    console.log(email);
     if (email.length === 0) {
       toast.error("Enter an email", {
         position: "bottom-left",
@@ -28,8 +29,16 @@ const Hero = () => {
         theme: "colored",
       });
     } else {
-      setsuccess(true);
-      setemail("");
+      axios
+        .post("http://34.227.27.192:8080/api/v1/mail/subscribe", { email })
+        .then((response) => {
+          console.log(response);
+          setsuccess(true);
+          setemail("");
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     }
   };
   useEffect(() => {
