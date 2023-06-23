@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
+  
   const [email, setemail] = useState("");
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
