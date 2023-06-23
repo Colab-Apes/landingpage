@@ -3,7 +3,7 @@ import img from "../../assets/Modalbackgrounds/authbg.png";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center ">
-      <div className="rounded-2xl bg-[#F5FFF7] h-[30rem] w-[36rem] absolute">
+      <div className="rounded-2xl bg-[#F5FFF7] h-[30rem] w-[50rem] absolute">
         <img
           src={img}
           alt=""
