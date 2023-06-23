@@ -10,7 +10,7 @@ const Signup = () => {
           alt=""
           className="bg-cover h-full w-full top-0 left-0 z-[1] hidden lg:block rounded-2xl"
         />
-        <TfiClose className="text-xl text-[#999999] top-6 absolute right-4 font-bold " />
+        <TfiClose className="text-xl text-[#999999] top-6 absolute right-8 font-bold cursor-pointer" />
       </div>
     </div>
   );
