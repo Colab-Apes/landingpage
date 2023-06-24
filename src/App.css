@@ -29,6 +29,7 @@ box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
 
 
 .join:hover{
+  background-image: url(./assets/ModalImages/authbg.png);
   background: transparent;
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
     /* Tailwind css */
