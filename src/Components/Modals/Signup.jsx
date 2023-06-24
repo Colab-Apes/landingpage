@@ -12,6 +12,7 @@ import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
 const Signup = () => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
+  const [isModal, setisModal] = useState(false);
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
       <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-10   relative">
@@ -29,7 +30,7 @@ const Signup = () => {
               Sign up to Get Started
             </p>
             <form
-              onSubmit=""
+              onSubmit={() => alert("Working on it")}
               className="w-full relative flex flex-col  justify-evenly   text-sm"
               action=""
             >
