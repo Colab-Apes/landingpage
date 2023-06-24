@@ -12,11 +12,11 @@ const Signup = () => {
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[1] hidden lg:block rounded-2xl"
         />
-        <TfiClose className="text-2xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
-        <div className="grid grid-cols-2  ">
-          <img src={img1} alt="" className=" z-[1] h-[26rem] " />
+        <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
+        <div className="grid grid-cols-2  jus">
+          <img src={img1} alt="" className=" z-[1] h-[27rem] " />
           <div className="flex flex-col items-center">
-            <img src={logo} alt="" className="w-[10rem]" />
+            <img src={logo} alt="" className="w-[8rem] " />
           </div>
         </div>
       </div>
