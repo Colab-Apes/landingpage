@@ -17,6 +17,28 @@ const Signup = () => {
           <img src={img1} alt="" className=" z-[1] h-[27rem] " />
           <div className="flex flex-col items-center">
             <img src={logo} alt="" className="w-[8rem] " />
+            <p className="text-[#555555] font-bold text-center">
+              Sign up to Get Started
+            </p>
+            <form className="w-full" action="">
+              <div className="mt-4  bg-red-500">
+                <label htmlFor="email" className="block">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full"
+                  placeholder="johndoe@email.com"
+                />
+              </div>
+              <div className="mt-4  bg-red-500">
+                <label htmlFor="email" className="block">
+                  Email
+                </label>
+                <input type="email" id="email" className="w-full" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
