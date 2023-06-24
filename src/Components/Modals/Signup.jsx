@@ -8,15 +8,15 @@ import { Lock, Message } from "react-iconly";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
-      <div className="rounded-2xl bg-[#F5FFF7] h-[32rem] w-[50rem] px-10 pt-4 relative">
+      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[30rem] w-[52rem] px-10  relative">
         <img
           src={img}
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
         <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
-        <div className="grid grid-cols-2  jus">
-          <img src={img1} alt="" className=" z-[1] h-[27rem] " />
+        <div className="grid grid-cols-2 gap-x-6">
+          <img src={img1} alt="" className=" z-[1] h-[29rem] object-contain" />
           <div className="flex flex-col items-center">
             <img src={logo} alt="" className="w-[5.8rem] " />
             <p className="text-[#555555] font-bold text-center">
@@ -42,7 +42,7 @@ const Signup = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-1 border border-[#999999] focus:outline-none"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="johndoe@email.com"
                 />
               </div>
@@ -60,7 +60,7 @@ const Signup = () => {
                 <input
                   type="password"
                   id="password"
-                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-1 border border-[#999999] focus:outline-none"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ●"
                 />
               </div>
