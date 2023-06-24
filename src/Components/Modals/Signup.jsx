@@ -21,7 +21,7 @@ const Signup = () => {
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
         <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
-        <div className="grid grid-cols-2 gap-x-6  ">
+        <div className="grid grid-cols-2 gap-x-8  ">
           <img src={img1} alt="" className="" />
           <div className="flex flex-col items-center ">
             <img src={logo} alt="" className="w-[5.8rem] " />
@@ -30,10 +30,10 @@ const Signup = () => {
             </p>
             <form
               onSubmit=""
-              className="w-full relative flex flex-col  text-sm"
+              className="w-full relative flex flex-col  justify-evenly   text-sm"
               action=""
             >
-              <div className="relative">
+              <div className="relative mt-2">
                 <span>
                   {" "}
                   <Message
@@ -52,7 +52,7 @@ const Signup = () => {
                   placeholder="johndoe@email.com"
                 />
               </div>
-              <div className="relative">
+              <div className="relative mt-4">
                 <span>
                   <Lock
                     set="curved"
@@ -83,7 +83,7 @@ const Signup = () => {
                 )}
               </div>
 
-              <div className="flex items-start gap-x-3 mt-2 font-normal text-sm">
+              <div className="flex items-start gap-x-3 mt-4 font-normal text-sm">
                 <input
                   type="checkbox"
                   className="accent-[#3B8004] hover:accent-[#3B8004]"
@@ -108,13 +108,13 @@ const Signup = () => {
                 Or Continue with
               </p>
               <div className="flex justify-evenly mt-2">
-                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
                   <img src={google} alt="" />
                 </div>{" "}
-                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
                   <img src={facebook} alt="" />
                 </div>{" "}
-                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
                   <img src={apple} alt="" />
                 </div>
               </div>
