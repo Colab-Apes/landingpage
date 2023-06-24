@@ -4,7 +4,7 @@ import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { TbMail } from "react-icons/tb";
-import { Message } from "react-iconly";
+import { Lock, Message } from "react-iconly";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
@@ -12,7 +12,7 @@ const Signup = () => {
         <img
           src={img}
           alt=""
-          className="bg-cover h-full w-full fixed top-0 left-0 z-[1] hidden lg:block rounded-2xl"
+          className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
         <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
         <div className="grid grid-cols-2  jus">
@@ -22,7 +22,15 @@ const Signup = () => {
             <p className="text-[#555555] font-bold text-center">
               Sign up to Get Started
             </p>
-            <form className="w-full" action="">
+            <form onSubmit="" className="w-full relative" action="">
+              <span>
+                {" "}
+                <Message
+                  set="curved"
+                  primaryColor="#999999"
+                  className="inset-y-14 left-1 absolute "
+                />
+              </span>
               <div className="mt-4  ">
                 <label htmlFor="email" className="block font-bold">
                   Email
@@ -30,18 +38,16 @@ const Signup = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999]"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999] focus:outline-none"
                   placeholder="johndoe@email.com"
                 />
               </div>
               <div className="mt-4  relative">
                 <span>
-                  {" "}
-                  <Message
-                    size="medium"
+                  <Lock
                     set="curved"
                     primaryColor="#999999"
-                    className="inset-y-11 absolute left-1 top-10"
+                    className="absolute inset-y-10 left-1"
                   />
                 </span>
                 <label htmlFor="password" className="block font-bold">
@@ -50,7 +56,7 @@ const Signup = () => {
                 <input
                   type="password"
                   id="password"
-                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999]"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ●"
                 />
               </div>
