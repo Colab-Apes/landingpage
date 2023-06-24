@@ -67,7 +67,7 @@ const Signup = () => {
                   type={isPasswordVisible ? "password" : "text"}
                   id="password"
                   className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
-                  placeholder="● ● ● ● ●"
+                  placeholder="● ● ● ● ● ● "
                 />
 
                 {isPasswordVisible ? (
