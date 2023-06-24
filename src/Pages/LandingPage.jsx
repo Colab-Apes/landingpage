@@ -16,7 +16,7 @@ const LandingPage = () => {
       {/* This signup is a modal */}
       <ToastContainer />
       <Background />
-      <NavBar />
+      <NavBar changeValue={setisModal} />
       <Hero />
       <div
         className=" w-full

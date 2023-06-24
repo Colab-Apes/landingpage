@@ -14,14 +14,31 @@ const Signup = ({ value, changeValue }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
 
   return (
-    <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
-      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem]   relative">
+    <div
+      onClick={() => console.log("coolss")}
+      className={
+        value
+          ? "bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
+          : "bg-black/[25%] fixed h-screen w-full z-[-1]  left-0 flex justify-center items-center font-lato  duration-300 ease-in-out"
+      }
+    >
+      <div
+        className={
+          value
+            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem] opacity-0  relative duration-[800ms] ease-in-out"
+        }
+      >
         <img
           src={img}
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
-        <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
+
+        <TfiClose
+          onClick={() => changeValue(false)}
+          className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4"
+        />
         <div className="grid grid-cols-2 gap-x-10">
           <img
             src={img1}

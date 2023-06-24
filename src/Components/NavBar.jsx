@@ -4,7 +4,7 @@ import logo from "../assets/logo.svg";
 import sidenavlogo from "../assets/sidenavlogo.png";
 import { TfiClose } from "react-icons/tfi";
 import "../App.css";
-const NavBar = () => {
+const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
     <nav className="flex justify-between items-center  sm:pt-8 pt-3 lg:pt-1">
@@ -17,7 +17,7 @@ const NavBar = () => {
         {/* <button className=" text-main rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] font-bold">
           Sign in
         </button> */}
-        <button className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main  font-bold">
+        <button onClick={()=>changeValue(true)} className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main  font-bold">
           Sign up
         </button>
       </div>
@@ -49,7 +49,10 @@ const NavBar = () => {
         </div>
 
         <div className="flex flex-col mt-16 gap-y-10">
-          <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
+          <button
+            onClick={() => changeValue(true)}
+            className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold"
+          >
             Signup
           </button>
           {/* <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
