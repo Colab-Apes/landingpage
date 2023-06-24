@@ -5,6 +5,9 @@ import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { TbMail } from "react-icons/tb";
 import { Lock, Message } from "react-iconly";
+import google from "../../assets/ModalImages/social/Google logo.png";
+import facebook from "../../assets/ModalImages/social/Facbook.png";
+import apple from "../../assets/ModalImages/social/Google logo.png";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
