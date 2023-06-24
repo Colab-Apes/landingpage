@@ -8,6 +8,7 @@ import { Hide, Lock, Message, Show } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
+import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
 const Signup = () => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
@@ -38,7 +39,7 @@ const Signup = () => {
                   <Message
                     set="curved"
                     primaryColor="#999999"
-                    className="inset-y-[2.3rem] left-1 absolute "
+                    className="inset-y-[2.3rem] left-1 absolute px-[0.2rem] "
                   />
                 </span>
                 <label htmlFor="email" className="block font-bold">
@@ -51,12 +52,12 @@ const Signup = () => {
                   placeholder="johndoe@email.com"
                 />
               </div>
-              <div className="mt-2  relative">
+              <div className="relative">
                 <span>
                   <Lock
                     set="curved"
                     primaryColor="#999999"
-                    className="absolute inset-y-[2.3rem] left-1"
+                    className="absolute inset-y-[2.3rem] left-1 px-[0.2rem]"
                   />
                 </span>
                 <label htmlFor="password" className="block font-bold">
@@ -68,31 +69,25 @@ const Signup = () => {
                   className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ●"
                 />
+
                 {isPasswordVisible ? (
-                  <span
+                  <MdOutlineVisibility
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
-                  >
-                    <Hide
-                      set="bold"
-                      primaryColor="#999999"
-                      className="absolute inset-y-[2.3rem] right-1"
-                    />
-                  </span>
+                    className="absolute inset-y-[2.3rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
+                  />
                 ) : (
-                  <span
+                  <MdOutlineVisibilityOff
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
-                  >
-                    <Show
-                      set="bold"
-                      primaryColor="#999999"
-                      className="absolute inset-y-[2.3rem] right-1"
-                    />
-                  </span>
+                    className="absolute inset-y-[2.3rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
+                  />
                 )}
               </div>
 
               <div className="flex items-start gap-x-3 mt-2 font-normal text-sm">
-                <input type="checkbox" class="accent-[#3B8004]" />
+                <input
+                  type="checkbox"
+                  className="accent-[#3B8004] hover:accent-[#3B8004]"
+                />
                 <p className="text-[#999999]">
                   By registering, you are agreeing with our{" "}
                   <span className="underline text-[#3B8004]">
