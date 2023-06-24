@@ -14,23 +14,23 @@ const Signup = () => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
-      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[30rem] w-[52rem] px-10  relative">
+      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-10   relative">
         <img
           src={img}
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
         <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
-        <div className="grid grid-cols-2 gap-x-6">
-          <img src={img1} alt="" className=" z-[1] h-[29rem] object-contain" />
-          <div className="flex flex-col items-center">
+        <div className="grid grid-cols-2 gap-x-6  ">
+          <img src={img1} alt="" className="" />
+          <div className="flex flex-col items-center ">
             <img src={logo} alt="" className="w-[5.8rem] " />
             <p className="text-[#555555] font-bold text-center">
               Sign up to Get Started
             </p>
             <form
               onSubmit=""
-              className="w-full relative flex flex-col "
+              className="w-full relative flex flex-col  text-sm"
               action=""
             >
               <div className="relative">
@@ -39,7 +39,7 @@ const Signup = () => {
                   <Message
                     set="curved"
                     primaryColor="#999999"
-                    className="inset-y-[2.3rem] left-1 absolute px-[0.2rem] "
+                    className="inset-y-[2rem] left-1 absolute px-[0.2rem] "
                   />
                 </span>
                 <label htmlFor="email" className="block font-bold">
@@ -57,7 +57,7 @@ const Signup = () => {
                   <Lock
                     set="curved"
                     primaryColor="#999999"
-                    className="absolute inset-y-[2.3rem] left-1 px-[0.2rem]"
+                    className="absolute inset-y-[2rem] left-1 px-[0.2rem]"
                   />
                 </span>
                 <label htmlFor="password" className="block font-bold">
@@ -73,12 +73,12 @@ const Signup = () => {
                 {isPasswordVisible ? (
                   <MdOutlineVisibility
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
-                    className="absolute inset-y-[2.3rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
+                    className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
                   />
                 ) : (
                   <MdOutlineVisibilityOff
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
-                    className="absolute inset-y-[2.3rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
+                    className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
                   />
                 )}
               </div>
@@ -117,6 +117,14 @@ const Signup = () => {
                 <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
                   <img src={apple} alt="" />
                 </div>
+              </div>
+              <div className="mt-4 text-sm">
+                <p className=" text-center">
+                  <span className="text-[#999999]">
+                    Already have an account?
+                  </span>
+                  <span className="text-[#054E12] font-bold"> Sign In</span>
+                </p>
               </div>
             </div>
           </div>
