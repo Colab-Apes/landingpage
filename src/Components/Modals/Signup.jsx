@@ -1,15 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../../assets/ModalImages/authbg.png";
 import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { TbMail } from "react-icons/tb";
-import { Lock, Message, Show } from "react-iconly";
+import { Hide, Lock, Message, Show } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 
 const Signup = () => {
+  const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
       <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[30rem] w-[52rem] px-10  relative">
@@ -62,20 +63,32 @@ const Signup = () => {
                   Create password
                 </label>
                 <input
-                  type="password"
+                  type={isPasswordVisible ? "password" : "text"}
                   id="password"
                   className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ●"
                 />
-                {
-                  <span>
+                {isPasswordVisible ? (
+                  <span
+                    onClick={() => setisPasswordVisible(!isPasswordVisible)}
+                  >
+                    <Hide
+                      set="bold"
+                      primaryColor="#999999"
+                      className="absolute inset-y-[2.3rem] right-1"
+                    />
+                  </span>
+                ) : (
+                  <span
+                    onClick={() => setisPasswordVisible(!isPasswordVisible)}
+                  >
                     <Show
                       set="bold"
                       primaryColor="#999999"
                       className="absolute inset-y-[2.3rem] right-1"
                     />
                   </span>
-                }
+                )}
               </div>
 
               <div className="flex items-start gap-x-3 mt-2 font-normal text-sm">
