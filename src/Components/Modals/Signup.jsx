@@ -3,9 +3,10 @@ import img from "../../assets/ModalImages/authbg.png";
 import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
+import { TbMail } from "react-icons/tb";
 const Signup = () => {
   return (
-    <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center ">
+    <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
       <div className="rounded-2xl bg-[#F5FFF7] h-[30rem] w-[50rem] px-10 pt-4 relative">
         <img
           src={img}
@@ -21,22 +22,28 @@ const Signup = () => {
               Sign up to Get Started
             </p>
             <form className="w-full" action="">
-              <div className="mt-4  bg-red-500">
-                <label htmlFor="email" className="block">
+              <div className="mt-4  ">
+                <label htmlFor="email" className="block font-bold">
                   Email
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="w-full"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999]"
                   placeholder="johndoe@email.com"
                 />
               </div>
-              <div className="mt-4  bg-red-500">
-                <label htmlFor="email" className="block">
-                  Email
+              <div className="mt-4  relative">
+                {/* <Message  set="curved" primaryColor="blueviolet"  /> */}
+                <label htmlFor="password" className="block font-bold">
+                  Create password
                 </label>
-                <input type="email" id="email" className="w-full" />
+                <input
+                  type="password"
+                  id="password"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] pl-8 mt-2 border border-[#999999]"
+                  placeholder="● ● ● ● ●"
+                />
               </div>
             </form>
           </div>
