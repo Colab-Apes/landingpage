@@ -8,7 +8,7 @@ import { Lock, Message } from "react-iconly";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
-      <div className="rounded-2xl bg-[#F5FFF7] h-[30rem] w-[50rem] px-10 pt-4 relative">
+      <div className="rounded-2xl bg-[#F5FFF7] h-[32rem] w-[50rem] px-10 pt-4 relative">
         <img
           src={img}
           alt=""
@@ -82,9 +82,9 @@ const Signup = () => {
                 Verify email
               </button>
             </form>{" "}
-            <div className="flex flex-col">
-              <p className="text-[#999999]">Or Continue with</p>
-              <div className="flex">
+            <div className="flex flex-col w-full mt-2">
+              <p className="text-[#999999] text-center">Or Continue with</p>
+              <div className="flex justify-evenly mt-2">
                 <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>{" "}
                 <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>{" "}
                 <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>
