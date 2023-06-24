@@ -4,6 +4,7 @@ import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { TbMail } from "react-icons/tb";
+import { Message } from "react-iconly";
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
@@ -34,7 +35,15 @@ const Signup = () => {
                 />
               </div>
               <div className="mt-4  relative">
-                {/* <Message  set="curved" primaryColor="blueviolet"  /> */}
+                <span>
+                  {" "}
+                  <Message
+                    size="medium"
+                    set="curved"
+                    primaryColor="#999999"
+                    className="inset-y-11 absolute left-1 top-10"
+                  />
+                </span>
                 <label htmlFor="password" className="block font-bold">
                   Create password
                 </label>
