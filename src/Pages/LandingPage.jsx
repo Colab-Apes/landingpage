@@ -8,9 +8,12 @@ import { ToastContainer } from "react-toastify";
 import Signup from "./../Components/Modals/Signup";
 
 const LandingPage = () => {
+  const [isModal, setisModal] = useState(false);
   return (
     <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[40rem] mx-auto lg:px-20 min-h-[100%] lg:h-screen lg:w-full  bg-no-repeat  font-lato   bg-cover">
+      {/* This signup is a modal */}
       <Signup />
+      {/* This signup is a modal */}
       <ToastContainer />
       <Background />
       <NavBar />

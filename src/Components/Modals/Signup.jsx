@@ -12,21 +12,25 @@ import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
 const Signup = () => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
-  const [isModal, setisModal] = useState(false);
+
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
-      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-10   relative">
+      <div className="rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem]   relative">
         <img
           src={img}
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
-        <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
-        <div className="grid grid-cols-2 gap-x-8  ">
-          <img src={img1} alt="" className="" />
+        <TfiClose   className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
+        <div className="grid grid-cols-2 gap-x-10">
+          <img
+            src={img1}
+            alt=""
+            className="object-cover h-[30rem] rounded-2xl"
+          />
           <div className="flex flex-col items-center ">
-            <img src={logo} alt="" className="w-[5.8rem] " />
-            <p className="text-[#555555] font-bold text-center">
+            <img src={logo} alt="" className="w-[6rem] object-contain " />
+            <p className="text-[#555555] font-bold text-center mt-1">
               Sign up to Get Started
             </p>
             <form
@@ -49,7 +53,7 @@ const Signup = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
+                  className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="johndoe@email.com"
                 />
               </div>
@@ -87,7 +91,7 @@ const Signup = () => {
               <div className="flex items-start gap-x-3 mt-4 font-normal text-sm">
                 <input
                   type="checkbox"
-                  className="accent-[#3B8004] hover:accent-[#3B8004]"
+                  className="accent-[#3B8004] hover:accent-[#3B8004] font-lato"
                 />
                 <p className="text-[#999999]">
                   By registering, you are agreeing with our{" "}
@@ -104,11 +108,11 @@ const Signup = () => {
                 Verify email
               </button>
             </form>{" "}
-            <div className="flex flex-col w-full mt-2">
+            <div className="flex flex-col w-full mt-4">
               <p className="text-[#999999] text-center text-sm">
                 Or Continue with
               </p>
-              <div className="flex justify-evenly mt-2">
+              <div className="flex justify-evenly mt-4">
                 <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
                   <img src={google} alt="" />
                 </div>{" "}
