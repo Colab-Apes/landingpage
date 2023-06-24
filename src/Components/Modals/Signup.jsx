@@ -4,10 +4,11 @@ import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { TbMail } from "react-icons/tb";
-import { Lock, Message } from "react-iconly";
+import { Lock, Message, Show } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
-import apple from "../../assets/ModalImages/social/Google logo.png";
+import apple from "../../assets/ModalImages/social/Vector.svg";
+
 const Signup = () => {
   return (
     <div className="bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato ">
@@ -27,7 +28,7 @@ const Signup = () => {
             </p>
             <form
               onSubmit=""
-              className="w-full relative flex flex-col gap-y-1"
+              className="w-full relative flex flex-col "
               action=""
             >
               <div className="relative">
@@ -36,7 +37,7 @@ const Signup = () => {
                   <Message
                     set="curved"
                     primaryColor="#999999"
-                    className="inset-y-10 left-1 absolute "
+                    className="inset-y-[2.3rem] left-1 absolute "
                   />
                 </span>
                 <label htmlFor="email" className="block font-bold">
@@ -54,7 +55,7 @@ const Signup = () => {
                   <Lock
                     set="curved"
                     primaryColor="#999999"
-                    className="absolute inset-y-10 left-1"
+                    className="absolute inset-y-[2.3rem] left-1"
                   />
                 </span>
                 <label htmlFor="password" className="block font-bold">
@@ -66,6 +67,15 @@ const Signup = () => {
                   className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ●"
                 />
+                {
+                  <span>
+                    <Show
+                      set="bold"
+                      primaryColor="#999999"
+                      className="absolute inset-y-[2.3rem] right-1"
+                    />
+                  </span>
+                }
               </div>
 
               <div className="flex items-start gap-x-3 mt-2 font-normal text-sm">
@@ -86,11 +96,19 @@ const Signup = () => {
               </button>
             </form>{" "}
             <div className="flex flex-col w-full mt-2">
-              <p className="text-[#999999] text-center">Or Continue with</p>
+              <p className="text-[#999999] text-center text-sm">
+                Or Continue with
+              </p>
               <div className="flex justify-evenly mt-2">
-                <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>{" "}
-                <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>{" "}
-                <div className="flex justify-center items-center h-[3rem] w-[3rem] border-2 border-solid border-[#DDDDDD] rounded-[10px]"></div>
+                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                  <img src={google} alt="" />
+                </div>{" "}
+                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                  <img src={facebook} alt="" />
+                </div>{" "}
+                <div className="flex justify-center items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+                  <img src={apple} alt="" />
+                </div>
               </div>
             </div>
           </div>
