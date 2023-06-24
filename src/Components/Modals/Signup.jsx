@@ -10,7 +10,7 @@ import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
-const Signup = () => {
+const Signup = ({ value, changeValue }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
 
   return (
@@ -21,7 +21,7 @@ const Signup = () => {
           alt=""
           className="bg-cover h-full w-full fixed top-0 left-0 z-[-1] hidden lg:block rounded-2xl"
         />
-        <TfiClose   className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
+        <TfiClose className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4" />
         <div className="grid grid-cols-2 gap-x-10">
           <img
             src={img1}
