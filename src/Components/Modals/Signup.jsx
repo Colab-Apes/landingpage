@@ -25,8 +25,8 @@ const Signup = ({ value, changeValue }) => {
       <div
         className={
           value
-            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[45rem] md:w-[52rem] px-10 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
-            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[45rem] md:w-[52rem] px-10 md:px-[3rem] opacity-0  relative duration-[800ms] ease-in-out"
+            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[40rem] md:w-[52rem] px-8 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[40rem] md:w-[52rem] px-8 md:px-[3rem] opacity-0  relative duration-[800ms] ease-in-out"
         }
       >
         <img
@@ -144,7 +144,7 @@ const Signup = ({ value, changeValue }) => {
                   <img src={apple} alt="" />
                 </div>
               </div>
-              <div className="mt-4 md:mt-8 lg:mt-4 text-sm">
+              <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
                 <p className=" text-center">
                   <span className="text-[#999999]">
                     Already have an account?
