@@ -125,7 +125,7 @@ const Hero = () => {
       <img
         src={heroimage}
         alt=""
-        className="xl:w-[27rem] object-contain lg:block hidden "
+        className=" lg:w-[21rem] xl:w-[27rem] object-contain lg:block hidden "
         loading="lazy"
       />
     </div>

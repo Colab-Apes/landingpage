@@ -7,7 +7,7 @@ import "../App.css";
 const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
   return (
-    <nav className="flex justify-between items-center  sm:pt-8 pt-3 lg:pt-1">
+    <nav className="flex justify-between items-center  sm:pt-8 pt-3 lg:pt-2">
       <img
         src={logo}
         alt=""

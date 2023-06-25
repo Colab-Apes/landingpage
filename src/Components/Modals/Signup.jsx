@@ -25,8 +25,8 @@ const Signup = ({ value, changeValue }) => {
       <div
         className={
           value
-            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem] opacity-100  relative duration-[800ms] ease-in-out"
-            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[4rem] opacity-0  relative duration-[800ms] ease-in-out"
+            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[3rem] opacity-0  relative duration-[800ms] ease-in-out"
         }
       >
         <img
