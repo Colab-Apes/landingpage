@@ -18,15 +18,15 @@ const Signup = ({ value, changeValue }) => {
       onClick={() => console.log("coolss")}
       className={
         value
-          ? "bg-black/[25%] fixed h-screen w-full z-10  left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
-          : "bg-black/[25%] fixed h-screen w-full z-[-1]  left-0 flex justify-center items-center font-lato  duration-300 ease-in-out"
+          ? "bg-black/[25%] fixed h-screen w-full z-10 px-12 md:px-20 left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
+          : "bg-black/[25%] fixed h-screen w-full z-[-1] px-12 md:px-20 left-0 flex justify-center items-center font-lato  duration-300 ease-in-out"
       }
     >
       <div
         className={
           value
-            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
-            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] w-[52rem] px-[3rem] opacity-0  relative duration-[800ms] ease-in-out"
+            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[52rem] px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[34rem] sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem] w-[52rem] px-[3rem] opacity-0  relative duration-[800ms] ease-in-out"
         }
       >
         <img
@@ -37,17 +37,17 @@ const Signup = ({ value, changeValue }) => {
 
         <TfiClose
           onClick={() => changeValue(false)}
-          className="text-xl text-[#999999] font-bold cursor-pointer absolute top-4 right-4"
+          className="text-2xl lg:text-xl text-[#999999] font-bold cursor-pointer absolute top-8 lg:top-4 right-8 lg:right-4"
         />
-        <div className="grid grid-cols-2 gap-x-10">
+        <div className="grid lg:grid-cols-2 gap-x-10 ">
           <img
             src={img1}
             alt=""
-            className="object-cover h-[30rem] rounded-2xl"
+            className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
           />
           <div className="flex flex-col items-center ">
-            <img src={logo} alt="" className="w-[6rem] object-contain " />
-            <p className="text-[#555555] font-bold text-center mt-1">
+            <img src={logo} alt="" className="lg:w-[6rem] object-contain " />
+            <p className="text-[#555555] font-bold text-center mt-4 lg:mt-1">
               Sign up to Get Started
             </p>
             <form
@@ -55,7 +55,7 @@ const Signup = ({ value, changeValue }) => {
               className="w-full relative flex flex-col  justify-evenly   text-sm"
               action=""
             >
-              <div className="relative mt-2">
+              <div className="relative mt-8 lg:mt-4">
                 <span>
                   {" "}
                   <Message
@@ -74,7 +74,7 @@ const Signup = ({ value, changeValue }) => {
                   placeholder="johndoe@email.com"
                 />
               </div>
-              <div className="relative mt-4">
+              <div className="relative mt-8 lg:mt-4">
                 <span>
                   <Lock
                     set="curved"
@@ -121,11 +121,11 @@ const Signup = ({ value, changeValue }) => {
                   </span>
                 </p>
               </div>
-              <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] rounded-[10px] h-[2.6rem] mt-4  text-white ">
+              <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] rounded-[10px] h-[2.6rem] mt-8 lg:mt-4  text-white ">
                 Verify email
               </button>
             </form>{" "}
-            <div className="flex flex-col w-full mt-4">
+            <div className="flex flex-col w-full mt-8 lg:mt-4">
               <p className="text-[#999999] text-center text-sm">
                 Or Continue with
               </p>
@@ -140,7 +140,7 @@ const Signup = ({ value, changeValue }) => {
                   <img src={apple} alt="" />
                 </div>
               </div>
-              <div className="mt-4 text-sm">
+              <div className="mt-8 lg:mt-4 text-sm">
                 <p className=" text-center">
                   <span className="text-[#999999]">
                     Already have an account?

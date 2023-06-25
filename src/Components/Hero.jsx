@@ -40,7 +40,7 @@ const Hero = () => {
   }, [success]);
 
   return (
-    <div className="grid lg:flex lg:px-10 mt-14 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[40rem]  lg:w-full   justify-center lg:gap-x-10 xl:gap-x-16 items-center justify-items-center  ">
+    <div className="grid lg:flex    mt-14 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[40rem]  lg:w-full   justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center  ">
       <div className="flex flex-col lg:min-h-[30vh] justify-around ">
         <div className="flex items-center gap-x-4 mt-2 ">
           <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
@@ -51,7 +51,7 @@ const Hero = () => {
         {/* <div className="text-[1.6rem] text-left lg:leading-[3rem] w-[30rem] h-[10rem]  bg-red-400 xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold ">
          
         </div> */}
-      
+
         <TypeAnimation
           className="text-[1.6rem] text-left lg:leading-[3rem] w-full  sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[14.2rem] sm:h-[10rem]   xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold "
           sequence={[
@@ -125,7 +125,7 @@ const Hero = () => {
       <img
         src={heroimage}
         alt=""
-        className=" lg:w-[21rem] xl:w-[27rem] object-contain lg:block hidden "
+        className=" lg:w-[20rem] xl:w-[27rem] object-contain lg:block hidden "
         loading="lazy"
       />
     </div>
