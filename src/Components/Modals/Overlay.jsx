@@ -48,17 +48,17 @@ const Overlay = ({ value, changeValue }) => {
           className="text-2xl lg:text-xl text-[#999999] font-bold cursor-pointer absolute right-3 top-3 md:top-8 lg:top-4 md:right-8 lg:right-4"
         />
 
-        {/* <Signup
+        <Signup
           setopenOtpmodalprop={setopenOtpmodal}
           setopensignupmodalprop={setopensignupmodal}
           opensignupmodalprop={opensignupmodal}
         />
-        <OtpModal
+        {/* <OtpModal
           openOtpmodalprop={openOtpmodal}
           setopenOtpmodalprop={setopenOtpmodal}
           setopenverifiedmodalprop={setopenverifiedmodal}
-        />
-        <VerifiedModal openverifiedmodalprop={openverifiedmodal} /> */}
+        /> */}
+        {/* <VerifiedModal openverifiedmodalprop={openverifiedmodal} /> */}
         {/* <ForgotPassword
           forgotpasswordprop={forgotpassword}
           setforgotpasswordprop={setforgotpassword}

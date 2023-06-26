@@ -11,7 +11,7 @@ import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 const Signin = ({ setsigninprop, signinprop }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
-    <div className={"grid lg:grid-cols-2 gap-x-10"}>
+    <div className={signinprop ? "grid lg:grid-cols-2 gap-x-10" : "hidden"}>
       <img
         src={img1}
         alt=""
