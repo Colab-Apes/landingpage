@@ -13,7 +13,10 @@ const Overlay = ({ value, changeValue }) => {
       }
     >
       {openOtpmodal ? (
-        <OtpModal />
+        <OtpModal
+          setopenOtpmodalprop={setopenOtpmodal}
+          openOtpmodalprop={openOtpmodal}
+        />
       ) : (
         <Signup value={value} changeValue={changeValue} />
       )}
