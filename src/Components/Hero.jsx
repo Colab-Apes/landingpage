@@ -38,7 +38,9 @@ const Hero = () => {
           {
             headers: {
               "Access-Control-Allow-Credentials": true,
+              "Content-Type": "application/json",
             },
+            withCredentials: true,
           }
         )
         .then((response) => {
