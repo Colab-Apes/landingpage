@@ -11,7 +11,7 @@ import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
 const Signup = ({ value, changeValue }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
-  const [openOtpmodal, setopenOtpmodal] = useState(false);
+
   return (
     <div
       className={
