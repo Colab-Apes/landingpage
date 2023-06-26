@@ -31,7 +31,7 @@ const Hero = () => {
     } else {
       axios
         .post(
-          "https://co-backend-production.up.railway.app:8080/api/v1/mail/subscribe",
+          "https://co-backend-production.up.railway.app/api/v1/mail/subscribe",
           { email }
         )
         .then((response) => {
