@@ -3,8 +3,7 @@ import img from "../../assets/ModalImages/authbg.png";
 import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
-import { TbMail } from "react-icons/tb";
-import { Hide, Lock, Message, Show } from "react-iconly";
+import { Lock, Message } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
@@ -45,7 +44,7 @@ const Signup = ({ value, changeValue }) => {
             alt=""
             className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
           />
-          <div className="flex flex-col items-center w-[19rem] h-[30rem]">
+          <div className="flex flex-col items-center w-[19rem] h-[30rem] md:w-full md:h-full">
             <img
               src={logo}
               alt=""
@@ -90,19 +89,19 @@ const Signup = ({ value, changeValue }) => {
                   Create password
                 </label>
                 <input
-                  type={isPasswordVisible ? "password" : "text"}
+                  type={isPasswordVisible ? "text" : "password"}
                   id="password"
                   className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
                   placeholder="● ● ● ● ● ● "
                 />
 
                 {isPasswordVisible ? (
-                  <MdOutlineVisibility
+                  <MdOutlineVisibilityOff
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
                     className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
                   />
                 ) : (
-                  <MdOutlineVisibilityOff
+                  <MdOutlineVisibility
                     onClick={() => setisPasswordVisible(!isPasswordVisible)}
                     className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
                   />
