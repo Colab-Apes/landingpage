@@ -34,7 +34,12 @@ const Hero = () => {
       axios
         .post(
           "https://co-backend-production.up.railway.app/api/v1/mail/subscribe",
-          { email }
+          { email },
+          {
+            headers: {
+              "Access-Control-Allow-Credentials": true,
+            },
+          }
         )
         .then((response) => {
           console.log(response);
