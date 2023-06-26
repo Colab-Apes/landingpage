@@ -44,7 +44,7 @@ const NavBar = ({ changeValue }) => {
         }
       >
         <div className="flex w-full justify-between items-center ">
-          <img src={sidenavlogo} alt="" className="object-contain w-[12rem] " />
+          <img src={sidenavlogo} alt="" className="" />
           <TfiClose
             onClick={() => setopensidenav(false)}
             className="text-2xl text-[#999999]"
