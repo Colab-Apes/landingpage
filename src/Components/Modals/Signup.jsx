@@ -9,12 +9,18 @@ import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
-const Signup = ({ setopenOtpmodalprop, openOtpmodalprop }) => {
+const Signup = ({
+  setopenOtpmodalprop,
+  setopensignupmodalprop,
+  opensignupmodalprop,
+}) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
 
   return (
     <div
-      className={openOtpmodalprop ? "hidden" : "grid lg:grid-cols-2 gap-x-10"}
+      className={
+        opensignupmodalprop ? "grid lg:grid-cols-2 gap-x-10" : "hidden"
+      }
     >
       <img
         src={img1}
@@ -33,6 +39,7 @@ const Signup = ({ setopenOtpmodalprop, openOtpmodalprop }) => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            setopensignupmodalprop(false);
             setopenOtpmodalprop(true);
           }}
           className="w-full relative flex flex-col  justify-evenly   text-sm"

@@ -4,7 +4,11 @@ import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 
-const OtpModal = ({ setopenOtpmodalprop, openOtpmodalprop, changeValue }) => {
+const OtpModal = ({
+  openOtpmodalprop,
+  setopenOtpmodalprop,
+  setopenverifiedmodalprop,
+}) => {
   return (
     <div
       className={openOtpmodalprop ? "grid lg:grid-cols-2 gap-x-10  " : "hidden"}
@@ -29,7 +33,13 @@ const OtpModal = ({ setopenOtpmodalprop, openOtpmodalprop, changeValue }) => {
         <div className="mt-4 text-[#3B8004] text-sm font-semibold">
           Enter 4 - digit code sent to johndoe@email.com
         </div>
-        <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] w-full rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-4  text-white ">
+        <button
+          onClick={() => {
+            setopenOtpmodalprop(false);
+            setopenverifiedmodalprop(true);
+          }}
+          className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] w-full rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-4  text-white "
+        >
           Verify email
         </button>
         <p className="text-xs">
