@@ -4,7 +4,7 @@ import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const [success, setsuccess] = useState(false);
