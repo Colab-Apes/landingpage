@@ -37,7 +37,6 @@ const Hero = () => {
           { email },
           {
             headers: {
-              "Access-Control-Allow-Credentials": true,
               "Content-Type": "application/json",
             },
             withCredentials: true,
