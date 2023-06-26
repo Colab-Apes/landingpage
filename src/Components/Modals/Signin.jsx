@@ -1,12 +1,17 @@
-import React from "react";
-
+import React, { useState } from "react";
+import img from "../../assets/ModalImages/authbg.png";
+import img1 from "../../assets/ModalImages/sidebar.png";
+import logo from "../../assets/ModalImages/logo.png";
+import { TfiClose } from "react-icons/tfi";
+import { Lock, Message } from "react-iconly";
+import google from "../../assets/ModalImages/social/Google logo.png";
+import facebook from "../../assets/ModalImages/social/Facbook.png";
+import apple from "../../assets/ModalImages/social/Vector.svg";
+import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 const Signin = () => {
+  const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
-    <div
-      className={
-        opensignupmodalprop ? "grid lg:grid-cols-2 gap-x-10" : "hidden"
-      }
-    >
+    <div className={"grid lg:grid-cols-2 gap-x-10"}>
       <img
         src={img1}
         alt=""
@@ -24,8 +29,8 @@ const Signin = () => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            setopensignupmodalprop(false);
-            setopenOtpmodalprop(true);
+            // setopensignupmodalprop(false);
+            // setopenOtpmodalprop(true);
           }}
           className="w-full relative flex flex-col  justify-evenly   text-sm"
           action=""
