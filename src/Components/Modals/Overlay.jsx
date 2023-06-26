@@ -8,7 +8,7 @@ import VerifiedModal from "./VerifiedModal";
 import ForgotPassword from "./RecoverPassword/ForgotPassword";
 import ResetPassword from "./RecoverPassword/ResetPassword";
 import Success from "./RecoverPassword/Success";
-import Signin from "./Signin";
+import Signin from './Signin';
 const Overlay = ({ value, changeValue }) => {
   const [success, setsuccess] = useState(true);
   const [resetpassword, setresetpassword] = useState(false);

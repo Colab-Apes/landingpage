@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import img from "../../assets/ModalImages/authbg.png";
-import img1 from "../../assets/ModalImages/sidebar.png";
+import img1 from "../../assets/ModalImages/signin.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import { Lock, Message } from "react-iconly";
@@ -23,8 +23,8 @@ const Signin = () => {
           alt=""
           className="w-[5rem] sm:w-[6rem] object-contain "
         />
-        <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-1">
-          Sign up to Get Started
+        <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-2">
+          Welcome Back!
         </p>
         <form
           onSubmit={(e) => {
@@ -54,6 +54,7 @@ const Signin = () => {
               placeholder="johndoe@email.com"
             />
           </div>
+
           <div className="relative  mt-4 md:mt-8 lg:mt-4">
             <span>
               <Lock
@@ -62,9 +63,16 @@ const Signin = () => {
                 className="absolute inset-y-[2rem] left-1 px-[0.2rem]"
               />
             </span>
-            <label htmlFor="password" className="block font-bold">
-              Create password
-            </label>
+            <div className="flex justify-between items-center ">
+              {" "}
+              <label htmlFor="password" className=" font-bold block">
+                Password
+              </label>
+              <a href="#" className="text-[#3B8004] font-semibold">
+                {" "}
+                Forgot password?
+              </a>
+            </div>
             <input
               type={isPasswordVisible ? "text" : "password"}
               id="password"
@@ -85,20 +93,8 @@ const Signin = () => {
             )}
           </div>
 
-          <div className="flex items-start gap-x-3 mt-4 font-normal text-sm">
-            <input
-              type="checkbox"
-              className="accent-[#3B8004] hover:accent-[#3B8004] font-lato"
-            />
-            <p className="text-[#999999]">
-              By registering, you are agreeing with our{" "}
-              <span className="underline text-[#3B8004]">Terms of Use </span>
-              and{" "}
-              <span className="underline text-[#3B8004]">Privacy Policy</span>
-            </p>
-          </div>
-          <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-4  text-white ">
-            Verify email
+          <button className="font-semibold bg-gradient-to-bl from-[#054E12]  to-[#3B8004] rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-6  text-white ">
+            Sign In
           </button>
         </form>{" "}
         <div className="flex flex-col w-full mt-4 md:mt-8 lg:mt-4">
@@ -117,7 +113,10 @@ const Signin = () => {
           <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
             <p className=" text-center">
               <span className="text-[#999999]">Already have an account?</span>
-              <span className="text-[#054E12] font-bold"> Sign In</span>
+              <a href="#" className="text-[#054E12] font-bold">
+                {" "}
+                Sign Up
+              </a>
             </p>
           </div>
         </div>
