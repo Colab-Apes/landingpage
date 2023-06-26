@@ -34,7 +34,7 @@ const VerifiedModal = ({ openverifiedmodalprop }) => {
         <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] w-full rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-6  text-white ">
           Get Started
         </button>
-        <p className="text-xs mt-6">
+        <p className="text-xs mt-6 font-semibold">
           Already have an account?
           <a className="text-[#054E12]"> Sign In</a>
         </p>

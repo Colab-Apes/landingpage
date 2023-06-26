@@ -5,10 +5,13 @@ import img from "../../assets/ModalImages/authbg.png";
 
 import { TfiClose } from "react-icons/tfi";
 import VerifiedModal from "./VerifiedModal";
+import ForgotPassword from "./RecoverPassword/ForgotPassword";
 const Overlay = ({ value, changeValue }) => {
-  const [opensignupmodal, setopensignupmodal] = useState(true);
+  const [forgotpassword, setforgotpassword] = useState(true);
   const [openOtpmodal, setopenOtpmodal] = useState(false);
   const [openverifiedmodal, setopenverifiedmodal] = useState(false);
+  const [opensignupmodal, setopensignupmodal] = useState(true);
+
   return (
     <div
       className={
@@ -39,7 +42,7 @@ const Overlay = ({ value, changeValue }) => {
           className="text-2xl lg:text-xl text-[#999999] font-bold cursor-pointer absolute right-3 top-3 md:top-8 lg:top-4 md:right-8 lg:right-4"
         />
 
-        <Signup
+        {/* <Signup
           setopenOtpmodalprop={setopenOtpmodal}
           setopensignupmodalprop={setopensignupmodal}
           opensignupmodalprop={opensignupmodal}
@@ -49,7 +52,11 @@ const Overlay = ({ value, changeValue }) => {
           setopenOtpmodalprop={setopenOtpmodal}
           setopenverifiedmodalprop={setopenverifiedmodal}
         />
-        <VerifiedModal openverifiedmodalprop={openverifiedmodal} />
+        <VerifiedModal openverifiedmodalprop={openverifiedmodal} /> */}
+        <ForgotPassword
+          forgotpasswordprop={forgotpassword}
+          setforgotpasswordprop={setforgotpassword}
+        />
       </div>
     </div>
   );
