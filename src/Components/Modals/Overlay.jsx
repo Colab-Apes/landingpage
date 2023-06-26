@@ -10,7 +10,7 @@ import ResetPassword from "./RecoverPassword/ResetPassword";
 import Success from "./RecoverPassword/Success";
 import Signin from "./Signin";
 const Overlay = ({ value, changeValue }) => {
-  const [signin, setsignin] = useState(false);
+  const [signinmodal, setsigninmodal] = useState(false);
   const [success, setsuccess] = useState(true);
   const [resetpassword, setresetpassword] = useState(false);
   const [forgotpassword, setforgotpassword] = useState(false);
@@ -52,6 +52,7 @@ const Overlay = ({ value, changeValue }) => {
           setopenOtpmodalprop={setopenOtpmodal}
           setopensignupmodalprop={setopensignupmodal}
           opensignupmodalprop={opensignupmodal}
+          setsigninmodalprop={setsigninmodal}
         />
         {/* <OtpModal
           openOtpmodalprop={openOtpmodal}
@@ -68,7 +69,7 @@ const Overlay = ({ value, changeValue }) => {
           setresetpasswordprop={setresetpassword}
         /> */}
         {/* <Success setsuccessprop={setsuccess} successprop={success} /> */}
-        <Signin setsigninprop={setsignin} signinprop={signin} />
+        <Signin setsigninmodalprop={setsigninmodal} signinprop={signinmodal} />
       </div>
     </div>
   );

@@ -13,6 +13,7 @@ const Signup = ({
   setopenOtpmodalprop,
   setopensignupmodalprop,
   opensignupmodalprop,
+  setsigninmodalprop,
 }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
 
@@ -127,7 +128,15 @@ const Signup = ({
           <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
             <p className=" text-center">
               <span className="text-[#999999]">Already have an account?</span>
-              <span className="text-[#054E12] font-bold"> Sign In</span>
+              <a
+                onClick={() => {
+                  setopensignupmodalprop(false);
+                  setsigninmodalprop(true);
+                }}
+                className="text-[#054E12] font-bold cursor-pointer ml-1"
+              >
+                Sign In
+              </a>
             </p>
           </div>
         </div>
