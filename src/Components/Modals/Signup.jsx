@@ -31,7 +31,10 @@ const Signup = ({ setopenOtpmodalprop, openOtpmodalprop }) => {
           Sign up to Get Started
         </p>
         <form
-          onSubmit={() => setopenOtpmodalprop(true)}
+          onSubmit={(e) => {
+            e.preventDefault();
+            setopenOtpmodalprop(true);
+          }}
           className="w-full relative flex flex-col  justify-evenly   text-sm"
           action=""
         >
