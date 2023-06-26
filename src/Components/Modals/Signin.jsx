@@ -8,7 +8,7 @@ import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
-const Signin = () => {
+const Signin = ({ setsigninprop, signinprop }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
     <div className={"grid lg:grid-cols-2 gap-x-10"}>
