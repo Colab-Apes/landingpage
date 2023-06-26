@@ -6,7 +6,6 @@ const Overlay = ({ value, changeValue }) => {
   const [openOtpmodal, setopenOtpmodal] = useState(false);
   return (
     <div
-      onClick={() => console.log("coolss")}
       className={
         value
           ? "bg-black/[25%] fixed h-screen w-full z-10 px-12 md:px-20 left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
