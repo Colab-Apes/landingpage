@@ -9,7 +9,7 @@ import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 
-const Signup = ({ value, changeValue }) => {
+const Signup = ({ value, changeValue, setopenOtpmodalprop }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
 
   return (
@@ -46,7 +46,7 @@ const Signup = ({ value, changeValue }) => {
             Sign up to Get Started
           </p>
           <form
-            onSubmit={() => alert("Working on it")}
+            onSubmit={() => setopenOtpmodalprop(true)}
             className="w-full relative flex flex-col  justify-evenly   text-sm"
             action=""
           >
