@@ -30,7 +30,10 @@ const Hero = () => {
       });
     } else {
       axios
-        .post("http://34.227.27.192:8080/api/v1/mail/subscribe", { email })
+        .post(
+          "https://co-backend-production.up.railway.app:8080/api/v1/mail/subscribe",
+          { email }
+        )
         .then((response) => {
           console.log(response);
           setsuccess(true);
