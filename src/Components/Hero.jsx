@@ -80,7 +80,7 @@ const Hero = () => {
             "Unleash Your Digital Vision. Find Your Dream Team Today!",
             10000,
           ]}
-          speed={65}
+          speed={62.5}
           style={{ fontSize: "2em" }}
           repeat={Infinity}
         />
