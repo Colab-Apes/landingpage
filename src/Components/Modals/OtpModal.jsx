@@ -2,7 +2,7 @@ import React from "react";
 import img from "../../assets/ModalImages/authbg.png";
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
+import { BsArrowLeft } from "react-icons/bs";
 
 const OtpModal = ({
   openOtpmodalprop,
@@ -24,9 +24,9 @@ const OtpModal = ({
           alt=""
           className="w-[5rem] sm:w-[6rem] object-contain "
         />
-        <div className="flex">
-          {" "}
-          <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-2">
+        <div className="flex items-center  w-full">
+          <BsArrowLeft className="mt-3 cursor-pointer text-xl" />
+          <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-2 w-full">
             Verify Email
           </p>
         </div>
