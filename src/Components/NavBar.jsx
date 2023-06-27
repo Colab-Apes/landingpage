@@ -61,9 +61,6 @@ const NavBar = ({ changeValue }) => {
           >
             Signup
           </button>
-          <button className=" h-[3rem] w-full rounded-xl gradnav text-white font-semibold">
-            Sign up
-          </button>
           {/* <button className=" h-[3rem] w-full rounded-xl text-main font-semibold">
             Signin
           </button> */}
