@@ -56,11 +56,8 @@ const NavBar = ({ changeValue }) => {
             : "fixed top-0 right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
         }
       >
-        <div className="flex w-full justify-between items-center">
-          {/* Side Navigation Logo */}
-          <img src={sidenavlogo} alt="" className="object-contain w-[12rem]" />
-
-          {/* Close Icon */}
+        <div className="flex w-full justify-between items-center ">
+          <img src={sidenavlogo} alt="" className="" />
           <TfiClose
             onClick={() => setopensidenav(false)}
             className="text-2xl text-[#999999]"
