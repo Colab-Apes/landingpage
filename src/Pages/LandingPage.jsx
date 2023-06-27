@@ -9,20 +9,21 @@ import Signup from "./../Components/Modals/Signup";
 
 const LandingPage = () => {
   const [isModal, setisModal] = useState(false);
+
   return (
-    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[42rem]   mx-auto lg:px-10 xl:px-20 min-h-[100%] lg:h-screen lg:w-full  bg-no-repeat  font-lato   bg-cover">
-      {/* This signup is a modal */}
+    <div className="px-4 sm:px-0 sm:w-[33rem] md:w-[42rem] mx-auto lg:px-10 xl:px-20 min-h-[100%] lg:h-screen lg:w-full bg-no-repeat font-lato bg-cover">
+      {/* Signup Modal */}
       <Signup value={isModal} changeValue={setisModal} />
-      {/* This signup is a modal */}
+      {/* Toast Container */}
       <ToastContainer />
+      {/* Background Component */}
       <Background />
+      {/* Navigation Bar Component */}
       <NavBar changeValue={setisModal} />
+      {/* Hero Component */}
       <Hero />
-      <div
-        className=" w-full
-         lg:block hidden "
-      >
-        {" "}
+      <div className="w-full lg:block hidden">
+        {/* Socials Component */}
         <Socials />
       </div>
     </div>
