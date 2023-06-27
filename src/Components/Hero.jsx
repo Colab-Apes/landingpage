@@ -26,6 +26,7 @@ const Hero = () => {
     } else if (!validRegex.test(email)) {
       toast.error("Enter a valid email", {
         position: "bottom-left",
+        
         autoClose: 2000,
         toastId: 2,
         theme: "colored",
