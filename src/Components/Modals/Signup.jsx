@@ -20,7 +20,7 @@ const Signup = ({
   return (
     <div
       className={
-        opensignupmodalprop ? "grid lg:grid-cols-2 gap-x-10" : "hidden"
+        opensignupmodalprop ? "grid lg:grid-cols-2 sm:gap-x-10" : "hidden"
       }
     >
       <img
@@ -28,7 +28,7 @@ const Signup = ({
         alt=""
         className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
       />
-      <div className="flex flex-col items-center w-[19rem] h-[30rem] md:w-full md:h-full">
+      <div className="flex flex-col items-center  sm:w-[19rem] h-[30rem] md:w-full md:h-full">
         <img
           src={logo}
           alt=""
