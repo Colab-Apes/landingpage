@@ -33,8 +33,8 @@ const LandingPage = () => {
       <NavBar changeValue={setisModal} />
       {/* Hero Component */}
       <Hero />
+      {/* Socials Component for lg screen  */}
       <div className="w-full lg:block hidden">
-        {/* Socials Component */}
         <Socials />
       </div>
     </div>
