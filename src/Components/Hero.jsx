@@ -60,19 +60,19 @@ const Hero = () => {
   }, [success]);
 
   return (
-    <div className=" lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
-      <div className="flex flex-col lg:min-h-[30vh] w-full justify-around">
+    <div className="grid lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
+      <div className="flex flex-col lg:min-h-[30vh] justify-between sm:justify-around">
         {/* Heading */}
-        <div className="flex items-center gap-x-4 mt-2 w-full">
+        <div className="flex items-center gap-x-4">
           <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
             Coming soon
           </p>
-          <div className="bg-[#3B8004] w-[10rem] xl:w-[9rem] h-[0.2rem]"></div>
+          <div className="bg-[#3B8004] sm:w-[10rem] w-[3rem] xl:w-[9rem] h-[0.2rem]"></div>
         </div>
 
         {/* Animated Text */}
         <TypeAnimation
-          className=" text-[1rem] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[12rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
+          className="text-[1.5rem] leading-[1.6] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[10rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
           sequence={[
             // Same substring at the start will only be typed once, initially
             "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
@@ -87,7 +87,6 @@ const Hero = () => {
             10000,
           ]}
           speed={62.5}
-          style={{ fontSize: "2em" }}
           repeat={Infinity}
         />
 
@@ -95,11 +94,11 @@ const Hero = () => {
         <img
           src={heroimage}
           alt=""
-          className="w-[20rem] object-contain lg:hidden mx-auto lg:mx-0 mt-2"
+          className="w-[80%] sm:w-[27rem] object-contain lg:hidden mx-auto lg:mx-0  mt-1 sm:mt-4"
           loading="lazy"
         />
 
-        <div className="flex flex-col w-full mt-10 justify-between">
+        <div className="flex flex-col w-full mt-8 sm:mt-10 justify-between">
           {/* Waitlist Form */}
           <p className="text-[#054E12] text-xl font-lato font-medium">
             Join the wait list
@@ -139,7 +138,7 @@ const Hero = () => {
           )}
 
           {/* Social Media Icons (hidden on lg and larger screens) */}
-          <div className="lg:hidden mt-10  justify-center flex">
+          <div className="lg:hidden mt-6 mb-4 sm:mt-10 ">
             <Socials />
           </div>
         </div>
