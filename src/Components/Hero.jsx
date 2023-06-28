@@ -26,7 +26,6 @@ const Hero = () => {
     } else if (!validRegex.test(email)) {
       toast.error("Enter a valid email", {
         position: "bottom-left",
-        
         autoClose: 2000,
         toastId: 2,
         theme: "colored",
@@ -61,10 +60,10 @@ const Hero = () => {
   }, [success]);
 
   return (
-    <div className="grid lg:flex mt-14 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
-      <div className="flex flex-col lg:min-h-[30vh] justify-around">
+    <div className=" lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
+      <div className="flex flex-col lg:min-h-[30vh] w-full justify-around">
         {/* Heading */}
-        <div className="flex items-center gap-x-4 mt-2">
+        <div className="flex items-center gap-x-4 mt-2 w-full">
           <p className="text-main text-lg md:text-2xl xlg:text-lg xl:text-xl font-bold">
             Coming soon
           </p>
@@ -73,7 +72,7 @@ const Hero = () => {
 
         {/* Animated Text */}
         <TypeAnimation
-          className="text-[1.6rem] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[14.2rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
+          className=" text-[1rem] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[12rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
           sequence={[
             // Same substring at the start will only be typed once, initially
             "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
@@ -96,7 +95,7 @@ const Hero = () => {
         <img
           src={heroimage}
           alt=""
-          className="w-[27rem] object-contain lg:hidden mx-auto lg:mx-0 mt-4"
+          className="w-[20rem] object-contain lg:hidden mx-auto lg:mx-0 mt-2"
           loading="lazy"
         />
 
@@ -140,7 +139,7 @@ const Hero = () => {
           )}
 
           {/* Social Media Icons (hidden on lg and larger screens) */}
-          <div className="lg:hidden mt-10 h-[10vh] justify-center flex">
+          <div className="lg:hidden mt-10  justify-center flex">
             <Socials />
           </div>
         </div>
