@@ -21,7 +21,7 @@ const LandingPage = () => {
   }, [isModal]);
 
   return (
-    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[42rem] mx-auto lg:px-10 xl:px-20 h-screen  lg:w-full  bg-no-repeat  font-lato   bg-cover">
+    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[42rem] mx-auto lg:px-10 xl:px-20 min-h-screen lg:h-screen  lg:w-full  bg-no-repeat  font-lato   bg-cover">
       {/* This signup is a modal */}
 
       <Overlay value={isModal} changeValue={setisModal} />
