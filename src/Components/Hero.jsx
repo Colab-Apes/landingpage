@@ -6,59 +6,10 @@ import { IoIosClose } from "react-icons/io";
 import { toast } from "react-toastify";
 import { TypeAnimation } from "react-type-animation";
 import axios from "axios";
+import HeroHooks from "./../Hooks/HeroHooks";
 
 const Hero = () => {
-  const [success, setsuccess] = useState(false);
-
-  const [email, setemail] = useState("");
-  var validRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-  const submitEmail = () => {
-    console.log(email);
-    if (email.length === 0) {
-      toast.error("Enter an email", {
-        position: "bottom-left",
-        autoClose: 2000,
-        toastId: 1,
-        theme: "colored",
-      });
-    } else if (!validRegex.test(email)) {
-      toast.error("Enter a valid email", {
-        position: "bottom-left",
-        autoClose: 2000,
-        toastId: 2,
-        theme: "colored",
-      });
-    } else {
-      axios
-        .post(
-          "https://co-backend-production.up.railway.app/api/v1/mail/subscribe",
-          { email },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-            withCredentials: true,
-          }
-        )
-        .then((response) => {
-          console.log(response);
-          setsuccess(true);
-          setemail("");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      setsuccess(false);
-    }, 3000);
-  }, [success]);
-
+  const { email, setemail, setsuccess, success, submitEmail } = HeroHooks();
   return (
     <div className="grid lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
       <div className="flex flex-col lg:min-h-[30vh] justify-between sm:justify-around">

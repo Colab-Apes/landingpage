@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const HeroHooks = () => {
   const [success, setsuccess] = useState(false);
@@ -52,7 +54,7 @@ const HeroHooks = () => {
     }, 3000);
   }, [success]);
 
-  return <div>HeroHooks</div>;
+  return { success, setsuccess, setemail, email, submitEmail };
 };
 
 export default HeroHooks;
