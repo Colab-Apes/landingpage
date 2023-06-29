@@ -11,7 +11,11 @@ const OtpModal = ({
 }) => {
   return (
     <div
-      className={openOtpmodalprop ? "grid lg:grid-cols-2 gap-x-10  " : "hidden"}
+      className={
+        openOtpmodalprop
+          ? "flex flex-col  w-full lg:grid lg:grid-cols-2 gap-x-10"
+          : "hidden"
+      }
     >
       <img
         src={otpmodal}

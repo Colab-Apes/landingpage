@@ -16,7 +16,7 @@ const VerifiedModal = ({ openverifiedmodalprop }) => {
         alt=""
         className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
       />
-      <div className="flex flex-col items-center w-[19rem] h-[30rem] md:w-full md:h-full">
+      <div className="flex flex-col w-full items-center sm:w-[19rem] h-[30rem] md:w-full md:h-full">
         <img
           src={logo}
           alt=""
@@ -31,9 +31,10 @@ const VerifiedModal = ({ openverifiedmodalprop }) => {
         <div className="mt-4 text-[#3B8004] text-sm font-bold">
           Complete a quick profile to start creating
         </div>
-        <button onClick={()=>{
-          
-        }} className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] w-full rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-6  text-white ">
+        <button
+          onClick={() => {}}
+          className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] w-full rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-6  text-white "
+        >
           Get Started
         </button>
         <p className="text-xs mt-6 font-semibold">

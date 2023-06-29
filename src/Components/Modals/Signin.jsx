@@ -12,7 +12,11 @@ const Signin = ({ setsigninmodalprop, signinmodalprop }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
   return (
     <div
-      className={signinmodalprop ? "grid lg:grid-cols-2 gap-x-10" : "hidden"}
+      className={
+        signinmodalprop
+          ? "flex flex-col  w-full lg:grid lg:grid-cols-2 gap-x-10"
+          : "hidden"
+      }
     >
       <img
         src={img1}
