@@ -24,12 +24,12 @@ const Hero = () => {
           className="text-[1.5rem] leading-[1.7] text-left lg:leading-[1.5] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[8rem] sm:h-[12.6rem]  md:h-[11rem] xl:leading-[1.6] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.2rem] text-main mt-4 lg:mt-2 font-bold"
           sequence={[
             // Same substring at the start will only be typed once, initially
-            // "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
-            // 10000,
-            // "Unlock Your Digital Dream Team: Find, Collaborate, and Soar Together",
-            // 10000,
-            // "Unleash Your Digital Vision with the Perfect Dream Team",
-            // 10000,
+            "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
+            10000,
+            "Unlock Your Digital Dream Team: Find, Collaborate, and Soar Together",
+            10000,
+            "Unleash Your Digital Vision with the Perfect Dream Team",
+            10000,
             "Empowering Digital Entrepreneurs to Build their Dream Team for Success",
             10000,
             "Unleash Your Digital Vision. Find Your Dream Team Today!",
