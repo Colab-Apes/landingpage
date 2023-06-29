@@ -72,7 +72,7 @@ const Hero = () => {
 
         {/* Animated Text */}
         <TypeAnimation
-          className="text-[1.5rem] leading-[1.6] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[10rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
+          className="text-[1.5rem] leading-[1.6] text-left lg:leading-[3rem] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[8rem] sm:h-[10rem] xl:leading-[3.5rem] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.5rem] text-main mt-4 font-bold"
           sequence={[
             // Same substring at the start will only be typed once, initially
             "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
@@ -94,11 +94,11 @@ const Hero = () => {
         <img
           src={heroimage}
           alt=""
-          className="w-[80%] sm:w-[27rem] object-contain lg:hidden mx-auto lg:mx-0  mt-1 sm:mt-4"
+          className="w-[80%] sm:w-[27rem] object-contain lg:hidden mx-auto lg:mx-0  mt-8 sm:mt-4"
           loading="lazy"
         />
 
-        <div className="flex flex-col w-full mt-8 sm:mt-10 justify-between">
+        <div className="flex flex-col w-full mt-8  sm:mt-10 justify-between">
           {/* Waitlist Form */}
           <p className="text-[#054E12] text-xl font-lato font-medium">
             Join the wait list

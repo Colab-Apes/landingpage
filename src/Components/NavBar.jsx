@@ -11,11 +11,13 @@ const NavBar = ({ changeValue }) => {
   return (
     <nav className="flex justify-between items-center sm:pt-8 pt-3 lg:pt-2">
       {/* Logo */}
-      <img
-        src={logo}
-        alt=""
-        className="object-contain md:w-[15rem] lg:w-[14rem]"
-      />
+      <a href="/">
+        <img
+          src={logo}
+          alt=""
+          className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
+        />
+      </a>
 
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         {/* Sign In Button */}
@@ -35,7 +37,7 @@ const NavBar = ({ changeValue }) => {
       {/* Hamburger Menu Icon */}
       <BiMenuAltRight
         onClick={() => setopensidenav(true)}
-        className="text-4xl md:text-5xl text-main lg:hidden"
+        className="text-5xl md:text-5xl text-main lg:hidden"
       />
 
       {/* Background Overlay */}
@@ -57,7 +59,7 @@ const NavBar = ({ changeValue }) => {
         }
       >
         <div className="flex w-full justify-between items-center ">
-          <img src={sidenavlogo} alt="" className="object-contain w-[12rem] " />
+          <img src={logo} alt="" className="object-cover w-[12rem] " />
           <TfiClose
             onClick={() => setopensidenav(false)}
             className="text-2xl text-[#999999]"
