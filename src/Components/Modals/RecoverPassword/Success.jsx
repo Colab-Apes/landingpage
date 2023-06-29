@@ -1,8 +1,7 @@
 import React from "react";
-import img from "../../../assets/ModalImages/authbg.png";
+
 import otpmodal from "../../../assets/ModalImages/success.png";
 import logo from "../../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
 
 const Success = ({ setsuccessprop, successprop }) => {
   return (

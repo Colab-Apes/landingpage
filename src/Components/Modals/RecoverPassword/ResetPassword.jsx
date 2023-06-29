@@ -2,8 +2,7 @@ import React, { useState } from "react";
 
 import password from "../../../assets/ModalImages/reset.png";
 import logo from "../../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
-import { Message, Lock } from "react-iconly";
+import { Lock } from "react-iconly";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 const ResetPassword = ({ resetpasswordprop, setresetpasswordprop }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);

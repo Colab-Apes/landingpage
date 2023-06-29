@@ -6,13 +6,13 @@ import img from "../../assets/ModalImages/authbg.png";
 import { TfiClose } from "react-icons/tfi";
 import VerifiedModal from "./VerifiedModal";
 import ForgotPassword from "./RecoverPassword/ForgotPassword";
-import ResetPassword from "./RecoverPassword/ResetPassword";
-import Success from "./RecoverPassword/Success";
-import Signin from "./Signin";
+// import ResetPassword from "./RecoverPassword/ResetPassword";
+// import Success from "./RecoverPassword/Success";
+// import Signin from "./Signin";
 const Overlay = ({ value, changeValue }) => {
   const [signinmodal, setsigninmodal] = useState(false);
-  const [success, setsuccess] = useState(true);
-  const [resetpassword, setresetpassword] = useState(false);
+  // const [success, setsuccess] = useState(true);
+  // const [resetpassword, setresetpassword] = useState(false);
   const [forgotpassword, setforgotpassword] = useState(false);
   const [openOtpmodal, setopenOtpmodal] = useState(false);
   const [openverifiedmodal, setopenverifiedmodal] = useState(false);

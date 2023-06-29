@@ -5,14 +5,15 @@ import Socials from "./../Components/Socials";
 import Background from "./../Components/Background";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import Signup from "./../Components/Modals/Signup";
+
 import Overlay from "./../Components/Modals/Overlay";
 
 const LandingPage = () => {
   const [isModal, setisModal] = useState(false);
-  const safeDocument = typeof document !== "undefined" ? document : {};
-  const { body } = safeDocument;
+
   useEffect(() => {
+    const safeDocument = typeof document !== "undefined" ? document : {};
+    const { body } = safeDocument;
     if (isModal) {
       body.style.overflow = "hidden";
     } else {

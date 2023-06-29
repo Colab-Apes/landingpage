@@ -1,8 +1,7 @@
 import React from "react";
-import img from "../../assets/ModalImages/authbg.png";
+// import img from "../../assets/ModalImages/authbg.png";
 import verifiedmodal from "../../assets/ModalImages/verifiedmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
 
 const VerifiedModal = ({ openverifiedmodalprop }) => {
   return (

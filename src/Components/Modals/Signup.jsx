@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import img from "../../assets/ModalImages/authbg.png";
 import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
+
 import { Lock, Message } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
@@ -57,12 +56,12 @@ const Signup = ({
                 className="inset-y-[2rem] left-1 absolute px-[0.2rem] "
               />
             </span>
-            <label htmlFor="email" className="block font-bold">
+            <label htmlFor="emaile" className="block font-bold">
               Email
             </label>
             <input
               type="email"
-              id="email"
+              id="emaile"
               className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-[#999999] focus:outline-none"
               placeholder="johndoe@email.com"
             />

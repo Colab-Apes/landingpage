@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import img from "../../assets/ModalImages/authbg.png";
+
 import img1 from "../../assets/ModalImages/signin.png";
 import logo from "../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
+
 import { Lock, Message } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
@@ -74,10 +74,10 @@ const Signin = ({ setsigninmodalprop, signinmodalprop }) => {
               <label htmlFor="password" className=" font-bold block">
                 Password
               </label>
-              <a href="#" className="text-[#3B8004] font-semibold">
+              <button className="text-[#3B8004] font-semibold">
                 {" "}
                 Forgot password?
-              </a>
+              </button>
             </div>
             <input
               type={isPasswordVisible ? "text" : "password"}
@@ -119,10 +119,7 @@ const Signin = ({ setsigninmodalprop, signinmodalprop }) => {
           <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
             <p className=" text-center">
               <span className="text-[#999999]">Already have an account?</span>
-              <a href="#" className="text-[#054E12] font-bold">
-                {" "}
-                Sign Up
-              </a>
+              <button className="text-[#054E12] font-bold"> Sign Up</button>
             </p>
           </div>
         </div>

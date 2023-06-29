@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/ModalImages/authbg.png";
+
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { BsArrowLeft } from "react-icons/bs";

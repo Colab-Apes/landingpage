@@ -2,7 +2,6 @@ import React from "react";
 
 import password from "../../../assets/ModalImages/password.png";
 import logo from "../../../assets/ModalImages/logo.png";
-import { TfiClose } from "react-icons/tfi";
 import { Message } from "react-iconly";
 const ForgotPassword = ({ forgotpasswordprop, setforgotpasswordprop }) => {
   return (
