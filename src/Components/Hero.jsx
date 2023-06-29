@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
-import { toast } from "react-toastify";
 import { TypeAnimation } from "react-type-animation";
-import axios from "axios";
 import HeroHooks from "./../Hooks/HeroHooks";
 
 const Hero = () => {
