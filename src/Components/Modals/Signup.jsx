@@ -20,34 +20,38 @@ const Signup = ({
     <div
       className={
         opensignupmodalprop
-          ? "flex flex-col  w-full lg:grid lg:grid-cols-2 gap-x-10"
+          ? "flex flex-col  w-full lg:flex-row gap-x-5  justify-between h-full items-center   "
           : "hidden"
       }
     >
-      <img
-        src={img1}
-        alt=""
-        className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
-      />
-      <div className="flex flex-col w-full items-center sm:w-[19rem] h-[30rem] md:w-full md:h-full">
+      <div className="w-full h-full flex  justify-center py-5 lg:rounded-[40px] ">
         <img
-          src={logo}
+          src={img1}
           alt=""
-          className="w-[5rem] sm:w-[6rem] object-contain "
+          className=" object-cover hidden lg:block lg:rounded-[40px] "
         />
-        <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-1">
-          Sign up to Get Started
-        </p>
+      </div>
+      <div className="flex flex-col  w-full justify-evenly items-center  sm:w-[19rem] lg:w-full lg:h-full h-[30rem] md:w-full md:h-full ">
+        <div className=" flex flex-col justify-center items-center">
+          <img
+            src={logo}
+            alt=""
+            className="w-[5rem] sm:w-[6rem] object-contain "
+          />
+          <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-1">
+            Sign up to Get Started
+          </p>
+        </div>
         <form
           onSubmit={(e) => {
             e.preventDefault();
             setopensignupmodalprop(false);
             setopenOtpmodalprop(true);
           }}
-          className="w-full relative flex flex-col  justify-evenly   text-sm"
+          className="w-full relative flex flex-col justify-between  text-sm"
           action=""
         >
-          <div className="relative  mt-4 md:mt-8 lg:mt-4">
+          <div className="relative   ">
             <span>
               {" "}
               <Message
@@ -97,7 +101,7 @@ const Signup = ({
             )}
           </div>
 
-          <div className="flex items-start gap-x-3 mt-4 font-normal text-sm">
+          <div className="flex items-start gap-x-3 mt-0 lg:mt-4 font-normal text-sm">
             <input
               type="checkbox"
               className="accent-[#3B8004] hover:accent-[#3B8004] font-lato"
@@ -113,9 +117,9 @@ const Signup = ({
             Verify email
           </button>
         </form>{" "}
-        <div className="flex flex-col w-full mt-4 md:mt-8 lg:mt-4">
-          <p className="text-[#999999] text-center text-sm">Or Continue with</p>
-          <div className="flex justify-evenly mt-4 w-full gap-x-4 lg:gap-x-0">
+        <p className="text-[#999999] text-center text-sm ">Or Continue with</p>
+        <div className="flex flex-col w-full mt-4 md:mt-8 lg:mt-0">
+          <div className="flex justify-evenly mt-4 w-full gap-x-4 lg:gap-x-0  lg:mt-0">
             <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-full  sm:w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
               <img src={google} alt="" />
             </div>{" "}
