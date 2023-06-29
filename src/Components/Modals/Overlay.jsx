@@ -29,8 +29,8 @@ const Overlay = ({ value, changeValue }) => {
       <div
         className={
           value
-            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[32rem] w-full sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem]  md:w-[52rem] px-4 sm:px-8 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
-            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[32rem] w-full sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem]  md:w-[52rem] px-4 sm:px-8 md:px-[3rem] opacity-0  relative duration-[100ms] ease-in-out"
+            ? "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[33rem] pb-5 w-full sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem]  md:w-[52rem] px-4 sm:px-8 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : "rounded-2xl bg-[#F5FFF7] flex items-center justify-center h-[33rem] pb-5 w-full sm:h-[40rem] md:h-[45rem] lg:h-[32rem] xl:h-[34rem]  md:w-[52rem] px-4 sm:px-8 md:px-[3rem] opacity-0  relative duration-[100ms] ease-in-out"
         }
       >
         <img
