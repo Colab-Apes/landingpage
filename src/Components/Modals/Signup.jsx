@@ -116,14 +116,14 @@ const Signup = ({
         </form>{" "}
         <div className="flex flex-col w-full mt-4 md:mt-8 lg:mt-4">
           <p className="text-[#999999] text-center text-sm">Or Continue with</p>
-          <div className="flex justify-evenly mt-4">
-            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+          <div className="flex justify-evenly mt-4 w-full gap-x-4 lg:gap-x-0">
+            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-full  sm:w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
               <img src={google} alt="" />
             </div>{" "}
-            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-full  sm:w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
               <img src={facebook} alt="" />
             </div>{" "}
-            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
+            <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-full  sm:w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
               <img src={apple} alt="" />
             </div>
           </div>
