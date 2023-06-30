@@ -7,7 +7,7 @@ import linkedin from "../assets/socials/linkedin.svg";
 
 const Socials = () => {
   return (
-    <div className="flex w-full md:h-[10vh] items-center justify-center lg:justify-end gap-x-3">
+    <div className="flex w-full md:h-[10vh] lg:h-[10vh] items-center justify-center lg:justify-end gap-x-3">
       {/* YouTube */}
       {/* 
         <a
@@ -23,7 +23,7 @@ const Socials = () => {
       {/* Facebook */}
       <a
         href="https://www.facebook.com"
-        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125 rounded-full flex justify-center items-center"
+        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125  ease-in-out duration-300 rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -33,7 +33,7 @@ const Socials = () => {
       {/* Instagram */}
       <a
         href="https://www.instagram.com/co_labapes"
-        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125 rounded-full flex justify-center items-center"
+        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125  ease-in-out  duration-300 rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -43,7 +43,7 @@ const Socials = () => {
       {/* Twitter */}
       <a
         href="https://www.twitter.com/co_labapes"
-        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125 rounded-full flex justify-center items-center"
+        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125  ease-in-out duration-300 rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -53,7 +53,7 @@ const Socials = () => {
       {/* LinkedIn */}
       <a
         href="https://www.linkedin.com/"
-        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125 rounded-full flex justify-center items-center"
+        className="border-[#3B8004] h-[2rem] w-[2rem] hover:scale-125  ease-in-out duration-300 rounded-full flex justify-center items-center"
         target="_blank"
         rel="noopener noreferrer"
       >

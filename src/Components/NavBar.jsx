@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../assets/logo.svg";
-import sidenavlogo from "../assets/sidenavlogo.png";
+// import sidenavlogo from "../assets/sidenavlogo.png";
 import { TfiClose } from "react-icons/tfi";
 import "../App.css";
 
@@ -9,13 +9,15 @@ const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center sm:pt-8 pt-3 lg:pt-2">
+    <nav className="flex justify-between items-center h-[10vh] sm:pt-8 pt-3 lg:pt-0">
       {/* Logo */}
-      <img
-        src={logo}
-        alt=""
-        className="object-contain md:w-[15rem] lg:w-[14rem]"
-      />
+      <a href="/">
+        <img
+          src={logo}
+          alt=""
+          className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
+        />
+      </a>
 
       <div className="text-lg lg:flex gap-x-3 items-center hidden">
         {/* Sign In Button */}
@@ -35,7 +37,7 @@ const NavBar = ({ changeValue }) => {
       {/* Hamburger Menu Icon */}
       <BiMenuAltRight
         onClick={() => setopensidenav(true)}
-        className="text-4xl md:text-5xl text-main lg:hidden"
+        className="text-5xl md:text-5xl text-main lg:hidden"
       />
 
       {/* Background Overlay */}
@@ -56,11 +58,8 @@ const NavBar = ({ changeValue }) => {
             : "fixed top-0 right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
         }
       >
-        <div className="flex w-full justify-between items-center">
-          {/* Side Navigation Logo */}
-          <img src={sidenavlogo} alt="" className="object-contain w-[12rem]" />
-
-          {/* Close Icon */}
+        <div className="flex w-full justify-between items-center ">
+          <img src={logo} alt="" className="object-cover w-[12rem] " />
           <TfiClose
             onClick={() => setopensidenav(false)}
             className="text-2xl text-[#999999]"
