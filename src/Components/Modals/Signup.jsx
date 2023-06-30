@@ -20,18 +20,14 @@ const Signup = ({
     <div
       className={
         opensignupmodalprop
-          ? "flex flex-col  w-full lg:flex-row gap-x-5  justify-between h-full items-center   "
+          ? "flex flex-col  w-full  lg:flex-row lg:gap-x-5  justify-center lg:justify-between h-full items-center   "
           : "hidden"
       }
     >
-      <div className="w-full h-full flex  justify-center py-5 lg:rounded-[40px] ">
-        <img
-          src={img1}
-          alt=""
-          className=" object-cover hidden lg:block lg:rounded-[40px] "
-        />
+      <div className="w-full h-full lg:flex  justify-center hidden   lg:py-5 lg:rounded-[40px] ">
+        <img src={img1} alt="" className=" object-cover lg:rounded-[40px] " />
       </div>
-      <div className="flex flex-col  w-full justify-evenly items-center  sm:w-[19rem] lg:w-full lg:h-full h-[30rem] md:w-full md:h-full ">
+      <div className="flex flex-col  w-full justify-evenly h-full items-center  sm:w-[19rem] lg:w-full lg:h-full md:w-full md:h-full ">
         <div className=" flex flex-col justify-center items-center">
           <img
             src={logo}
@@ -48,7 +44,7 @@ const Signup = ({
             setopensignupmodalprop(false);
             setopenOtpmodalprop(true);
           }}
-          className="w-full relative flex flex-col justify-between  text-sm"
+          className="w-full relative flex flex-col justify-between gap-y-4 mt-2 md:gap-y-4 text-sm"
           action=""
         >
           <div className="relative   ">
@@ -70,7 +66,7 @@ const Signup = ({
               placeholder="johndoe@email.com"
             />
           </div>
-          <div className="relative  mt-4 md:mt-8 lg:mt-4">
+          <div className="relative   md:mt-0 lg:mt-4">
             <span>
               <Lock
                 set="curved"
@@ -101,7 +97,7 @@ const Signup = ({
             )}
           </div>
 
-          <div className="flex items-start gap-x-3 mt-0 lg:mt-4 font-normal text-sm">
+          <div className="flex items-start gap-x-3 mt-0  lg:mt-4 font-normal text-sm">
             <input
               type="checkbox"
               className="accent-[#3B8004] hover:accent-[#3B8004] font-lato"
@@ -113,12 +109,14 @@ const Signup = ({
               <span className="underline text-[#3B8004]">Privacy Policy</span>
             </p>
           </div>
-          <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] rounded-[10px] h-[2.6rem] mt-6 md:mt-8 lg:mt-4  text-white ">
+          <button className="font-semibold bg-gradient-to-bl from-[#054E12] to-[#3B8004] rounded-[10px] h-[2.6rem] lg:mt-4  text-white ">
             Verify email
           </button>
         </form>{" "}
-        <p className="text-[#999999] text-center text-sm ">Or Continue with</p>
-        <div className="flex flex-col w-full mt-4 md:mt-8 lg:mt-0">
+        <p className="text-[#999999] text-center text-sm mt-2">
+          Or Continue with
+        </p>
+        <div className="flex flex-col w-full  md:mt-0 lg:mt-0">
           <div className="flex justify-evenly mt-4 w-full gap-x-4 lg:gap-x-0  lg:mt-0">
             <div className="flex justify-center cursor-pointer items-center h-[2.4rem] w-full  sm:w-[6rem] border border-solid border-[#DDDDDD] rounded-[10px]">
               <img src={google} alt="" />
@@ -130,7 +128,7 @@ const Signup = ({
               <img src={apple} alt="" />
             </div>
           </div>
-          <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
+          <div className="mt-2  md:mt-8 lg:mt-4 text-sm">
             <p className=" text-center">
               <span className="text-[#999999]">Already have an account?</span>
               <a

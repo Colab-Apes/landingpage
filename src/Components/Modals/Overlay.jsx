@@ -22,15 +22,15 @@ const Overlay = ({ value, changeValue }) => {
     <div
       className={
         value
-          ? "bg-black/[25%] fixed h-screen w-full z-10  px-8 sm:px-12 md:px-20 left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
-          : "bg-black/[25%] fixed h-screen w-full z-[-1] px-8 sm:px-12 md:px-20 left-0 flex justify-center items-center font-lato  duration-300 ease-in-out"
+          ? "bg-black/[25%] fixed h-screen w-full z-10  px-4 sm:px-32 md:px-32 left-0 flex justify-center items-center font-lato duration-300 ease-in-out "
+          : "bg-black/[25%] fixed h-screen w-full z-[-1] px-4 sm:px-32 md:px-32 left-0 flex justify-center items-center font-lato  duration-300 ease-in-out"
       }
     >
       <div
         className={
           value
-            ? " rounded-2xl lg:rounded-[40px] bg-[#F5FFF7] flex items-center justify-center h-[33rem] w-full pb-5  lg:py-4  sm:h-[40rem] md:h-[45rem] lg:h-[32rem] lg:w-[54rem] xl:h-[34.5rem] xl:w-[56rem]   md:w-full      px-4 sm:px-8 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
-            : " rounded-2xl lg:rounded-[40px] bg-[#F5FFF7] flex items-center justify-center h-[33rem] w-full pb-5  lg:py-4 sm:h-[40rem] md:h-[45rem]  lg:h-[32rem] lg:w-[54rem] xl:h-[34.5rem] xl:w-[56rem]   px-4 sm:px-8 md:px-[3rem] opacity-0  relative duration-[100ms] ease-in-out"
+            ? " rounded-2xl lg:rounded-[40px] bg-[#F5FFF7] flex items-center justify-center h-[33rem]  w-full py-4  sm:pb-0 md:py-4  lg:py-4  sm:h-[35rem] lg:h-[32rem] lg:w-[54rem] xl:h-[34.5rem] xl:w-[56rem]   md:w-full      px-4 sm:px-8 md:px-[3rem] opacity-100  relative duration-[800ms] ease-in-out"
+            : " rounded-2xl lg:rounded-[40px] bg-[#F5FFF7] flex items-center justify-center h-[33rem] w-full py-4  sm:pb-0  md:py-4 lg:py-4 sm:h-[35rem]  lg:h-[32rem] lg:w-[54rem] xl:h-[34.5rem] xl:w-[56rem]   px-4 sm:px-8 md:px-[3rem] opacity-0  relative duration-[100ms] ease-in-out"
         }
       >
         <img

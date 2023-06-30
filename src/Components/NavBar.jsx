@@ -9,7 +9,7 @@ const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center h-[10vh] sm:pt-8 pt-3 lg:pt-0">
+    <nav className="flex justify-between items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
       {/* Logo */}
       <a href="/">
         <img
