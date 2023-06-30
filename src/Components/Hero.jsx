@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroimage from "../assets/waitlistheroimage.png";
 import Socials from "./Socials";
 import { RiErrorWarningLine } from "react-icons/ri";
@@ -7,7 +7,9 @@ import { TypeAnimation } from "react-type-animation";
 import HeroHooks from "./../Hooks/HeroHooks";
 
 const Hero = () => {
-  const { email, setemail, setsuccess, success, submitEmail } = HeroHooks();
+  const { email, setemail, setsuccess, success, submitEmail, load } =
+    HeroHooks();
+
   return (
     <div className="grid lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] lg:h-[80vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
       <div className="flex flex-col lg:min-h-[30vh] justify-between sm:justify-around">
