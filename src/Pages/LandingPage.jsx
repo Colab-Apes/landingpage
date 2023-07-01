@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import NavBar from "../Components/NavBar";
-import Hero from "./../Components/Hero";
-import Socials from "./../Components/Socials";
-import Background from "./../Components/Background";
+
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 import Overlay from "./../Components/Modals/Overlay";
+import NavBar from "../Components/LandingPageComponents/NavBar";
+import Hero from './../Components/LandingPageComponents/Hero';
+import Socials from "../Components/LandingPageComponents/Socials";
+import Background from "../Components/LandingPageComponents/Background";
 
 const LandingPage = () => {
   const [isModal, setisModal] = useState(false);

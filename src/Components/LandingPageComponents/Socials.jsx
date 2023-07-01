@@ -1,9 +1,9 @@
 import React from "react";
 // import youtube from "../assets/socials/youtube.svg";
-import facebook from "../assets/socials/facebook.svg";
-import instagram from "../assets/socials/instagram.svg";
-import twitter from "../assets/socials/twitter.svg";
-import linkedin from "../assets/socials/linkedin.svg";
+import facebook from "../../assets/socials/facebook.svg";
+import instagram from "../../assets/socials/instagram.svg";
+import twitter from "../../assets/socials/twitter.svg";
+import linkedin from "../../assets/socials/linkedin.svg";
 
 const Socials = () => {
   return (

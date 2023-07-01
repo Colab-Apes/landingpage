@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { BsArrowLeft } from "react-icons/bs";
-
+import OtpInput from "react-otp-input";
 const OtpModal = ({
   openOtpmodalprop,
   setopenOtpmodalprop,
   setopenverifiedmodalprop,
 }) => {
+  const [otp, setOtp] = useState("");
   return (
     <div
       className={
@@ -22,20 +23,33 @@ const OtpModal = ({
         alt=""
         className=" object-cover hidden lg:block lg:h-[30rem] xl:h-[30rem] rounded-2xl"
       />
-      <div className="flex flex-col items-center w-[19rem] h-[30rem] md:w-full md:h-full">
+      <div className="flex flex-col items-center w-[19rem] relative h-[30rem] md:w-full md:h-full">
         <img
           src={logo}
           alt=""
           className="w-[5rem] sm:w-[6rem] object-contain "
         />
-        <div className="flex items-center  w-full">
-          <BsArrowLeft className="mt-3 cursor-pointer text-xl" />
-          <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-2 w-full">
-            Verify Email
-          </p>
-        </div>
+
+        <BsArrowLeft className="mt-3 cursor-pointer text-xl absolute left-1 top-[4.1rem] " />
+        <p className="text-[#555555] font-bold text-center mt-1 md:mt-4 lg:mt-2 w-full">
+          Verify Email
+        </p>
+
         <div className="mt-4 text-[#3B8004] text-sm font-semibold">
           Enter 4 - digit code sent to johndoe@email.com
+        </div>
+
+        <div className="bg-red-500">
+          <OtpInput
+            value={otp}
+            onChange={setOtp}
+            numInputs={4}
+            inputStyle="bg-red-500 w-[30rem]"
+            renderSeparator={<span>-</span>}
+            renderInput={(props) => (
+              <input {...props} className="rounded-md h-[8rem]" />
+            )}
+          />
         </div>
         <button
           onClick={() => {

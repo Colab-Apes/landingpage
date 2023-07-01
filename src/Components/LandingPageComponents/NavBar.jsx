@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 // import sidenavlogo from "../assets/sidenavlogo.png";
 import { TfiClose } from "react-icons/tfi";
-import "../App.css";
+import "../../App.css";
 
 const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);

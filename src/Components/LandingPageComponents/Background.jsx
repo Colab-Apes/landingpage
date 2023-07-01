@@ -1,6 +1,6 @@
 import React from "react";
-import bglgscreen from "../assets/hero.jpeg";
-import bgscreen from "../assets/heroMobile.jpeg";
+import bglgscreen from "../../assets/hero.jpeg";
+import bgscreen from "../../assets/heroMobile.jpeg";
 const Background = () => {
   return (
     <div className="">

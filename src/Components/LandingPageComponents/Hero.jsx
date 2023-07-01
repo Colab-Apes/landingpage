@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import heroimage from "../assets/waitlistheroimage.png";
-import Socials from "./Socials";
+import heroimage from "../../assets/waitlistheroimage.png";
+
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
 import { TypeAnimation } from "react-type-animation";
-import HeroHooks from "./../Hooks/HeroHooks";
+import HeroHooks from "../../Hooks/HeroHooks";
 import { ClipLoader } from "react-spinners";
+import Socials from "./Socials";
 
 const Hero = () => {
   const { email, setemail, setsuccess, success, submitEmail, load } =
