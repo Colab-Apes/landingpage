@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { BsArrowLeft } from "react-icons/bs";
-import OtpInput from "react-otp-input";
+import OTPInput from "react-otp-input";
+import OtpInputField from "./../OtpInputField";
 const OtpModal = ({
   openOtpmodalprop,
   setopenOtpmodalprop,
@@ -39,18 +40,8 @@ const OtpModal = ({
           Enter 4 - digit code sent to johndoe@email.com
         </div>
 
-        <div className="bg-red-500">
-          <OtpInput
-            value={otp}
-            onChange={setOtp}
-            numInputs={4}
-            inputStyle="bg-red-500 w-[30rem]"
-            renderSeparator={<span>-</span>}
-            renderInput={(props) => (
-              <input {...props} className="rounded-md h-[8rem]" />
-            )}
-          />
-        </div>
+        <OtpInputField length={4} />
+
         <button
           onClick={() => {
             setopenOtpmodalprop(false);
