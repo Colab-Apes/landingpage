@@ -56,13 +56,13 @@ const Signup = ({
                 className="inset-y-[2rem] left-1 absolute px-[0.2rem] "
               />
             </span>
-            <label htmlFor="emaile" className="block font-bold">
+            <label htmlFor="email" className="block font-bold">
               Email
             </label>
             <input
               type="email"
-              id="emaile"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-[#999999] focus:outline-none"
+              id="email"
+              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border focus:border-[#3B8004] border-[#999999] focus:outline-none"
               placeholder="johndoe@email.com"
             />
           </div>
@@ -80,7 +80,7 @@ const Signup = ({
             <input
               type={isPasswordVisible ? "text" : "password"}
               id="password"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
+              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:border-[#3B8004] focus:outline-none"
               placeholder="● ● ● ● ● ● "
             />
 
