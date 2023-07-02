@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 // import sidenavlogo from "../assets/sidenavlogo.png";
 import { TfiClose } from "react-icons/tfi";
-import "../App.css";
+import "../../App.css";
 
 const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
 
   return (
-    <nav className="flex justify-between items-center h-[10vh] sm:pt-8 pt-3 lg:pt-0">
+    <nav className="flex justify-between items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
       {/* Logo */}
       <a href="/">
         <img

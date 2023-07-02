@@ -1,13 +1,17 @@
-import React from "react";
-import heroimage from "../assets/waitlistheroimage.png";
-import Socials from "./Socials";
+import React, { useState } from "react";
+import heroimage from "../../assets/waitlistheroimage.png";
+
 import { RiErrorWarningLine } from "react-icons/ri";
 import { IoIosClose } from "react-icons/io";
 import { TypeAnimation } from "react-type-animation";
-import HeroHooks from "./../Hooks/HeroHooks";
+import HeroHooks from "../../Hooks/HeroHooks";
+import { ClipLoader } from "react-spinners";
+import Socials from "./Socials";
 
 const Hero = () => {
-  const { email, setemail, setsuccess, success, submitEmail } = HeroHooks();
+  const { email, setemail, setsuccess, success, submitEmail, load } =
+    HeroHooks();
+
   return (
     <div className="grid lg:flex mt-4 lg:mt-0 xl:px-20 md:h-[75vh] lg:h-[80vh] sm:w-[33rem] md:w-[42rem] lg:w-full justify-center lg:gap-x-8 xl:gap-x-16 items-center justify-items-center">
       <div className="flex flex-col lg:min-h-[30vh] justify-between sm:justify-around">
@@ -21,7 +25,7 @@ const Hero = () => {
 
         {/* Animated Text */}
         <TypeAnimation
-          className="text-[1.5rem] leading-[1.7] text-left lg:leading-[1.5] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[8rem] sm:h-[12.6rem]  md:h-[11rem] xl:leading-[1.6] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.2rem] text-main mt-4 lg:mt-2 font-bold"
+          className="text-[1.5rem] leading-[1.7] md:leading-[1.7] text-left lg:leading-[1.5] w-full sm:w-[33rem] md:w-[40rem] lg:w-[30rem] h-[8rem] sm:h-[12.6rem]  md:h-[11rem] xl:leading-[1.6] sm:text-[1.9rem] md:text-4xl lg:text-[2rem] xl:text-[2.2rem] text-main mt-4 lg:mt-2 font-bold"
           sequence={[
             // Same substring at the start will only be typed once, initially
             "Unlock Your Digital Team: Find, Collaborate, and Build the Future Together",
@@ -77,12 +81,21 @@ const Hero = () => {
                 placeholder="enter your email address..."
                 className="h-[4rem] placeholder:text-[#999999] text-lg font-medium w-full lg:w-full lg:origin-left px-[1.3rem] pr-[7rem] rounded-[20px] focus:outline-none border-[#3B8004] border-2 bg-transparent"
               />
-              <button
-                onClick={() => submitEmail()}
-                className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
-              >
-                Join
-              </button>
+              {load ? (
+                <ClipLoader
+                  color="#3B8004"
+                  className="right-5 text-2xl  inset-y-4 absolute"
+                  aria-label="Loading Spinner"
+                  data-testid="loader"
+                />
+              ) : (
+                <button
+                  onClick={() => submitEmail()}
+                  className="join absolute right-2 inset-y-2 hover:bg-transparent hover:text-main font-lato font-semibold h-[3rem] w-[6rem] rounded-[15px] text-white"
+                >
+                  Join
+                </button>
+              )}
             </div>
           )}
 
