@@ -1,8 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const OTPInputField = ({ length }) => {
   const [otp, setOTP] = useState(new Array(length).fill(""));
   const inputRefs = useRef([]);
+  useEffect(() => {
+    inputRefs.current[0].focus();
+  }, []);
 
   const handleChange = (e, index) => {
     const newOTP = [...otp];
