@@ -21,18 +21,19 @@ const Home = () => {
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-4 mt-5 gap-y-4 justify-center place-items-center">
-          <Project image={img1} />
-          <Project image={img2} />
-          <Project image={img3} />
-          <Project image={img4} />
-          <Project image={img1} />
-          <Project image={img2} />
-          <Project image={img3} />
-          <Project image={img4} /> <Project image={img1} />
-          <Project image={img2} />
-          <Project image={img3} />
-          <Project image={img4} />
+        <div className="grid lg:grid-cols-4 mt-5 gap-y-10 justify-center place-items-center">
+          <Project image={img1} name="Mobile game" />
+          <Project image={img2} name="Product design" />
+          <Project image={img3} name="Video game" />
+          <Project image={img4} name="data analyst" />
+          <Project image={img1} name="Mobile game" />
+          <Project image={img2} name="Product design" />
+          <Project image={img3} name="Video game" />
+          <Project image={img4} name="data analyst" />{" "}
+          <Project image={img1} name="Mobile game" />
+          <Project image={img2} name="Product design" />
+          <Project image={img3} name="Video game" />
+          <Project image={img4} name="data analyst" />
         </div>
       </div>
     </div>
