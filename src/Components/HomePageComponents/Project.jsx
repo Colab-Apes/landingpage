@@ -9,7 +9,7 @@ const Project = ({ image }) => {
     <div className="w-[15rem]   font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10);] hover:shadow-sm cursor-pointer ease-out hover:duration-200 h-[24rem] rounded-[30px] ">
       <img src={image} alt="" className="object-cover w-[15rem] " />
       <div className="px-4 w-full text-xs flex-1 rounded-b-[30px] flex flex-col justify-evenly">
-        <div className="f">
+        <div className="flex flex-col gap-y-3 ">
           <div className="flex gap-x-3">
             <img src={bag} alt="" className="object-contain w-[1rem]" />
             <p className="font-bold">Mobile game</p>
