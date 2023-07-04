@@ -6,7 +6,7 @@ import avatar from "../../assets/homepageicons/images/avatar.png";
 import { BsChevronDown } from "react-icons/bs";
 const NavBarComp = () => {
   return (
-    <nav className="font-lato flex justify-between items-center shadow-xl relative top-0  h-[8rem] w-full px-10">
+    <nav className="font-lato bg-white z-20 flex justify-between items-center shadow-xl fixed top-0  h-[8rem] w-full px-10">
       <a href="/">
         <img
           src={logo}
@@ -14,7 +14,7 @@ const NavBarComp = () => {
           className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
         />
       </a>
-      <div className=" flex items-center gap-x-20 text-xl text-center mt-4">
+      <div className=" z-[20]  flex items-center gap-x-20 text-xl text-center mt-4">
         <p className=" border-b-4 border-b-[#054E12] w-[4rem] pb-4 cursor-pointer">
           Home
         </p>

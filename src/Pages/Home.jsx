@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className=" font-lato ">
       <NavBarComp />
-      <div className="px-24 mt-4">
+      <div className="px-24 mt-40  z-[-10] ">
         {" "}
         <p className="text-left">
           <p className="text-3xl font-semibold">
