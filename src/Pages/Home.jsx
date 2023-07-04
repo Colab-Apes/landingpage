@@ -11,12 +11,12 @@ const Home = () => {
       <NavBarComp />
       <div className="px-24 mt-[9rem]  z-[-10] ">
         {" "}
-        <p className="text-left">
+        <p className="text-left font-inter">
           <p className="text-3xl font-semibold">
             {" "}
             Discover Amazing Projects From Around The World
           </p>
-          <p className="text-left">
+          <p className="text-left mt-1">
             Join Projects That Interests You And Be A Part Of Their Success
             Story
           </p>
