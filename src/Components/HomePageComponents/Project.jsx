@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../assets/projectimages/1.png";
 import bag from "../../assets/homepageicons/images/bag.svg";
 import group from "../../assets/homepageicons/images/user.svg";
 import info from "../../assets/homepageicons/images/info.svg";
