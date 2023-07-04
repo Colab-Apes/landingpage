@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className=" font-lato ">
       <NavBarComp />
-      <div className="px-24 mt-40  z-[-10] ">
+      <div className="px-24 mt-[9rem]  z-[-10] ">
         {" "}
         <p className="text-left">
           <p className="text-3xl font-semibold">
@@ -21,7 +21,7 @@ const Home = () => {
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-4 mt-5 gap-y-10 justify-center place-items-center">
+        <div className="grid lg:grid-cols-4 mt-20 gap-y-10 justify-center place-items-center">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
