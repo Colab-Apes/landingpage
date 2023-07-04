@@ -37,7 +37,7 @@ const Project = ({ image }) => {
             <img src={hand} alt="" />
             <p>19+</p>
           </div>
-          <button className="h-[2rem] w-[6rem] border rounded-[15px]">
+          <button className="h-[2rem] w-[6rem] border rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
             Join project
           </button>
         </div>
