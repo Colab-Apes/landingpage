@@ -7,7 +7,7 @@ import "../../App.css";
 
 const MobileNavComp = () => {
   return (
-    <div>
+    <div >
       <nav className="flex lg:hidden px-4 justify-between fixed bg-white top-0 w-screen items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
         {/* Logo */}
         <a href="/">
@@ -23,6 +23,7 @@ const MobileNavComp = () => {
           className="text-5xl md:text-5xl text-main lg:hidden"
         />
       </nav>
+    
     </div>
   );
 };

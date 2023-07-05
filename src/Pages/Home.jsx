@@ -9,8 +9,10 @@ const Home = () => {
   return (
     <div className=" font-lato  bg-white">
       <NavBarComp />
-      <div className=" px-4 lg:px-24 mt-32 lg:mt-[9rem]  z-[-10] ">
-        <p className="text-left font-inter text-[#333333]">
+
+      <div className=" px-8 lg:px-24 mt-20 lg:mt-[9rem]  z-[-10] ">
+        <div className="h-[5rem] w-full mx-auto bg-white rounded-[10px] mt-20 shad lg:hidden"></div>
+        <p className="text-left font-inter text-[#333333] mt-4">
           <p className="text-3xl font-semibold">
             Discover Amazing Projects From Around The World
           </p>
