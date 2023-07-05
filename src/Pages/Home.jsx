@@ -7,7 +7,7 @@ import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
 const Home = () => {
   return (
-    <div className=" font-lato ">
+    <div className=" font-lato  bg-white">
       <NavBarComp />
       <div className="px-24 mt-[9rem]  z-[-10] ">
         {" "}
