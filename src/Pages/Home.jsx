@@ -5,6 +5,7 @@ import img1 from "../assets/projectimages/1.png";
 import img2 from "../assets/projectimages/2.png";
 import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
+import Footer from "./../Components/HomePageComponents/Footer";
 const Home = () => {
   return (
     <div className=" font-lato  bg-white">
@@ -45,6 +46,7 @@ const Home = () => {
             Load more...
           </button>
         </div>
+        <Footer />
       </div>
     </div>
   );
