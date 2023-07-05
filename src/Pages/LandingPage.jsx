@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 import Overlay from "./../Components/Modals/Overlay";
 import NavBar from "../Components/LandingPageComponents/NavBar";
-import Hero from './../Components/LandingPageComponents/Hero';
+import Hero from "./../Components/LandingPageComponents/Hero";
 import Socials from "../Components/LandingPageComponents/Socials";
 import Background from "../Components/LandingPageComponents/Background";
 
@@ -23,7 +23,7 @@ const LandingPage = () => {
   }, [isModal]);
 
   return (
-    <div className=" px-4 sm:px-0 sm:w-[33rem] md:w-[42rem] mx-auto lg:px-10 xl:px-20 min-h-screen lg:min-h-screen  lg:w-full  bg-no-repeat  font-lato   bg-cover">
+    <div className=" px-4 sm:px-0 sm:w-[33rem] bg-[#F5FFF7] md:w-[42rem] mx-auto lg:px-10 xl:px-20 min-h-screen lg:min-h-screen  lg:w-full  bg-no-repeat  font-lato   bg-cover">
       {/* This signup is a modal */}
 
       <Overlay value={isModal} changeValue={setisModal} />
