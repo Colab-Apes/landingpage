@@ -40,6 +40,9 @@ const Home = () => {
           <Project image={img4} name="data analyst" />
         </div>
       </div>
+      <button className="h-[2rem] mx-auto w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2rem] lg:w-[6rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
+        Join project
+      </button>
     </div>
   );
 };
