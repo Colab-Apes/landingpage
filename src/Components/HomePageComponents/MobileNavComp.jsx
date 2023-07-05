@@ -16,13 +16,13 @@ const MobileNavComp = () => {
           <img
             src={logo}
             alt=""
-            className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
+            className="object-contain w-[10rem]  sm:w-[18rem]  lg:w-[14rem]"
           />
         </a>
 
         <BiMenuAltRight
           onClick={() => setopensidenav(true)}
-          className="text-5xl md:text-5xl text-[#3B8004] lg:hidden"
+          className="text-5xl sm:text-6xl text-[#3B8004] lg:hidden"
         />
         {/* Background Overlay */}
         <div
