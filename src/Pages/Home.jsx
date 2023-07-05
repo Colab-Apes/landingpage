@@ -21,7 +21,7 @@ const Home = () => {
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-4 mt-20 gap-y-10 justify-center place-items-center">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 justify-center place-items-center">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
