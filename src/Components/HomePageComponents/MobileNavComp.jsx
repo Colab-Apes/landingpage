@@ -22,7 +22,7 @@ const MobileNavComp = () => {
 
         <BiMenuAltRight
           onClick={() => setopensidenav(true)}
-          className="text-5xl md:text-5xl text-main lg:hidden"
+          className="text-5xl md:text-5xl text-[#3B8004] lg:hidden"
         />
         {/* Background Overlay */}
         <div
@@ -42,11 +42,11 @@ const MobileNavComp = () => {
               : "fixed top-0 right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
           }
         >
-          <div className="flex w-full justify-between items-center ">
-            <img src={logo} alt="" className="object-cover w-[12rem] " />
+          <div className="flex w-full justify-between items-center mt-8 ">
+            <img src={logo} alt="" className="object-cover w-[10rem] " />
             <TfiClose
               onClick={() => setopensidenav(false)}
-              className="text-2xl text-[#999999]"
+              className="text-xl text-[#999999]"
             />
           </div>
 
@@ -60,11 +60,6 @@ const MobileNavComp = () => {
             >
               Signup
             </button>
-
-            {/* Signin Button */}
-            {/* <button className="h-[3rem] w-full rounded-xl text-main font-semibold">
-            Signin
-          </button> */}
           </div>
         </div>
       </nav>
