@@ -10,7 +10,7 @@ const Home = () => {
     <div className=" font-lato  bg-white">
       <NavBarComp />
 
-      <div className=" px-8 lg:px-24 mt-20 sm:mt-32  lg:mt-[9rem]   ">
+      <div className=" px-8 sm:px-20 lg:px-24 mt-20 sm:mt-32  lg:mt-[9rem]   ">
         <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden">
           <p className=" border-b-4 font-bold border-b-[#054E12] pb-4">Home</p>
           <p className=" pb-4 text-[#333]/[50%]">Learning Pool</p>
@@ -25,7 +25,7 @@ const Home = () => {
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 mx-auto justify-center w-full place-items-center">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 sm:gap-y-20 md:gap-y-32 lg:gap-y-10  mx-auto justify-center w-full place-items-center">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
