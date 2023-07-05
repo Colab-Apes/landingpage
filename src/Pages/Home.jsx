@@ -10,18 +10,18 @@ const Home = () => {
     <div className=" font-lato  bg-white">
       <NavBarComp />
 
-      <div className=" px-8 lg:px-24 mt-20 lg:mt-[9rem]  z-[-10] ">
-        <div className="h-[5rem] w-full mx-auto bg-white rounded-[10px] mt-20 shad lg:hidden"></div>
+      <div className=" px-8 lg:px-24 mt-8 lg:mt-[9rem]  z-[-10] ">
+        <div className="h-[5rem] w-full mx-auto bg-white rounded-[10px] mt-32 shad lg:hidden"></div>
         <p className="text-left font-inter text-[#333333] mt-4">
           <p className="text-3xl font-semibold">
             Discover Amazing Projects From Around The World
           </p>
-          <p className="text-left mt-1">
+          <p className="text-left mt-8 lg:mt8">
             Join Projects That Interests You And Be A Part Of Their Success
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 justify-center place-items-center">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 mx-auto justify-center w-full place-items-center">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
