@@ -10,9 +10,13 @@ const Home = () => {
     <div className=" font-lato  bg-white">
       <NavBarComp />
 
-      <div className=" px-8 lg:px-24 mt-8 lg:mt-[9rem]  z-[-10] ">
-        <div className="h-[5rem] w-full mx-auto bg-white rounded-[10px] mt-32 shad lg:hidden"></div>
-        <p className="text-left font-inter text-[#333333] mt-4">
+      <div className=" px-8 lg:px-24 mt-0 lg:mt-[9rem]   ">
+        <div className="h-[5rem] flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] mt-20 shad lg:hidden">
+          <p className=" border-b-4 font-bold border-b-[#054E12] pb-4">Home</p>
+          <p className=" pb-4 text-[#333]/[50%]">Learning Pool</p>
+          <p className=" pb-4 text-[#333]/[50%]">Create project</p>
+        </div>
+        <p className="text-left font-inter text-[#333] mt-4">
           <p className="text-3xl font-semibold">
             Discover Amazing Projects From Around The World
           </p>
