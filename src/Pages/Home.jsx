@@ -28,7 +28,7 @@ const Home = () => {
         </p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 sm:mt-20 gap-y-10 sm:gap-y-20 sm:gap-x-8 md:gap-y-32 lg:gap-y-10  mx-auto justify-center w-full place-items-center">
           <Project image={img1} name="Mobile game" />
-          <Project image={img2} name="Product design" />
+          {/* <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
           <Project image={img4} name="data analyst" />
           <Project image={img1} name="Mobile game" />
@@ -38,7 +38,7 @@ const Home = () => {
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
-          <Project image={img4} name="data analyst" />
+          <Project image={img4} name="data analyst" /> */}
         </div>
         <div className="w-full flex justify-center items-center  mt-10 mb-10">
           {" "}
