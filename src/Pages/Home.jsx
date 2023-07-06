@@ -11,22 +11,22 @@ const Home = () => {
     <div className=" font-lato  bg-white">
       <NavBarComp />
 
-      <div className=" px-8 sm:px-20 lg:px-24 mt-20 sm:mt-32  lg:mt-[9rem]   ">
+      <div className=" px-8 sm:px-10 lg:px-24 mt-20 sm:mt-32  lg:mt-[9rem]   ">
         <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden">
           <p className=" border-b-4 font-bold border-b-[#054E12] pb-4">Home</p>
           <p className=" pb-4 text-[#333]/[50%]">Learning Pool</p>
           <p className=" pb-4 text-[#333]/[50%]">Create project</p>
         </div>
         <p className="text-left font-inter text-[#333] mt-4">
-          <p className="text-3xl font-semibold">
+          <p className=" text-2xl sm:text-3xl font-semibold">
             Discover Amazing Projects From Around The World
           </p>
-          <p className="text-left mt-8 lg:mt8">
+          <p className="text-left mt-4 text-sm sm:text-base lg:mt8">
             Join Projects That Interests You And Be A Part Of Their Success
             Story
           </p>
         </p>
-        <div className="grid lg:grid-cols-3 xl:grid-cols-4 mt-20 gap-y-10 sm:gap-y-20 md:gap-y-32 lg:gap-y-10  mx-auto justify-center w-full place-items-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 sm:mt-20 gap-y-10 sm:gap-y-20 sm:gap-x-8 md:gap-y-32 lg:gap-y-10  mx-auto justify-center w-full place-items-center">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
