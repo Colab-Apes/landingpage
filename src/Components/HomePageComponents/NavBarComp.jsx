@@ -8,7 +8,7 @@ import MobileNavComp from "./MobileNavComp";
 const NavBarComp = () => {
   return (
     <div>
-      <nav className="font-lato lg:px-4 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center shadow-md  fixed top-0  h-[8rem] w-full ">
+      <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center shadow-md  fixed top-0  h-[8rem] w-full ">
         <a href="/">
           <img
             src={logo}
