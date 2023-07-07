@@ -6,17 +6,14 @@ import img2 from "../assets/projectimages/2.png";
 import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
 import Footer from "./../Components/HomePageComponents/Footer";
+import MobileTabs from "./../Components/HomePageComponents/MobileTabs";
+import TabHook from "../Hooks/TabHook";
 const Home = () => {
-  const { tabs, checkindex, setcheckindex } = TabHook();
   return (
     <div className=" font-lato  bg-white ">
       <NavBarComp />
       <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-20 sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
-        <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden">
-          <p className=" border-b-4 font-bold border-b-[#054E12] pb-4">Home</p>
-          <p className=" pb-4 text-[#333]/[50%]">Learning Pool</p>
-          <p className=" pb-4 text-[#333]/[50%]">Create project</p>
-        </div>
+        <MobileTabs />
         <p className="text-left font-inter text-[#333] mt-4 ">
           <p className=" text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold">
             Discover Amazing Projects From Around The World

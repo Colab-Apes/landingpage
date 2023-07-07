@@ -9,7 +9,6 @@ import { useState } from "react";
 import TabHook from "../../Hooks/TabHook";
 const NavBarComp = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
-
   return (
     <div>
       <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center  fixed top-0  h-[9rem] w-full ">
@@ -41,7 +40,7 @@ const NavBarComp = () => {
             </p>
           ))}
         </div>
-        <div className="flex items-center gap-x-6">
+        <div className="flex items-center gap-x-14">
           <img src={icon} alt="" className="w-[4rem] object-contain" />
           <div className="flex items-center gap-x-4 ">
             {" "}
