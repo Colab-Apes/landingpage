@@ -16,7 +16,7 @@ const NavBarComp = () => {
 
   return (
     <div>
-      <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center shadow-md  fixed top-0  h-[9rem] w-full ">
+      <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center  fixed top-0  h-[9rem] w-full ">
         <a href="/">
           <img
             src={logo}
@@ -24,7 +24,7 @@ const NavBarComp = () => {
             className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
           />
         </a>
-        <div className=" z-[20]  flex items-center w-[40vw] gap-x-20 text-xl text-center mt-8">
+        <div className=" z-[20]  flex items-center gap-x-20 text-xl text-center mt-8">
           {tabs.map((tab, index) => (
             <p
               onClick={() => setcheckindex(index)}
@@ -32,9 +32,13 @@ const NavBarComp = () => {
               className={
                 index === checkindex
                   ? `border-b-2  border-b-[#054E12] ${
-                      index == 0 ? "w-[8rem]" : "w-[8rem]"
+                      index == 0
+                        ? "w-[3.7rem]"
+                        : "w-[8rem] duration-500 ease-linear"
                     } pb-10 cursor-pointer`
-                  : "text-[#33333380]  pb-10 cursor-pointer border-b-2 w-[8rem]  border-b-white"
+                  : `text-[#33333380]  pb-10 cursor-pointer border-b-2 duration-200 ease-linear${
+                      index == 0 ? "w-[3.7rem]" : "w-[8rem]"
+                    }  border-b-white`
               }
             >
               {tab}
