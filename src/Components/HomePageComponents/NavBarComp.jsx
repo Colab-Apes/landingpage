@@ -6,13 +6,9 @@ import avatar from "../../assets/homepageicons/images/avatar.png";
 import { BsChevronDown } from "react-icons/bs";
 import MobileNavComp from "./MobileNavComp";
 import { useState } from "react";
+import TabHook from "../../Hooks/TabHook";
 const NavBarComp = () => {
-  const [tabs, settabs] = useState([
-    "Home",
-    "Learning  Pool",
-    "Create Project",
-  ]);
-  const [checkindex, setcheckindex] = useState(0);
+  const { tabs, checkindex, setcheckindex } = TabHook();
 
   return (
     <div>

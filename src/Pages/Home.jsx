@@ -7,6 +7,7 @@ import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
 import Footer from "./../Components/HomePageComponents/Footer";
 const Home = () => {
+  const { tabs, checkindex, setcheckindex } = TabHook();
   return (
     <div className=" font-lato  bg-white ">
       <NavBarComp />
