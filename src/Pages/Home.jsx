@@ -7,7 +7,7 @@ import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
 import Footer from "./../Components/HomePageComponents/Footer";
 import MobileTabs from "./../Components/HomePageComponents/MobileTabs";
-import TabHook from "../Hooks/TabHook";
+
 const Home = () => {
   return (
     <div className=" font-lato  bg-white ">
