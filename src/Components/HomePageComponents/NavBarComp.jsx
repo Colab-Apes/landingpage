@@ -11,7 +11,7 @@ const NavBarComp = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
   return (
     <div>
-      <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden  lg:flex justify-between items-center  fixed top-0  h-[9rem] w-full ">
+      <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden lg:flex justify-between items-center  fixed top-0  h-[9rem] w-full ">
         <a href="/">
           <img
             src={logo}
