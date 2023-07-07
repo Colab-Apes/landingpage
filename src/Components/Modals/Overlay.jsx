@@ -10,7 +10,7 @@ import ForgotPassword from "./RecoverPassword/ForgotPassword";
 // import Success from "./RecoverPassword/Success";
 // import Signin from "./Signin";
 const Overlay = ({ value, changeValue }) => {
-  const [signinmodal, setsigninmodal] = useState(false);
+  const [ setsigninmodal] = useState(false);
   // const [success, setsuccess] = useState(true);
   // const [resetpassword, setresetpassword] = useState(false);
   const [forgotpassword, setforgotpassword] = useState(false);

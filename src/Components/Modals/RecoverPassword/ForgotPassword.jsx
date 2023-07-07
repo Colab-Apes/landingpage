@@ -67,7 +67,7 @@ const ForgotPassword = ({ forgotpasswordprop, setforgotpasswordprop }) => {
         </form>
         <p className="text-xs mt-6 font-semibold">
           Remember password?
-          <a className="text-[#054E12]"> Sign In</a>
+          <a className="text-[#054E12]" href="/"> Sign In</a>
         </p>
       </div>
     </div>

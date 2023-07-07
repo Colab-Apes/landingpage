@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import heroimage from "../../assets/waitlistheroimage.png";
 
 import { RiErrorWarningLine } from "react-icons/ri";

@@ -137,6 +137,7 @@ const Signup = ({
                   setsigninmodalprop(true);
                 }}
                 className="text-[#054E12] font-bold cursor-pointer ml-1"
+                href="/"
               >
                 Sign In
               </a>
