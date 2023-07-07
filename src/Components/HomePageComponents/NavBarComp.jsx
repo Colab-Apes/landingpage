@@ -33,7 +33,7 @@ const NavBarComp = () => {
                 index === checkindex
                   ? `border-b-2  border-b-[#054E12] ${
                       index == 0
-                        ? "w-[3.7rem]"
+                        ? "w-[3.7rem] "
                         : "w-[8rem] duration-500 ease-linear"
                     } pb-10 cursor-pointer`
                   : `text-[#33333380]  pb-10 cursor-pointer border-b-2 duration-200 ease-linear${

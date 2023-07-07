@@ -7,6 +7,7 @@ import "../../App.css";
 
 const MobileNavComp = () => {
   const [opensidenav, setopensidenav] = useState(false);
+  
 
   return (
     <div>
