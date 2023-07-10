@@ -11,7 +11,7 @@ const Project = ({ image, name }) => {
       <img
         src={image}
         alt=""
-        className="object-cover w-full sm:w-[20rem] lg:w-[19rem] xl:w-[18rem] "
+        className="object-cover w-full sm:w-[20rem] lg:w-[19rem] xl:w-[19rem] "
       />
       <div className="px-4 sm:px-4 lg:px-4 w-full text-lg lg:text-xs flex-1 rounded-b-[30px] flex flex-col justify-evenly">
         <div className="flex flex-col text-base sm:text-2xl lg:text-base gap-y-3 sm:gap-y-6  lg:gap-y-3 text-[#333]">
