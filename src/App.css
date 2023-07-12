@@ -1,41 +1,50 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
 .grad {
-  background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
-  
+  background: linear-gradient(263.79deg, #054e12 18.73%, #3b8004 95.09%);
 }
 .gradnav {
-  background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
-  
+  background: linear-gradient(263.79deg, #054e12 18.73%, #3b8004 95.09%);
 }
 
-.grad:hover{
+.grad:hover {
   background: transparent;
   /* Tailwind css */
   @apply bg-[#054e12]/[10%];
-
 }
 
-.join{
-  background: linear-gradient(263.79deg, #054E12 18.73%, #3B8004 95.09%);
-box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
+.join {
+  background: linear-gradient(263.79deg, #054e12 18.73%, #3b8004 95.09%);
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
 }
 
-
-
-
-
-.join:hover{
+.join:hover {
   background-image: url(./assets/ModalImages/authbg.png);
   background: transparent;
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.05);
-    /* Tailwind css */
-  @apply bg-[#054e12]/[10%]  ;
-  
-  
+  /* Tailwind css */
+  @apply bg-[#054e12]/[10%];
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 
+.shad{
+  box-shadow: 0px 0px 0px 0px rgba(2, 130, 26, 0.10), 0px 2px 4px 0px rgba(2, 130, 26, 0.10), 0px 7px 7px 0px rgba(2, 130, 26, 0.09), 0px 16px 10px 0px rgba(2, 130, 26, 0.05), 0px 29px 11px 0px rgba(2, 130, 26, 0.01), 0px 45px 13px 0px rgba(2, 130, 26, 0.00);
+
+}
+.graid{
+  border-radius: 15px;
+  background: linear-gradient(224deg, #054E12 0%, #3B8004 100%);}

@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       lato: ["Lato", ...defaultTheme.fontFamily.sans],
+      inter: ["Inter", ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

@@ -1,20 +1,25 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import "../App.css";
 
 const OTPInputField = ({ length }) => {
   const [otp, setOTP] = useState(new Array(length).fill(""));
   const inputRefs = useRef([]);
+  useEffect(() => {
+    inputRefs.current[0].focus();
+  }, []);
 
   const handleChange = (e, index) => {
     const newOTP = [...otp];
     newOTP[index] = e.target.value;
     setOTP(newOTP);
-
+    console.log(e.target.value);
     if (e.target.value !== "" && index < otp.length - 1) {
       inputRefs.current[index + 1].focus();
     }
   };
 
   const handleKeyDown = (e, index) => {
+    console.log(otp);
     if (e.key === "Backspace" && index > 0 && otp[index] === "") {
       inputRefs.current[index - 1].focus();
     }

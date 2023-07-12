@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 import Overlay from "./../Components/Modals/Overlay";
 import NavBar from "../Components/LandingPageComponents/NavBar";
-import Hero from './../Components/LandingPageComponents/Hero';
+import Hero from "./../Components/LandingPageComponents/Hero";
 import Socials from "../Components/LandingPageComponents/Socials";
 import Background from "../Components/LandingPageComponents/Background";
 

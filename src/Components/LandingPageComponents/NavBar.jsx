@@ -4,9 +4,11 @@ import logo from "../../assets/logo.svg";
 // import sidenavlogo from "../assets/sidenavlogo.png";
 import { TfiClose } from "react-icons/tfi";
 import "../../App.css";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = ({ changeValue }) => {
   const [opensidenav, setopensidenav] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="flex justify-between items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
@@ -27,7 +29,8 @@ const NavBar = ({ changeValue }) => {
 
         {/* Sign Up Button */}
         <button
-          onClick={() => changeValue(true)}
+          // onClick={() => changeValue(true)}'
+          onClick={() => navigate("/home")}
           className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main font-bold"
         >
           Sign up
