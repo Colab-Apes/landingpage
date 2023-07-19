@@ -7,13 +7,13 @@ import { CgCopyright } from "react-icons/cg";
 const Footer = () => {
   return (
     <div>
-      <footer className=" h-[28rem] px-10 w-full rounded-[15px]  graid relative mb-4  ">
+      <footer className=" h-[30rem] px-10 w-full rounded-[15px]  graid relative mb-4  ">
         <img
           src={ape}
           alt=""
-          className="top-0 absolute object-contain w-[24.2rem] rounded-l-[15px] left-0 z-[1] "
+          className="top-0 absolute object-contain w-[26rem] rounded-l-[15px] left-0 z-[1] "
         />
-        <div className="grid grid-cols-4 z-[10] text-white pt-8 h-full gap-x-8 ">
+        <div className="grid grid-cols-4 z-[10] text-white pt-10 h-full gap-x-8 ">
           <div className="flex flex-col w-fit mx-auto   text-sm text-left z-[3] gap-y-5">
             <p className="text-lg font-bold ">Co_lab Apes</p>
             <p className=" mt-5">About Us</p>
@@ -43,15 +43,15 @@ const Footer = () => {
             <img src={logo} alt="" />
             <a className="mt-5">help@colabapes.com</a>
             <SocialLogo className="mt-2" />
-            <button className="px-12 py-8 mt-5 text-main bg-white rounded-[30px] font-lato font-bold text-xl">
+            <button className="px-12 py-8 mt-8 text-main bg-white rounded-[30px] font-lato font-bold text-xl">
               Contact Us
             </button>
           </div>
-          <div className="h-[0.1rem] stroke w-full bg-white z-[3] col-span-4 "></div>
+          <div className="h-[0.1rem] rounded w-full bg-white z-[3] col-span-4 "></div>
           <div className="col-span-4 flex justify-center items-center">
             <div className="flex items-center">
               {" "}
-              <div className="md">
+              <div className="text-2xl">
                 <CgCopyright />
               </div>
               <div className="ss">2023, all rights reserved</div>
