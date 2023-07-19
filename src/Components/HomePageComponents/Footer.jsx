@@ -28,8 +28,8 @@ const Footer = () => {
             <p className="ss">Coding</p>
             <p className="ss">Content writing</p>
             <p className="ss">Data science</p>
-            <p className="ss">Data science</p>  
-             <p className="ss">Data science</p>
+            <p className="ss">Video editting</p>  
+             <p className="ss">3D modelling</p>
           </div>
           <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-4">
             <p className="text-lg font-bold">Features</p>
