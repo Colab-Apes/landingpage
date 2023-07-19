@@ -10,8 +10,8 @@ const Footer = () => {
           alt=""
           className="top-0 absolute object-contain w-[21.58rem] rounded-[15px] left-0 z-[1] "
         />
-        <div className="grid grid-cols-4  text-white pt-10">
-          <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-8">
+        <div className="grid grid-cols-4 z-[10] text-white pt-10">
+          <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-4">
             <p className="text-lg font-bold ">Co_lab Apes</p>
             <p className=" mt-5">About Us</p>
             <p className="ss">About Us</p>
@@ -22,13 +22,17 @@ const Footer = () => {
           <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-4">
             <p className="text-lg font-bold">Features</p>
             <p className=" mt-5">Home</p>
-            <p className="ss">Top 10 projects</p>
-            <p className="ss">Learning pool</p>{" "}
-            <p className="ss">Join </p>
-            <p className="ss">Create project</p>
+            <p className="ss">Analytics</p>
+            <p className="ss">Artificial intelligence</p>{" "}
+            <p className="ss">Animation </p>
+            <p className="ss">Coding</p>
+            <p className="ss">Content writing</p>
+            <p className="ss">Data science</p>
+            <p className="ss">Data science</p>  
+             <p className="ss">Data science</p>
           </div>
-          <div className="flex flex-col items-center">
-            <p className="text-lg font-bold">Learning pool</p>
+          <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-4">
+            <p className="text-lg font-bold">Features</p>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-lg font-bold">Features</p>
