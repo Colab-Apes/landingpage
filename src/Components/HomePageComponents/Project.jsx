@@ -29,7 +29,7 @@ const Project = ({ image, name }) => {
               alt=""
               className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
             />
-            <p className="text-[#999999] sm:text-base">Multiple owners</p>
+            <p className="text-[#999999] sm:text-base lg:text-sm">Multiple owners</p>
           </div>
           <div className="flex  lg:text-xs gap-x-3 items-start">
             <img
@@ -37,7 +37,7 @@ const Project = ({ image, name }) => {
               alt=""
               className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
             />
-            <p className="text-[#999999] sm:text-base ">
+            <p className="text-[#999999] sm:text-base lg:text-sm ">
               Lorem ipsum dolor sit amet consectetur. Justo feugiat pharetra eu
               eu enim...
             </p>

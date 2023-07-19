@@ -24,7 +24,7 @@ const Home = () => {
           </p>
         </p>
    
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 sm:mt-20 lg:mt-8 xl:mt-10 gap-y-10 sm:gap-y-20 md:gap-x-20 sm:gap-x-10 md:gap-y-32 lg:gap-10 xl:gap-x-6 xl:gap-y-10  mx-auto justify-center w-full ">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-4 sm:mt-20 lg:mt-8 xl:mt-10 gap-y-10 sm:gap-y-20 md:gap-x-20 sm:gap-x-10 md:gap-y-32 lg:gap-y-10  lg:gap-x-8  xl:gap-x-6 xl:gap-y-10  mx-auto justify-center w-full ">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
           <Project image={img3} name="Video game" />
