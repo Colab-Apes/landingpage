@@ -2,6 +2,7 @@ import React from "react";
 import "../../App.css";
 import ape from "../../assets/homepageicons/footerimages/apehead.png";
 import logo from "../../assets/homepageicons/footerimages/footerlogo.png"
+import SocialLogo from "./SocialLogo";
 const Footer = () => {
   return (
     <div>
@@ -42,7 +43,7 @@ const Footer = () => {
           <div className="flex flex-col items-center">
             <img src={logo} alt="" />
             <a className="mt-5">help@colabapes.com</a>
-          
+            <SocialLogo />
           </div>
         </div>
       </footer>
