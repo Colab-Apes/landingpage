@@ -19,8 +19,9 @@ const Footer = () => {
             <p className="ss">Terms of Use</p>{" "}
             <p className="ss">Legal</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-8">
             <p className="text-lg font-bold">Features</p>
+            <p className=" mt-5">Home</p>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-lg font-bold">Learning pool</p>
