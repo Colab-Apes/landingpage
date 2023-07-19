@@ -1,10 +1,11 @@
 import React from "react";
 import "../../App.css";
 import ape from "../../assets/homepageicons/footerimages/apehead.png";
+import logo from "../../assets/homepageicons/footerimages/footerlogo.png"
 const Footer = () => {
   return (
     <div>
-      <footer className=" h-[28rem] w-full rounded-[15px]  graid relative mb-10 ">
+      <footer className=" h-[28rem] px-32 w-full rounded-[15px]  graid relative mb-10 ">
         <img
           src={ape}
           alt=""
@@ -39,7 +40,9 @@ const Footer = () => {
              <p className="ss">3D modelling</p>
           </div>
           <div className="flex flex-col items-center">
-            <p className="text-lg font-bold">Features</p>
+            <img src={logo} alt="" />
+            <a className="mt-5">help@colabapes.com</a>
+          
           </div>
         </div>
       </footer>
