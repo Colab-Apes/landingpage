@@ -7,7 +7,7 @@ import hand from "../../assets/homepageicons/images/group-3.svg";
 import like from "../../assets/homepageicons/images/like.svg";
 const Project = ({ image, name }) => {
   return (
-  <div className=" w-full  font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] rounded-[30px] ">
+  <div className=" w-full  font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] xl:min-h-[34rem] rounded-[30px] ">
       <img
         src={image}
         alt=""
