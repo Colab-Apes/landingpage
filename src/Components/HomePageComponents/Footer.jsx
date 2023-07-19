@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-4  text-white pt-10">
           <div className="flex flex-col w-fit mx-auto  text-left z-[3] gap-y-8">
             <p className="text-lg font-bold ">Co_lab Apes</p>
-            <p className=" mt-10">About Us</p>
+            <p className=" mt-5">About Us</p>
             <p className="ss">About Us</p>
             <p className="ss">Privacy policy</p>
             <p className="ss">Terms of Use</p>{" "}
