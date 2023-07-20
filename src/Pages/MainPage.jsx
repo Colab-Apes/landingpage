@@ -7,6 +7,7 @@ import LearningPool from ".././Pages/LearningPool";
 import CreateProject from "./CreateProject";
 import Footer from "../Components/HomePageComponents/Footer";
 
+
 const MainPage = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
   return (

@@ -1,10 +1,12 @@
 import React from "react";
 import NavBarComp from "../Components/HomePageComponents/NavBarComp";
 import Project from "../Components/HomePageComponents/Project";
-import img1 from "../assets/homepageicons/homepageimages/img1.png";
-import img2 from "../assets/homepageicons/homepageimages/img2.png";
-import img3 from "../assets/homepageicons/homepageimages/img3.png";
-import img4 from "../assets/homepageicons/homepageimages/img4.png";
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+} from "../assets/homepageicons/homepageimages/BullkImport";
 
 const HomePage = () => {
   return (
