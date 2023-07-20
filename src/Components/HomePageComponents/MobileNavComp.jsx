@@ -5,6 +5,7 @@ import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
 import avatar from "../../assets/homepageicons/sidenavimages/avatar.png";
 import award from "../../assets/homepageicons/sidenavimages/award.svg";
 import { TfiClose } from "react-icons/tfi";
+import { add } from "../../assets/homepageicons/sidenavimages/listtileimages/BulkImport";
 import "../../App.css";
 
 const MobileNavComp = () => {
@@ -67,7 +68,7 @@ const MobileNavComp = () => {
 
             <div className="flex flex-col text-left">
               <div className="flex items-center">
-                
+                <img src={add} alt="" />
               </div>
             </div>
           </div>

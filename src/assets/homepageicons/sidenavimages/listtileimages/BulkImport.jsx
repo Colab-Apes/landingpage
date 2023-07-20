@@ -7,8 +7,4 @@ import settings from "./settings.svg";
 import help from "./help.svg";
 import signout from "./signout.svg";
 
-const BulkImport = () => {
-  return { add, profile, project, learning, settings, help, signout };
-};
-
-export default BulkImport;
+export { add, profile, project, learning, settings, help, signout };
