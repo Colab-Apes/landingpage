@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../../assets/logo.svg";
-import sidenavlogo from "../../assets/homepageicons/sidenavimages/imglogo.png";
-import avatar from "../../assets/homepageicons/sidenavimages";
+import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
+import avatar from "../../assets/homepageicons/sidenavimages/avatar.png";
 import { TfiClose } from "react-icons/tfi";
 import "../../App.css";
 
@@ -40,8 +40,8 @@ const MobileNavComp = () => {
         <div
           className={
             opensidenav
-              ? "fixed top-0 right-0 duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
-              : "fixed top-0 right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
+              ? "fixed top-0 font-lato right-0 duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
+              : "fixed top-0 font-lato right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
           }
           
         >
@@ -54,8 +54,9 @@ const MobileNavComp = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center mt-16 gap-y-10 relative">
+          <div className="flex flex-col items-center mt-16  relative">
             <img src={avatar} alt="" />
+            <p className="font-semibold text-xl"> Sarah Lopez</p>
            
           </div>
         </div>
