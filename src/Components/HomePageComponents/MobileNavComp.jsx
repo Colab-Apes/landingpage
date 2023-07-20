@@ -57,12 +57,18 @@ const MobileNavComp = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center mt-16  relative">
+          <div className="flex flex-col items-center mt-16  ">
             <img src={avatar} alt="" />
-            <div className="flex">
-              {" "}
-              <img src={award} alt="" />{" "}
-              <p className="font-semibold text-xl"> Sarah Lopez</p>
+            <p className="font-semibold text-xl mt-1"> Sarah Lopez</p>
+            <div className="flex gap-2 rounded-[10px] p-1 px-4 mt-1 items-center bg-[rgba(78,_175,_0,_0.10)]">
+              <img src={award} alt="" className="object-contain w-[1.3rem]" />
+              <p className="font-semibold text-[#4EAF00] text-lg ">Founder</p>
+            </div>
+
+            <div className="flex flex-col text-left">
+              <div className="flex items-center">
+                
+              </div>
             </div>
           </div>
         </div>
