@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../../assets/logo.svg";
-// import sidenavlogo from "../assets/sidenavlogo.png";
+import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
 import { TfiClose } from "react-icons/tfi";
 import "../../App.css";
 
@@ -17,7 +17,7 @@ const MobileNavComp = () => {
           <img
             src={logo}
             alt=""
-            className="object-contain w-[10rem]  sm:w-[18rem]  lg:w-[14rem]"
+            className="object-contain w-[10rem]  sm:w-[18rem] z-[3] lg:w-[14rem]"
           />
         </a>
 
@@ -44,15 +44,15 @@ const MobileNavComp = () => {
           }
         >
           <div className="flex w-full justify-between items-center mt-3 ">
-            <img src={logo} alt="" className="object-cover w-[10rem] " />
+            <img src={sidenavlogo} alt="" className="object-contain scale-75 z-[90] w-[30rem]" />
             <TfiClose
               onClick={() => setopensidenav(false)}
               className="text-xl text-[#999999]"
             />
           </div>
 
-          <div className="flex flex-col mt-16 gap-y-10">
-            
+          <div className="flex flex-col mt-16 gap-y-10 relative">
+            {/* <div className="blur-[250px] bg-[rgba(194,_106,_170,_0.30)] absolute h-20 w-20"></div> */}
            
           </div>
         </div>
