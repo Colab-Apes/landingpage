@@ -43,7 +43,6 @@ const NavBarComp = () => {
         <div className="flex items-center gap-x-14">
           <img src={icon} alt="" className="w-[4rem] object-contain" />
           <div className="flex items-center gap-x-4 ">
-            {" "}
             <img src={avatar} alt="" />
             <BsChevronDown />
           </div>

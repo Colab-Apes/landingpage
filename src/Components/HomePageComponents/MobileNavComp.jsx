@@ -52,15 +52,8 @@ const MobileNavComp = () => {
           </div>
 
           <div className="flex flex-col mt-16 gap-y-10">
-            {/* Signup Button */}
-            <button
-              onClick={() => {
-                setopensidenav(false);
-              }}
-              className="h-[3rem] w-full rounded-xl gradnav text-white font-semibold"
-            >
-              Signup
-            </button>
+            
+           
           </div>
         </div>
       </nav>
