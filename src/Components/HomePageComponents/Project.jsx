@@ -15,7 +15,7 @@ const Project = ({ image, name }) => {
             <img
               src={bag}
               alt=""
-              className="object-contain sm:w-[1.9rem] lg:w-[1.3rem]"
+              className="object-contain sm:w-[1.9rem] lg:w-[1rem]"
             />
             <p className="font-bold text-xl">{name}</p>
           </div>
