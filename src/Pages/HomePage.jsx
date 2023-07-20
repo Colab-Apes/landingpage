@@ -36,7 +36,7 @@ const HomePage = () => {
         <Project image={img4} name="Data analysis" />
       </div>
       <div className="w-full flex justify-center items-center  mt-10 mb-10">
-        <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[8rem] border border-solid border-[#999] rounded-[15px] ">
+        <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[8rem] border border-solid border-[#999] text-[#999] rounded-[15px] ">
           Load more...
         </button>
       </div>

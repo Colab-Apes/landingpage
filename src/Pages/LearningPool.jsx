@@ -47,7 +47,7 @@ const LearningPool = () => {
         <Learn image={img4} name="Coding" />
       </div>
       <div className="w-full flex justify-center items-center  mt-10 mb-10">
-        <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[10rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
+        <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[8rem] border border-solid border-[#999] text-[#999] rounded-[15px] ">
           Load more...
         </button>
       </div>
