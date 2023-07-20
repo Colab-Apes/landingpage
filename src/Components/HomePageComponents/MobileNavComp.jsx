@@ -3,12 +3,12 @@ import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../../assets/logo.svg";
 import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
 import avatar from "../../assets/homepageicons/sidenavimages/avatar.png";
+import award from "../../assets/homepageicons/sidenavimages/award.svg";
 import { TfiClose } from "react-icons/tfi";
 import "../../App.css";
 
 const MobileNavComp = () => {
   const [opensidenav, setopensidenav] = useState(false);
-  
 
   return (
     <div>
@@ -43,11 +43,14 @@ const MobileNavComp = () => {
               ? "fixed top-0 font-lato right-0 duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
               : "fixed top-0 font-lato right-[-100%] duration-500 ease-in-out bottom-0 h-[100vh] w-[75%] sm:w-[60%] px-5 sm:px-16 md:px-20 pt-3 sm:pt-10 bg-[#F8F8F8] bg-sidenav bg-cover z-30 rounded-l-[20px] lg:hidden"
           }
-          
         >
           {/* <div className="blur-[250px] bg-[rgba(194,_106,_170,_0.30)] absolute h-20 w-20"></div> */}
           <div className="flex w-full justify-between items-center mt-3 ">
-            <img src={sidenavlogo} alt="" className="object-contain scale-75 z-[90] w-[30rem]" />
+            <img
+              src={sidenavlogo}
+              alt=""
+              className="object-contain scale-75 z-[90] w-[30rem]"
+            />
             <TfiClose
               onClick={() => setopensidenav(false)}
               className="text-4xl text-[#999999]"
@@ -56,8 +59,11 @@ const MobileNavComp = () => {
 
           <div className="flex flex-col items-center mt-16  relative">
             <img src={avatar} alt="" />
-            <p className="font-semibold text-xl"> Sarah Lopez</p>
-           
+            <div className="flex">
+              {" "}
+              <img src={award} alt="" />{" "}
+              <p className="font-semibold text-xl"> Sarah Lopez</p>
+            </div>
           </div>
         </div>
       </nav>
