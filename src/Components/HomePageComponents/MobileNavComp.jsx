@@ -74,30 +74,62 @@ const MobileNavComp = () => {
               <p className="font-semibold text-[#4EAF00] text-lg ">Founder</p>
             </div>
 
-            <div className="flex flex-col text-left">
+            <div className="flex flex-col text-left w-full gap-6 mt-8">
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
+                <img
+                  src={add}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
                 <p>Create New Project</p>
               </div>
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
-                <p>Create New Project</p>
+                <img
+                  src={profile}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>My Profile</p>
               </div>
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
-                <p>Create New Project</p>
+                <img
+                  src={project}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>My Projects</p>
               </div>
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
-                <p>Create New Project</p>
+                <img
+                  src={learning}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>My Learning Pool</p>
               </div>
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
-                <p>Create New Project</p>
+                <img
+                  src={settings}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>Settings</p>
               </div>
               <div className="flex items-center mt-2">
-                <img src={add} alt="" />
-                <p>Create New Project</p>
+                <img
+                  src={help}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>Help</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img
+                  src={signout}
+                  alt=""
+                  className="object-contain w-[1.2rem] mr-2"
+                />
+                <p>Sign Out </p>
               </div>
             </div>
           </div>
