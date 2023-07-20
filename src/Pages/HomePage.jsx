@@ -11,9 +11,8 @@ import MobileTabs from "../Components/HomePageComponents/MobileTabs";
 const HomePage = () => {
   return (
     <div className=" font-lato  bg-white ">
-      <NavBarComp />
       <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-20 sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
-        <MobileTabs />
+        {/* <MobileTabs /> */}
         <p className="text-left font-inter text-[#333] mt-4 ">
           <p className=" text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold">
             Discover Amazing Projects From Around The World
