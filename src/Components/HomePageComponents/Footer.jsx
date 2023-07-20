@@ -14,23 +14,23 @@ const Footer = () => {
           className="bottom-0 lg:top-0 absolute object-contain w-[26rem] rounded-bl-[15px] lg:rounded-l-[15px] left-0 z-[1] "
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 z-[10] text-white pt-10 h-full gap-x-8 gap-y-10 lg:gap-y-0 ">
-          <div className="flex flex-col w-fit mx-auto text-sm lg:text-base text-left z-[3] gap-y-5">
+          <div className="flex flex-col w-fit mx-auto  text-sm lg:text-lg text-left z-[3] gap-y-5">
             <p className="text-lg font-bold ">Co_lab Apes</p>
-            <p className="lg:mt-5 mt-2">About Us</p>
+            <p className="lg:mt-4 mt-2">About Us</p>
             <p className="">About Us</p>
             <p className="">Privacy policy</p>
             <p className="">Terms of Use</p> <p className="">Legal</p>
           </div>
-          <div className="flex flex-col w-fit mx-auto   text-sm lg:text-base text-left z-[3] gap-y-5">
+          <div className="flex flex-col w-fit mx-auto    text-sm lg:text-lg text-left z-[3] gap-y-5">
             <p className="text-lg font-bold">Features</p>
-            <p className="lg:mt-5 mt-2">Home</p>
+            <p className="lg:mt-4 mt-2">Home</p>
             <p className="">Top 10 projects</p>
             <p className="">Learning pool</p> <p className="">Join </p>
             <p className="">Create project</p>
           </div>
-          <div className="flex flex-col w-fit mx-auto  text-sm lg:text-base text-left z-[3] gap-y-5">
+          <div className="flex flex-col w-fit mx-auto  text-sm lg:text-lg text-left z-[3] gap-y-5">
             <p className="text-lg font-bold">Learning pool</p>
-            <p className="lg:mt-5 mt-2">Analytics</p>
+            <p className="lg:mt-4 mt-2">Analytics</p>
             <p className="">Artificial intelligence</p>{" "}
             <p className="">Animation </p>
             <p className="">Coding</p>

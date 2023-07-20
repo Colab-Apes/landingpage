@@ -18,7 +18,7 @@ const NavBarComp = ({ tabs, checkindex, setcheckindex }) => {
             className="object-contain w-[10rem] md:w-[15rem] lg:w-[14rem]"
           />
         </a>
-        <div className=" z-[20]  flex items-center gap-x-20 text-xl text-center mt-8">
+        <div className=" z-[20] font-bold flex items-center gap-x-20 text-[24px] text-center mt-8">
           {tabs.map((tab, index) => (
             <p
               onClick={() => setcheckindex(index)}
@@ -27,10 +27,10 @@ const NavBarComp = ({ tabs, checkindex, setcheckindex }) => {
                 index === checkindex
                   ? `border-b-2  border-b-[#054E12] ${
                       index == 0
-                        ? "w-[3.7rem] "
-                        : "w-[8rem] duration-500 ease-linear"
+                        ? "w-[4rem]  "
+                        : "w-[10rem] duration-500 ease-linear "
                     } pb-10 cursor-pointer`
-                  : `text-[#33333380]  pb-10 cursor-pointer border-b-2 duration-200 ease-linear${
+                  : `text-[#33333380]  pb-10 cursor-pointer  border-b-2 duration-200 ease-linear${
                       index == 0 ? "w-[3.7rem]" : "w-[8rem]"
                     }  border-b-white`
               }
