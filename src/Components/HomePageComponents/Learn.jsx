@@ -16,50 +16,29 @@ const Learn = ({ image, name }) => {
             />
             <p className="font-bold">{name}</p>
           </div>
-          <div className="flex gap-x-3">
+          <div className="flex gap-x-3 text-xl sm:text-3xl  lg:text-base">
             <img
-              src={group}
+              src={book}
               alt=""
-              className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
+              className="object-contain sm:w-[1.9rem] lg:w-[1rem]"
             />
-            <p className="text-[#999999] sm:text-base lg:text-sm">
-              Multiple owners
-            </p>
+            <p className="font-bold">310,000 resources</p>
           </div>
-          <div className="flex  lg:text-xs gap-x-3 items-start">
-            <img
-              src="{info}"
-              alt=""
-              className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
-            />
-            <p className="text-[#999999] sm:text-base lg:text-sm ">
-              Lorem ipsum dolor sit amet consectetur. Justo feugiat pharetra eu
-              eu enim...
-            </p>
-          </div>
-        </div>
-        <div className="flex text-[#999999] w-full items-center justify-between">
-          <div className="flex items-center gap-x-1">
-            <span className=" text-sm">
+          <div className="flex justify-between items-center">
+            <div className="flex gap-x-3">
               <img
-                src=""
+                src={group}
                 alt=""
-                className="object-contain w-[1rem] sm:w-[1.9rem] lg:w-full"
+                className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
               />
-            </span>
-            <p>19+</p>
+              <p className="text-[#999999] sm:text-base lg:text-sm">
+                10K+ members
+              </p>
+            </div>
+            <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
+              Join project
+            </button>
           </div>
-          <div className="flex items-center gap-x-1">
-            <img
-              src=""
-              alt=""
-              className="object-contain  sm:w-[2.2rem] lg:w-full"
-            />
-            <p>5</p>
-          </div>
-          <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
-            Join project
-          </button>
         </div>
       </div>
     </div>
