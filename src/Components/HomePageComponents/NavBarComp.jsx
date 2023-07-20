@@ -8,7 +8,6 @@ import MobileNavComp from "./MobileNavComp";
 import { useState } from "react";
 import TabHook from "../../Hooks/TabHook";
 const NavBarComp = ({ tabs, checkindex, setcheckindex }) => {
-  
   return (
     <div>
       <nav className="font-lato lg:px-6 xl:px-10 bg-white z-20 hidden lg:flex justify-between items-center  fixed top-0  h-[9rem] w-full ">
