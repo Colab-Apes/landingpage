@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import logo from "../../assets/logo.svg";
-import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
+import sidenavlogo from "../../assets/homepageicons/sidenavimages/imglogo.png";
 import avatar from "../../assets/homepageicons/sidenavimages";
 import { TfiClose } from "react-icons/tfi";
 import "../../App.css";
@@ -55,7 +55,7 @@ const MobileNavComp = () => {
           </div>
 
           <div className="flex flex-col items-center mt-16 gap-y-10 relative">
-            <img src="" alt="" />
+            <img src={avatar} alt="" />
            
           </div>
         </div>
