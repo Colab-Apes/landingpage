@@ -66,7 +66,7 @@ const MobileNavComp = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center mt-16  ">
+          <div className="flex flex-col items-center mt-16 px-5 ">
             <img src={avatar} alt="" />
             <p className="font-semibold text-xl mt-1"> Sarah Lopez</p>
             <div className="flex gap-2 rounded-[10px] p-1 px-4 mt-1 items-center bg-[rgba(78,_175,_0,_0.10)]">
@@ -74,7 +74,7 @@ const MobileNavComp = () => {
               <p className="font-semibold text-[#4EAF00] text-lg ">Founder</p>
             </div>
 
-            <div className="flex flex-col text-left w-full gap-6 mt-8">
+            <div className="flex flex-col text-left w-full gap-y-6 mt-8">
               <div className="flex items-center mt-2">
                 <img
                   src={add}
