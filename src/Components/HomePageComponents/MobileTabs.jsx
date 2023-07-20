@@ -1,8 +1,7 @@
 import React from "react";
 import TabHook from "../../Hooks/TabHook";
 
-const MobileTabs = () => {
-  const { tabs, checkindex, setcheckindex } = TabHook();
+const MobileTabs = ({ tabs, checkindex, setcheckindex }) => {
   return (
     <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden">
       <p className=" border-b-4 font-bold border-b-[#054E12] pb-4">Home</p>
