@@ -33,6 +33,18 @@ const LearningPool = () => {
         <Learn image={img6} name="Content Writing" />
         <Learn image={img7} name="Video Editting" />
         <Learn image={img8} name="3D Modelling" />
+        <Learn image={img1} name="Analytics" />
+        <Learn image={img2} name="Artificial Intelligence" />
+        <Learn image={img3} name="Animation" />
+        <Learn image={img4} name="Coding" />
+        <Learn image={img5} name="Data Science" />
+        <Learn image={img6} name="Content Writing" />
+        <Learn image={img7} name="Video Editting" />
+        <Learn image={img8} name="3D Modelling" />
+        <Learn image={img1} name="Analytics" />
+        <Learn image={img2} name="Artificial Intelligence" />
+        <Learn image={img3} name="Animation" />
+        <Learn image={img4} name="Coding" />
       </div>
       <div className="w-full flex justify-center items-center  mt-10 mb-10">
         <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[10rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
