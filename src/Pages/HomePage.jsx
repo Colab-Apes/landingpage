@@ -5,10 +5,10 @@ import img1 from "../assets/projectimages/1.png";
 import img2 from "../assets/projectimages/2.png";
 import img3 from "../assets/projectimages/3.png";
 import img4 from "../assets/projectimages/4.png";
-import Footer from "./../Components/HomePageComponents/Footer";
-import MobileTabs from "./../Components/HomePageComponents/MobileTabs";
+import Footer from "../Components/HomePageComponents/Footer";
+import MobileTabs from "../Components/HomePageComponents/MobileTabs";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className=" font-lato  bg-white ">
       <NavBarComp />
@@ -23,7 +23,7 @@ const Home = () => {
             Story
           </p>
         </p>
-   
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-4 sm:mt-20 lg:mt-8 xl:mt-10 gap-y-10 sm:gap-y-20 md:gap-x-20 sm:gap-x-10 md:gap-y-32 lg:gap-y-10  lg:gap-x-4  xl:gap-x-6 xl:gap-y-10  mx-auto justify-center w-full ">
           <Project image={img1} name="Mobile game" />
           <Project image={img2} name="Product design" />
@@ -50,4 +50,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
