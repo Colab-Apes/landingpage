@@ -10,26 +10,28 @@ import Footer from "../Components/HomePageComponents/Footer";
 const MainPage = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
   return (
-    <div>
-      <NavBarComp
-        tabs={tabs}
-        checkindex={checkindex}
-        setcheckindex={setcheckindex}
-      />
-      <MobileTabs
-        tabs={tabs}
-        checkindex={checkindex}
-        setcheckindex={setcheckindex}
-      />
+    <div className=" font-lato  bg-white ">
+      <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-20 sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
+        <NavBarComp
+          tabs={tabs}
+          checkindex={checkindex}
+          setcheckindex={setcheckindex}
+        />
+        <MobileTabs
+          tabs={tabs}
+          checkindex={checkindex}
+          setcheckindex={setcheckindex}
+        />
 
-      {checkindex == 0 ? (
-        <HomePage />
-      ) : checkindex == 1 ? (
-        <LearningPool />
-      ) : (
-        <CreateProject />
-      )}
-      <Footer />
+        {checkindex == 0 ? (
+          <HomePage />
+        ) : checkindex == 1 ? (
+          <LearningPool />
+        ) : (
+          <CreateProject />
+        )}
+        <Footer />
+      </div>
     </div>
   );
 };
