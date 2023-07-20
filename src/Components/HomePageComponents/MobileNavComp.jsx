@@ -67,8 +67,29 @@ const MobileNavComp = () => {
             </div>
 
             <div className="flex flex-col text-left">
-              <div className="flex items-center">
+              <div className="flex items-center mt-2">
                 <img src={add} alt="" />
+                <p>Create New Project</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img src={add} alt="" />
+                <p>Create New Project</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img src={add} alt="" />
+                <p>Create New Project</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img src={add} alt="" />
+                <p>Create New Project</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img src={add} alt="" />
+                <p>Create New Project</p>
+              </div>
+              <div className="flex items-center mt-2">
+                <img src={add} alt="" />
+                <p>Create New Project</p>
               </div>
             </div>
           </div>
