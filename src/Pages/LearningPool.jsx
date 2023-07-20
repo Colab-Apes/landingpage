@@ -6,10 +6,11 @@ const LearningPool = () => {
       {" "}
       <p className="text-left font-inter text-[#333] mt-4 ">
         <p className=" text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-semibold">
-          Discover Amazing Projects From Around The World
+          Get A New Skill Or Master An Existing One
         </p>
         <p className="text-left mt-4 text-sm sm:text-base lg:mt-2 xl:mt-4 ">
-          Join Projects That Interests You And Be A Part Of Their Success Story
+          Join A Learning Pool Group to Start Learning And Interacting With
+          Other Learners
         </p>
       </p>
     </div>
