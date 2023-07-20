@@ -8,7 +8,7 @@ import help from "./help.svg";
 import signout from "./signout.svg";
 
 const BulkImport = () => {
-  return <div>BulkImport</div>;
+  return { add, profile, project, learning, settings, help, signout };
 };
 
 export default BulkImport;
