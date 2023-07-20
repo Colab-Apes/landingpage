@@ -4,7 +4,7 @@ import book from "../../assets/Learnimages/icons/book.svg";
 import group from "../../assets/Learnimages/icons/group.svg";
 const Learn = ({ image, name }) => {
   return (
-    <div className=" w-full  font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[28rem] sm:min-h-[26rem] md:min-h-[2rem] lg:min-h-[22rem] xl:min-h-[26rem] rounded-[30px] pb-8">
+    <div className=" w-full  font-lato flex flex-col shadow-[3px_15px_50px_0px_rgba(5,_78,_18,_0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[28rem] sm:min-h-[26rem] md:min-h-[2rem] lg:min-h-[22rem] xl:min-h-[26rem] rounded-[30px] pb-8">
       <img src={image} alt="" className="object-cover w-full " />
 
       <div className="flex flex-col text-base sm:text-2xl lg:text-base gap-y-3 px-4 sm:gap-y-6  lg:gap-y-4 text-[#333]">

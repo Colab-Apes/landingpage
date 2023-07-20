@@ -7,21 +7,17 @@ import hand from "../../assets/homepageicons/images/group-3.svg";
 import like from "../../assets/homepageicons/images/like.svg";
 const Project = ({ image, name }) => {
   return (
-  <div className=" w-full  font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] xl:min-h-[34rem] rounded-[30px] ">
-      <img
-        src={image}
-        alt=""
-        className="object-cover w-full "
-      />
+    <div className=" w-full  font-lato flex flex-col  shadow-[3px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] xl:min-h-[34rem] rounded-[30px] ">
+      <img src={image} alt="" className="object-cover w-full " />
       <div className="px-4 sm:px-4 lg:px-4 w-full text-lg lg:text-xs flex-1 rounded-b-[30px] flex flex-col justify-evenly">
         <div className="flex flex-col text-base sm:text-2xl lg:text-base gap-y-3 sm:gap-y-6  lg:gap-y-3 text-[#333]">
           <div className="flex gap-x-3 text-xl sm:text-3xl  lg:text-base">
             <img
               src={bag}
               alt=""
-              className="object-contain sm:w-[1.9rem] lg:w-[1rem]"
+              className="object-contain sm:w-[1.9rem] lg:w-[1.3rem]"
             />
-            <p className="font-bold">{name}</p>
+            <p className="font-bold text-xl">{name}</p>
           </div>
           <div className="flex gap-x-3">
             <img
@@ -29,7 +25,9 @@ const Project = ({ image, name }) => {
               alt=""
               className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
             />
-            <p className="text-[#999999] sm:text-base lg:text-sm">Multiple owners</p>
+            <p className="text-[#999999] sm:text-base lg:text-sm">
+              Multiple owners
+            </p>
           </div>
           <div className="flex  lg:text-xs gap-x-3 items-start">
             <img
