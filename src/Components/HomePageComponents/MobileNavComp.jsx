@@ -5,7 +5,15 @@ import sidenavlogo from "../../assets/homepageicons/sidenavimages/logo.png";
 import avatar from "../../assets/homepageicons/sidenavimages/avatar.png";
 import award from "../../assets/homepageicons/sidenavimages/award.svg";
 import { TfiClose } from "react-icons/tfi";
-import { add } from "../../assets/homepageicons/sidenavimages/listtileimages/BulkImport";
+import {
+  add,
+  profile,
+  project,
+  learning,
+  settings,
+  help,
+  signout,
+} from "../../assets/homepageicons/sidenavimages/listtileimages/BulkImport";
 import "../../App.css";
 
 const MobileNavComp = () => {
