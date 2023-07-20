@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col items-center z-[3] text-sm">
             <img src={logo} alt="" className="z-[2]" />
-            <a className="mt-5">help@colabapes.com</a>
+            <p className="mt-5">help@colabapes.com</p>
             <SocialLogo className="mt-2" />
             <button className=" w-full lg:px-12 py-8 mt-8 z-[3] text-main bg-white rounded-[30px] font-lato font-bold text-xl">
               Contact Us
