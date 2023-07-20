@@ -1,9 +1,10 @@
 import React from "react";
+import { img1 } from "../../assets/homepageicons/homepageimages/BullkImport";
 
 const Learn = ({ image, name }) => {
   return (
     <div className=" w-full  font-lato flex flex-col  shadow-[15px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] xl:min-h-[34rem] rounded-[30px] ">
-      <img src={image} alt="" className="object-cover w-full " />
+      <img src={img1} alt="" className="object-cover w-full " />
       <div className="px-4 sm:px-4 lg:px-4 w-full text-lg lg:text-xs flex-1 rounded-b-[30px] flex flex-col justify-evenly">
         <div className="flex flex-col text-base sm:text-2xl lg:text-base gap-y-3 sm:gap-y-6  lg:gap-y-3 text-[#333]">
           <div className="flex gap-x-3 text-xl sm:text-3xl  lg:text-base">
