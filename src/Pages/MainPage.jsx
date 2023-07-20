@@ -11,12 +11,12 @@ const MainPage = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
   return (
     <div className=" font-lato  bg-white ">
+      <NavBarComp
+        tabs={tabs}
+        checkindex={checkindex}
+        setcheckindex={setcheckindex}
+      />
       <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-20 sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
-        <NavBarComp
-          tabs={tabs}
-          checkindex={checkindex}
-          setcheckindex={setcheckindex}
-        />
         <MobileTabs
           tabs={tabs}
           checkindex={checkindex}
