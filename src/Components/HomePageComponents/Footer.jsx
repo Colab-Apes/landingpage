@@ -7,11 +7,11 @@ import { CgCopyright } from "react-icons/cg";
 const Footer = () => {
   return (
     <div>
-      <footer className=" min-h-[30rem] font-lato px-10 w-full rounded-[15px]  graid relative mb-4 z-[1]  ">
+      <footer className=" min-h-[30rem] font-lato px-5 lg:px-10 w-full rounded-[15px]  graid relative mb-4 z-[1]  ">
         <img
           src={ape}
           alt=""
-          className="top-0 absolute object-contain w-[26rem] rounded-l-[15px] left-0 z-[1] "
+          className="bottom-0 lg:top-0 absolute object-contain w-[26rem] rounded-l-[15px] left-0 z-[1] "
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 z-[10] text-white pt-10 h-full gap-x-8 gap-y-10 lg:gap-y-0 ">
           <div className="flex flex-col w-fit mx-auto   text-sm text-left z-[3] gap-y-5">
@@ -39,11 +39,11 @@ const Footer = () => {
             <p className="ss">Video editting</p>
             <p className="ss">3D modelling</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center z-[3] text-sm">
             <img src={logo} alt="" className="z-[2]" />
             <a className="mt-5">help@colabapes.com</a>
             <SocialLogo className="mt-2" />
-            <button className="px-10 py-8 mt-8 text-main bg-white rounded-[30px] font-lato font-bold text-xl">
+            <button className=" w-full lg:px-12 py-8 mt-8 z-[3] text-main bg-white rounded-[30px] font-lato font-bold text-xl">
               Contact Us
             </button>
           </div>

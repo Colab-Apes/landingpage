@@ -11,7 +11,7 @@ const MobileNavComp = () => {
 
   return (
     <div>
-      <nav className="flex lg:hidden px-4 justify-between fixed bg-white top-0 w-screen items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
+      <nav className="flex lg:hidden px-4 justify-between fixed bg-white top-0 w-screen z-20 items-center min-h-[10vh] sm:pt-8 pt-3 lg:pt-0">
         {/* Logo */}
         <a href="/">
           <img
