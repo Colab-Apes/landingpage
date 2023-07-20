@@ -4,6 +4,8 @@ import MobileTabs from "../Components/HomePageComponents/MobileTabs";
 import TabHook from "../Hooks/TabHook";
 import HomePage from ".././Pages/HomePage";
 import LearningPool from ".././Pages/LearningPool";
+import CreateProject from "./CreateProject";
+import Footer from "../Components/HomePageComponents/Footer";
 
 const MainPage = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
@@ -20,7 +22,14 @@ const MainPage = () => {
         setcheckindex={setcheckindex}
       />
 
-      {checkindex == 0 ? <HomePage /> : checkindex == 1 ? <LearningPool /> : ""}
+      {checkindex == 0 ? (
+        <HomePage />
+      ) : checkindex == 1 ? (
+        <LearningPool />
+      ) : (
+        <CreateProject />
+      )}
+      <Footer />
     </div>
   );
 };

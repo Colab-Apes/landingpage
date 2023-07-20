@@ -43,7 +43,7 @@ const HomePage = () => {
             Load more...
           </button>
         </div>
-        <Footer />
+       
       </div>
     </div>
   );
