@@ -35,7 +35,7 @@ const Project = ({ image, name }) => {
               alt=""
               className="object-contain  sm:w-[1.9rem]  w-[1rem] lg:w-[1rem]"
             />
-            <p className="text-[#999999] sm:text-base lg:text-sm ">
+            <p className="text-[#999999] sm:text-base lg:text-sm  font-semibold xl:text-lg   ">
               Lorem ipsum dolor sit amet consectetur. Justo feugiat pharetra eu
               eu enim...
             </p>
@@ -60,8 +60,8 @@ const Project = ({ image, name }) => {
             />
             <p>5</p>
           </div>
-          <button className="h-[2rem] mx-auto  w-[8rem] sm:h-[3rem] sm:w-[12rem] lg:h-[2.6rem] lg:w-[8rem] border border-solid border-[#999] text-[#999] rounded-[15px] ">
-            Load more...
+          <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] border border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004]">
+            Join project
           </button>
         </div>
       </div>
