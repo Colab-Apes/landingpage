@@ -1,4 +1,4 @@
-import React from "react";
+
 import add from "./add.svg";
 import profile from "./profile.svg";
 import project from "./project.svg";

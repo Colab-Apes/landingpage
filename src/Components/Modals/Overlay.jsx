@@ -71,6 +71,7 @@ const Overlay = ({ value, changeValue }) => {
         /> */}
         {/* <Success setsuccessprop={setsuccess} successprop={success} /> */}
         {/* <Signin setsigninmodalprop={setsigninmodal} signinprop={signinmodal} /> */}
+        {signinmodal ? "" : ""}
       </div>
     </div>
   );

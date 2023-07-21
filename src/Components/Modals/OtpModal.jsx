@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { BsArrowLeft } from "react-icons/bs";
-import OTPInput from "react-otp-input";
+
 import OtpInputField from "./../OtpInputField";
 const OtpModal = ({
   openOtpmodalprop,
   setopenOtpmodalprop,
   setopenverifiedmodalprop,
 }) => {
-  const [otp, setOtp] = useState("");
+
   return (
     <div
       className={
@@ -53,7 +53,7 @@ const OtpModal = ({
         </button>
         <p className="text-xs">
           Already have an account?
-          <a className="text-[#054E12]"> Sign In</a>
+          <a className="text-[#054E12]" href="/"> Sign In</a>
         </p>
       </div>
     </div>
