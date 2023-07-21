@@ -5,8 +5,8 @@ import icon from "../../assets/homepageicons/images/group-50.svg";
 import avatar from "../../assets/homepageicons/images/avatar.png";
 import { BsChevronDown } from "react-icons/bs";
 import MobileNavComp from "./MobileNavComp";
-import { useState } from "react";
-import TabHook from "../../Hooks/TabHook";
+// import { useState } from "react";
+// import TabHook from "../../Hooks/TabHook";
 const NavBarComp = ({ tabs, checkindex, setcheckindex }) => {
   return (
     <div>
@@ -26,12 +26,12 @@ const NavBarComp = ({ tabs, checkindex, setcheckindex }) => {
               className={
                 index === checkindex
                   ? `border-b-2  border-b-[#054E12] ${
-                      index == 0
+                      index === 0
                         ? "w-[4rem]  "
                         : "w-[10rem] duration-500 ease-linear "
                     } pb-10 cursor-pointer`
                   : `text-[#33333380]  pb-10 cursor-pointer  border-b-2 duration-200 ease-linear${
-                      index == 0 ? "w-[3.7rem]" : "w-[8rem]"
+                      index === 0 ? "w-[3.7rem]" : "w-[8rem]"
                     }  border-b-white`
               }
             >

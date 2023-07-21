@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 
 const TabHook = () => {
   const [tabs, settabs] = useState([
@@ -7,7 +7,7 @@ const TabHook = () => {
     "Create project",
   ]);
   const [checkindex, setcheckindex] = useState(0);
-  return { tabs, checkindex, setcheckindex };
+  return { tabs, checkindex, setcheckindex,settabs };
 };
 
 export default TabHook;

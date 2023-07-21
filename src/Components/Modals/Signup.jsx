@@ -131,7 +131,7 @@ const Signup = ({
           <div className="mt-2  md:mt-8 lg:mt-4 text-sm">
             <p className=" text-center">
               <span className="text-[#999999]">Already have an account?</span>
-              <a
+              <p
                 onClick={() => {
                   setopensignupmodalprop(false);
                   setsigninmodalprop(true);
@@ -140,7 +140,7 @@ const Signup = ({
                 href="/"
               >
                 Sign In
-              </a>
+              </p>
             </p>
           </div>
         </div>

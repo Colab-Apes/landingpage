@@ -38,7 +38,10 @@ const VerifiedModal = ({ openverifiedmodalprop }) => {
         </button>
         <p className="text-xs mt-6 font-semibold">
           Already have an account?
-          <a className="text-[#054E12]" href="/"> Sign In</a>
+          <a className="text-[#054E12]" href="/">
+            {" "}
+            Sign In
+          </a>
         </p>
       </div>
     </div>
