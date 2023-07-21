@@ -50,17 +50,16 @@ const Project = ({ image, name }) => {
                 className="object-contain w-[1rem] sm:w-[1.9rem] lg:w-full"
               />
             </span>
-            <p className="mr-6 font-bold text-sm">19+</p>
-            <div className="flex items-center gap-x-1">
-              <img
-                src={hand}
-                alt=""
-                className="object-contain  sm:w-[2.2rem] lg:w-full xl:w-[1.2rem]"
-              />
-              <p className="font-bold text-sm">5</p>
-            </div>
+            <p className=" font-bold text-sm">19+</p>
           </div>
-
+          <div className="flex items-center gap-x-1">
+            <img
+              src={hand}
+              alt=""
+              className="object-contain  sm:w-[2.2rem] lg:w-full xl:w-[1.2rem]"
+            />
+            <p className="font-bold text-sm">5</p>
+          </div>
           <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] xl:w-[8rem] xl:h-[2.5rem] border-[1px] border-solid border-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004] xl:text-base font-">
             Join project
           </button>
