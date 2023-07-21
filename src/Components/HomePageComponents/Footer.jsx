@@ -3,7 +3,7 @@ import "../../App.css";
 import ape from "../../assets/homepageicons/footerimages/apehead.png";
 import logo from "../../assets/homepageicons/footerimages/footerlogo.png";
 import SocialLogo from "./SocialLogo";
-import { CgCopyright } from "react-icons/cg";
+
 const Footer = () => {
   return (
     <div>

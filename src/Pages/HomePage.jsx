@@ -1,5 +1,5 @@
 import React from "react";
-import NavBarComp from "../Components/HomePageComponents/NavBarComp";
+
 import Project from "../Components/HomePageComponents/Project";
 import {
   img1,

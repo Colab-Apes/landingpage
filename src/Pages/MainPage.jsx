@@ -23,9 +23,9 @@ const MainPage = () => {
           setcheckindex={setcheckindex}
         />
 
-        {checkindex == 0 ? (
+        {checkindex === 0 ? (
           <HomePage />
-        ) : checkindex == 1 ? (
+        ) : checkindex === 1 ? (
           <LearningPool />
         ) : (
           <CreateProject />
