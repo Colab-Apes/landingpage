@@ -2,9 +2,6 @@ import React from "react";
 import otpmodal from "../../assets/ModalImages/otpmodal.png";
 import logo from "../../assets/ModalImages/logo.png";
 import { BsArrowLeft } from "react-icons/bs";
-import otpmodal from "../../assets/ModalImages/otpmodal.png";
-import logo from "../../assets/ModalImages/logo.png";
-import { BsArrowLeft } from "react-icons/bs";
 // import OTPInput from "react-otp-input";
 import OtpInputField from "./../OtpInputField";
 
