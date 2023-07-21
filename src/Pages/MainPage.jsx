@@ -7,7 +7,6 @@ import LearningPool from ".././Pages/LearningPool";
 import CreateProject from "./CreateProject";
 import Footer from "../Components/HomePageComponents/Footer";
 
-
 const MainPage = () => {
   const { tabs, checkindex, setcheckindex } = TabHook();
   return (
@@ -17,7 +16,7 @@ const MainPage = () => {
         checkindex={checkindex}
         setcheckindex={setcheckindex}
       />
-      <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-20 sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
+      <div className=" px-8 sm:px-10 lg:px-6 xl:px-10 mt-[6rem] sm:mt-32  lg:mt-[10rem] xl:mt-[12rem]   ">
         <MobileTabs
           tabs={tabs}
           checkindex={checkindex}

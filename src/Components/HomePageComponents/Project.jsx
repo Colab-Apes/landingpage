@@ -7,11 +7,11 @@ import hand from "../../assets/homepageicons/images/group-3.svg";
 import like from "../../assets/homepageicons/images/like.svg";
 const Project = ({ image, name }) => {
   return (
-    <div className=" w-full  font-lato flex flex-col  shadow-[3px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[35rem] md:min-h-[35rem] lg:min-h-[30rem] xl:min-h-[35rem] rounded-[30px] pb-4">
+    <div className=" w-full  font-lato flex flex-col  shadow-[3px_15px_50px_0px_rgba(5,78,18,0.10)] hover:shadow-sm cursor-pointer ease-out hover:duration-200 min-h-[34rem] sm:min-h-[26rem] md:min-h-[36rem] lg:min-h-[30rem] xl:min-h-[35rem] rounded-[30px] pb-8">
       <img src={image} alt="" className="object-cover w-full " />
       <div className="px-4 sm:px-4 lg:px-4 w-full text-lg lg:text-xs flex-1 rounded-b-[30px] flex flex-col justify-evenly xl:px-6">
         <div className="flex flex-col text-base sm:text-2xl lg:text-base gap-y-3 sm:gap-y-6  lg:gap-y-3 text-[#333]">
-          <div className="flex gap-x-3 text-xl sm:text-3xl  lg:text-base">
+          <div className="flex gap-x-3 text-xl sm:text-3xl mt-4  lg:text-base">
             <img
               src={bag}
               alt=""
@@ -41,7 +41,7 @@ const Project = ({ image, name }) => {
             </p>
           </div>
         </div>
-        <div className="flex text-[#999999] w-full items-center justify-between">
+        <div className="flex text-[#999999] w-full items-center  justify-between md:mt-2">
           <div className="flex items-center gap-x-1">
             <span className=" text-sm">
               <img

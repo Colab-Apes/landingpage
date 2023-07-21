@@ -24,7 +24,7 @@ const LearningPool = () => {
           Other Learners
         </p>
       </p>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-4 sm:mt-20 lg:mt-8 xl:mt-10 gap-y-10 sm:gap-y-20 md:gap-x-8 sm:gap-x-10 md:gap-y-10 lg:gap-y-10  lg:gap-x-4  xl:gap-x-6 xl:gap-y-10  mx-auto justify-center w-full ">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-4 sm:mt-20 lg:mt-8 xl:mt-10 gap-y-10 sm:gap-y-20 sm:gap-x-10 md:gap-10 lg:gap-y-10  lg:gap-x-4  xl:gap-x-6 xl:gap-y-10   mx-auto w-full ">
         <Learn image={img1} name="Analytics" />
         <Learn image={img2} name="Artificial Intelligence" />
         <Learn image={img3} name="Animation" />

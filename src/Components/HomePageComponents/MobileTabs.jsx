@@ -3,7 +3,7 @@ import TabHook from "../../Hooks/TabHook";
 
 const MobileTabs = ({ tabs, checkindex, setcheckindex }) => {
   return (
-    <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden">
+    <div className="h-[5rem] sm:text-2xl flex items-center justify-evenly w-full mx-auto bg-white rounded-[10px] shad lg:hidden ">
       {tabs.map((tab, index) => (
         <p
           onClick={() => setcheckindex(index)}
