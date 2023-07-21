@@ -11,7 +11,7 @@ const Footer = () => {
         <img
           src={ape}
           alt=""
-          className="bottom-0 lg:top-0 absolute object-contain w-[26rem] rounded-bl-[15px] lg:rounded-l-[15px] left-0 z-[1] "
+          className="bottom-0  absolute object-contain w-[26rem] lg:w-[29.2rem] rounded-bl-[15px] lg:rounded-l-[15px] left-0 z-[1] "
         />
         <div className="grid grid-cols-2 lg:grid-cols-4 z-[10] text-white pt-10 h-full gap-x-8 gap-y-10 lg:gap-y-0 ">
           <div className="flex flex-col w-fit mx-auto  text-sm lg:text-lg text-left z-[3] gap-y-5">
