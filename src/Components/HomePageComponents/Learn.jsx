@@ -12,17 +12,17 @@ const Learn = ({ image, name }) => {
           <img
             src={pen}
             alt=""
-            className="object-contain w-[1rem] xl:w-[1.2rem]"
+            className="object-contain w-[1rem] md:w-[1.2rem] xl:w-[1.2rem]"
           />
-          <p className="font-bold text-lg md:text-sm  xl:text-2xl ">{name}</p>
+          <p className="font-bold text-lg md:text-lg  xl:text-2xl ">{name}</p>
         </div>
         <div className="flex gap-x-3 text-xl sm:text-3xl  lg:text-base">
           <img
             src={book}
             alt=""
-            className="object-contain w-[1rem] xl:w-[1.2rem]"
+            className="object-contain w-[1rem] md:w-[1.2rem] xl:w-[1.2rem]"
           />
-          <p className="text-[#999999] text-sm  xl:text-[1rem] xl:font-semibold">
+          <p className="text-[#999999] text-sm  md:text-lg xl:text-[1rem] xl:font-semibold">
             310,000 resources
           </p>
         </div>
@@ -31,13 +31,13 @@ const Learn = ({ image, name }) => {
             <img
               src={group}
               alt=""
-              className="object-contain  w-[1rem] xl:w-[1.3rem]"
+              className="object-contain  w-[1rem] md:w-[1.3rem] xl:w-[1.3rem]"
             />
             <p className="text-[#999999] text-sm lg:text-xs xl:text-[0.8rem] xl:font-semibold">
               10K+ members
             </p>
           </div>
-          <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] xl:w-[7rem] xl:h-[2.3rem] border-[1px] border-solid border-[#999]  text-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004] xl:text-sm xl:font-bold">
+          <button className="h-[2rem] w-[8rem] sm:h-[2rem] sm:w-[8rem] lg:h-[2rem] lg:w-[6rem] xl:w-[7rem] xl:h-[2.3rem] border-[1px] border-solid border-[#999]  text-[#999] rounded-[15px] hover:text-white hover:bg-gradient-to-bl hover:from-[#054E12] hover:to-[#3B8004] text-sm xl:font-bold">
             Join group
           </button>
         </div>
