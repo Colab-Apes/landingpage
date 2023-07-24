@@ -29,8 +29,8 @@ const NavBar = ({ changeValue }) => {
 
         {/* Sign Up Button */}
         <button
-          // onClick={() => changeValue(true)}'
-          onClick={() => navigate("/home")}
+          onClick={() => changeValue(true)}
+          // onClick={() => navigate("/home")}
           className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main font-bold"
         >
           Sign up
