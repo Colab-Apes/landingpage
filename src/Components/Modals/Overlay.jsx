@@ -44,6 +44,7 @@ const Overlay = ({ value, changeValue }) => {
             setopensignupmodal(true);
             setopenverifiedmodal(false);
             setopenOtpmodal(false);
+            setsigninmodal(false);
           }}
           className="text-2xl lg:text-xl xl:text-lg text-[#999999] font-bold cursor-pointer absolute right-6 top-6  md:top-8 lg:top-6 md:right-8 lg:right-10 "
         />

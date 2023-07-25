@@ -8,13 +8,22 @@ import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
+import { useFormik } from "formik";
+import { signuploginValidate } from "../../Service/yupValidation";
 const Signin = ({
   signinmodalprop,
   setopensignupmodalprop,
   setsigninmodalprop,
 }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
-
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: signuploginValidate,
+    onSubmit: (values) => {},
+  });
   return (
     <div
       className={
@@ -40,6 +49,7 @@ const Signin = ({
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            formik.handleSubmit();
             // setopensignupmodalprop(false);
             // setopenOtpmodalprop(true);
           }}
@@ -61,9 +71,23 @@ const Signin = ({
             <input
               type="email"
               id="email"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-[#999999] focus:outline-none"
+              className={
+                formik.errors.email && formik.touched.email
+                  ? "w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-red-500 focus:outline-none"
+                  : "w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border border-[#999999] focus:outline-none"
+              }
               placeholder="johndoe@email.com"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.email && formik.touched.email ? (
+              <p className="text-red-500 text-xs font-poppins">
+                {formik.errors.email}
+              </p>
+            ) : (
+              ""
+            )}
           </div>
 
           <div className="relative  mt-4 md:mt-8 lg:mt-4">
@@ -87,8 +111,15 @@ const Signin = ({
             <input
               type={isPasswordVisible ? "text" : "password"}
               id="password"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
+              className={
+                formik.errors.password && formik.touched.password
+                  ? "w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-red-500 focus:outline-none"
+                  : "w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:outline-none"
+              }
               placeholder="● ● ● ● ● ● "
+              onChange={formik.handleChange}
+              value={formik.values.password}
+              onBlur={formik.handleBlur}
             />
 
             {isPasswordVisible ? (
@@ -101,6 +132,13 @@ const Signin = ({
                 onClick={() => setisPasswordVisible(!isPasswordVisible)}
                 className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
               />
+            )}
+            {formik.errors.password && formik.touched.password ? (
+              <p className="text-red-500 text-xs font-poppins">
+                {formik.errors.password}
+              </p>
+            ) : (
+              ""
             )}
           </div>
 
