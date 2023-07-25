@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import img1 from "../../assets/ModalImages/sidebar.png";
 import logo from "../../assets/ModalImages/logo.png";
-
 import { Lock, Message } from "react-iconly";
 import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
@@ -44,7 +43,7 @@ const Signup = ({
             setopensignupmodalprop(false);
             setopenOtpmodalprop(true);
           }}
-          className="w-full relative flex flex-col justify-between gap-y-4 mt-2 md:gap-y-4 text-sm"
+          className="w-full relative flex flex-col justify-between gap-y-4 mt-2 md:gap-y-4 text-sm xl:gap-y-0"
           action=""
         >
           <div className="relative   ">
@@ -74,12 +73,12 @@ const Signup = ({
                 className="absolute inset-y-[2rem] left-1 px-[0.2rem]"
               />
             </span>
-            <label htmlFor="password" className="block font-bold">
+            <label htmlFor="password1" className="block font-bold">
               Create password
             </label>
             <input
               type={isPasswordVisible ? "text" : "password"}
-              id="password"
+              id="password1"
               className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:border-[#3B8004] focus:outline-none"
               placeholder="● ● ● ● ● ● "
             />
@@ -102,7 +101,7 @@ const Signup = ({
               type="checkbox"
               className="accent-[#3B8004] hover:accent-[#3B8004] font-lato"
             />
-            <p className="text-[#999999]">
+            <p className="text-[#999999] text-sm leading-[20px] ">
               By registering, you are agreeing with our{" "}
               <span className="underline text-[#3B8004]">Terms of Use </span>
               and{" "}
@@ -128,18 +127,17 @@ const Signup = ({
               <img src={apple} alt="" />
             </div>
           </div>
-          <div className="mt-2  md:mt-8 lg:mt-4 text-sm">
-            <p className=" text-center">
-              <span className="text-[#999999]">Already have an account?</span>
-              <p
-                onClick={() => {
-                  setopensignupmodalprop(false);
-                  setsigninmodalprop(true);
-                }}
-                className="text-[#054E12] font-bold cursor-pointer ml-1"
-              >
-                Sign In
-              </p>
+          <div className="mt-2 text-center flex items-center justify-center md:mt-8 lg:mt-4 text-sm">
+            <span className="text-[#999999]">Already have an account?</span>
+            <p
+              onClick={(e) => {
+                e.preventDefault();
+                setopensignupmodalprop(false);
+                setsigninmodalprop(true);
+              }}
+              className="text-[#054E12] font-bold cursor-pointer ml-1"
+            >
+              Sign In
             </p>
           </div>
         </div>

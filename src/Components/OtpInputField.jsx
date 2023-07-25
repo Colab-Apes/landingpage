@@ -2,29 +2,49 @@ import React, { useState, useRef, useEffect } from "react";
 import "../App.css";
 
 const OTPInputField = ({ length }) => {
-  const [otp, setOTP] = useState(new Array(length).fill(""));
-  const inputRefs = useRef([]);
-  useEffect(() => {
-    inputRefs.current[0].focus();
-  }, []);
+  const [otp, setOtp] = useState(Array(length).fill(""));
+  const otpInputRefs = useRef([]); // To store references of each OTP input field
 
-  const handleChange = (e, index) => {
-    const newOTP = [...otp];
-    newOTP[index] = e.target.value;
-    setOTP(newOTP);
-    console.log(e.target.value);
-    if (e.target.value !== "" && index < otp.length - 1) {
-      inputRefs.current[index + 1].focus();
+  const handleInputChange = (index, event) => {
+    const value = event.target.value;
+    // If the user presses backspace/delete, clear the current field and move focus to the previous one
+    if (value.length === 0) {
+      const newOtp = [...otp];
+      newOtp[index] = "";
+      setOtp(newOtp);
+    } else if (value.length === 1 && /^\d+$/.test(value)) {
+      // If the value is a single digit, update the OTP and move focus to the next input field
+      const newOtp = [...otp];
+      newOtp[index] = value;
+      setOtp(newOtp);
+
+      if (otpInputRefs.current[index + 1]) {
+        otpInputRefs.current[index + 1].focus();
+      }
     }
   };
 
+  const handleInputPaste = (event) => {
+    const pasteData = event.clipboardData.getData("text");
+    // Split the pasted data into individual characters
+    const pastedDigits = pasteData.slice(0, length).split("");
+
+    const newOtp = [...otp];
+    for (let i = 0; i < length; i++) {
+      if (pastedDigits[i] && /^\d+$/.test(pastedDigits[i])) {
+        newOtp[i] = pastedDigits[i];
+      }
+    }
+    otpInputRefs.current[3].focus();
+    setOtp(newOtp);
+  };
   const handleKeyDown = (e, index) => {
     console.log(otp);
     if (e.key === "Backspace" && index > 0 && otp[index] === "") {
-      inputRefs.current[index - 1].focus();
+      console.log(index);
+      otpInputRefs.current[index - 1].focus();
     }
   };
-
   return (
     <div className="flex justify-center items-center">
       {otp.map((value, index) => (
@@ -34,9 +54,10 @@ const OTPInputField = ({ length }) => {
             className="w-16 h-11 border-[2px] rounded-md text-center mx-2 focus:outline-none border-[#999] focus:border-[#4EAF00]"
             value={value}
             maxLength="1"
-            onChange={(e) => handleChange(e, index)}
+            onChange={(e) => handleInputChange(index, e)}
+            onPaste={(e) => handleInputPaste(e)}
             onKeyDown={(e) => handleKeyDown(e, index)}
-            ref={(ref) => (inputRefs.current[index] = ref)}
+            ref={(input) => (otpInputRefs.current[index] = input)}
           />
           {!value && (
             <div className="absolute left-[50%]  right-[50%] w-[2rem]  translate-x-[-50%]  translate-y-[-50%] bottom-2 bg-[#999999] h-[1.2px] "></div>

@@ -8,8 +8,13 @@ import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
-const Signin = ({ setsigninmodalprop, signinmodalprop }) => {
+const Signin = ({
+  signinmodalprop,
+  setopensignupmodalprop,
+  setsigninmodalprop,
+}) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
+
   return (
     <div
       className={
@@ -116,11 +121,19 @@ const Signin = ({ setsigninmodalprop, signinmodalprop }) => {
               <img src={apple} alt="" />
             </div>
           </div>
-          <div className="mt-6  md:mt-8 lg:mt-4 text-sm">
-            <p className=" text-center">
-              <span className="text-[#999999]">Already have an account?</span>
-              <button className="text-[#054E12] font-bold"> Sign Up</button>
-            </p>
+          <div className="mt-6 flex justify-center md:mt-8 lg:mt-4 text-sm">
+            <span className="text-[#999999]">Already have an account?</span>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setopensignupmodalprop(true);
+                setsigninmodalprop(false);
+              }}
+              className="text-[#054E12] font-bold ml-1"
+            >
+              {" "}
+              Sign Up
+            </button>
           </div>
         </div>
       </div>
