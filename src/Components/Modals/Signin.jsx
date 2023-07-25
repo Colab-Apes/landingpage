@@ -8,22 +8,14 @@ import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
-import { useFormik } from "formik";
-import { signuploginValidate } from "../../Service/yupValidation";
+import SigninHook from "../../Hooks/SigninHook";
 const Signin = ({
   signinmodalprop,
   setopensignupmodalprop,
   setsigninmodalprop,
 }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    validationSchema: signuploginValidate,
-    onSubmit: (values) => {},
-  });
+  const { formik } = SigninHook();
   return (
     <div
       className={

@@ -6,6 +6,7 @@ import google from "../../assets/ModalImages/social/Google logo.png";
 import facebook from "../../assets/ModalImages/social/Facbook.png";
 import apple from "../../assets/ModalImages/social/Vector.svg";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
+import SignupHook from "../../Hooks/SignupHook";
 
 const Signup = ({
   setopenOtpmodalprop,
@@ -14,7 +15,7 @@ const Signup = ({
   setsigninmodalprop,
 }) => {
   const [isPasswordVisible, setisPasswordVisible] = useState(false);
-
+  const { formik } = SignupHook();
   return (
     <div
       className={
@@ -40,8 +41,9 @@ const Signup = ({
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            setopensignupmodalprop(false);
-            setopenOtpmodalprop(true);
+            // setopensignupmodalprop(false);
+            // setopenOtpmodalprop(true);
+            formik.handleSubmit();
           }}
           className="w-full relative flex flex-col justify-between gap-y-4 mt-2 md:gap-y-4 text-sm xl:gap-y-0"
           action=""
@@ -61,9 +63,23 @@ const Signup = ({
             <input
               type="email"
               id="emaile"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border focus:border-[#3B8004] border-[#999999] focus:outline-none"
+              className={
+                formik.errors.email && formik.touched.email
+                  ? "w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border focus:border-[#3B8004] border-red-500 focus:outline-none"
+                  : "w-full py-2 bg-[#FFFFFF] rounded-[5px] font-lato px-8 mt-1 border focus:border-[#3B8004] border-[#999999] focus:outline-none"
+              }
               placeholder="johndoe@email.com"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+              onBlur={formik.handleBlur}
             />
+            {formik.errors.email && formik.touched.email ? (
+              <p className="text-red-500 text-xs font-poppins">
+                {formik.errors.email}
+              </p>
+            ) : (
+              ""
+            )}
           </div>
           <div className="relative   md:mt-0 lg:mt-4">
             <span>
@@ -79,7 +95,11 @@ const Signup = ({
             <input
               type={isPasswordVisible ? "text" : "password"}
               id="password1"
-              className="w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:border-[#3B8004] focus:outline-none"
+              className={
+                formik.errors.password && formik.touched.password
+                  ? "w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-red-500 focus:border-[#3B8004] focus:outline-none"
+                  : "w-full py-2 bg-[#FFFFFF] rounded-[5px] px-8 mt-1 border border-[#999999] focus:border-[#3B8004] focus:outline-none"
+              }
               placeholder="● ● ● ● ● ● "
             />
 
@@ -94,8 +114,14 @@ const Signup = ({
                 className="absolute inset-y-[2rem] right-1 px-[0.2rem] text-2xl text-[#333333]"
               />
             )}
+            {formik.errors.password && formik.touched.password ? (
+              <p className="text-red-500 text-xs font-poppins">
+                {formik.errors.password}
+              </p>
+            ) : (
+              ""
+            )}
           </div>
-
           <div className="flex items-start gap-x-3 mt-0  lg:mt-4 font-normal text-sm">
             <input
               type="checkbox"

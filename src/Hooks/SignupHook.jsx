@@ -1,9 +1,17 @@
-import React from 'react'
+import { useFormik } from "formik";
+
+import { signuploginValidate } from "../Service/yupValidation";
 
 const SignupHook = () => {
-  return (
-    <div>SignupHook</div>
-  )
-}
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: "",
+    },
+    validationSchema: signuploginValidate,
+    onSubmit: (values) => {},
+  });
+  return { formik };
+};
 
-export default SignupHook
+export default SignupHook;
