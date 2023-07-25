@@ -7,13 +7,13 @@ const OTPInputField = ({ length }) => {
 
   const handleInputChange = (index, event) => {
     const value = event.target.value;
-    // If the user presses backspace/delete, clear the current field and move focus to the previous one
+
     if (value.length === 0) {
       const newOtp = [...otp];
       newOtp[index] = "";
       setOtp(newOtp);
     } else if (value.length === 1 && /^\d+$/.test(value)) {
-      // If the value is a single digit, update the OTP and move focus to the next input field
+    
       const newOtp = [...otp];
       newOtp[index] = value;
       setOtp(newOtp);
