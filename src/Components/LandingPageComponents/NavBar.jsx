@@ -27,8 +27,9 @@ const NavBar = ({ changeValue }) => {
           Sign in
         </button> */}
 
-        {/* Sign Up Button */}
+        {/* Sign Up Button - Disabled for now*/}
         <button
+          disabled
           // onClick={() => changeValue(true)}'
           onClick={() => navigate("/home")}
           className="grad rounded-[20px] text-[16px] w-[5.5rem] h-[2.5rem] text-white hover:text-main font-bold"
@@ -70,8 +71,9 @@ const NavBar = ({ changeValue }) => {
         </div>
 
         <div className="flex flex-col mt-16 gap-y-10">
-          {/* Signup Button */}
+          {/* Signup Button - Disabled for now*/}
           <button
+            disabled
             onClick={() => {
               setopensidenav(false);
               changeValue(true);
